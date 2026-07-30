@@ -1,4 +1,7 @@
 site_name: note
+site_url: https://wijkqwe.github.io/
+repo_url: https://github.com/Wijkqwe/Wijkqwe.github.io
 
 nav:
-  - index.md
+  - Home:
+    - index.md
