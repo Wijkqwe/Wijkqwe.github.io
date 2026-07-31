@@ -1,6 +1,7 @@
 site_name: Website
 site_url: https://wijkqwe.github.io/
 repo_url: https://github.com/Wijkqwe/Wijkqwe.github.io
+remote_branch: site
 
 nav:
   - Home:

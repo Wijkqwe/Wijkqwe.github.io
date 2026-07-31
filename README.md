@@ -6,8 +6,15 @@
 mkdocs serve
 ```
 
+### deploy
+
+```bash
+mkdocs gh-deploy
+```
+
+
 ## Reference
 
-- [](https://github.com/HobbitQia/notebook/tree/note1)
+- [HobbitQia的笔记本](https://github.com/HobbitQia/notebook/tree/note1)
 
 
