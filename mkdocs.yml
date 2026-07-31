@@ -45,3 +45,19 @@ nav:
 
 theme:
   name: material
+  language: zh
+  features:        # 开启功能（导航、返回顶部等）
+    # - navigation.tabs
+    - navigation.top
+  palette:         # 颜色方案（支持亮/暗切换）
+    - scheme: default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: 切换到暗色模式
+    - scheme: slate   # 暗色模式
+      primary: blue
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到亮色模式
