@@ -2,12 +2,17 @@
 
 ## Usage
 
+### 本地预览
 ```bash
 mkdocs serve
 ```
 
-### deploy
+### 手动构建
+```bash
+mkdocs build
+```
 
+### 一键部署
 ```bash
 mkdocs gh-deploy
 ```
@@ -16,5 +21,4 @@ mkdocs gh-deploy
 ## Reference
 
 - [HobbitQia的笔记本](https://github.com/HobbitQia/notebook/tree/note1)
-
 
