@@ -17,6 +17,10 @@ mkdocs build
 mkdocs gh-deploy
 ```
 
+## Debug
+
+在浏览器中可以查看对应部分 css 样式名。
+
 
 ## Reference
 
