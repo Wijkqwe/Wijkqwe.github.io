@@ -1,5 +1,4 @@
-
-
+# Browser Plugin
 
 ## uBlock Origin
 ad blocker

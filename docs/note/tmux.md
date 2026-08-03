@@ -1,9 +1,5 @@
 # tmux
 
-[TOC]
-
----
-
 ## main
 
 * session

@@ -1,8 +1,5 @@
 # git
 
-[TOC]
-
-
 ## terminology
 
 ### tree

@@ -2,6 +2,8 @@
 
 ## Usage
 
+使用了主题 material，需要安装对应 pip 包。
+
 ### 本地预览
 ```bash
 mkdocs serve
