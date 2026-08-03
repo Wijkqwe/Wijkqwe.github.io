@@ -35,13 +35,13 @@ ll quick_mod_pow(ll a, ll s, ll d)
 
 #### gcd最大公约数
 
-##### std::gcd()
+- std::gcd()
 Add in C++17`<numeric>`
 
-##### std::__gcd()
+- std::__gcd()
 `<algorithm>`特定于libstdc++内部
 
-##### 欧几里得算法
+- 欧几里得算法
 ```cpp
 //: 欧几里得算法求两数 GCD
 int ojld_gcd(int a, int b)
@@ -56,7 +56,7 @@ int ojld_gcd(int a, int b)
 }
 ```
 
-##### Stein算法
+- Stein算法
 ```cpp
 //: Stein算法
 int binary_gcd(int u, int v)
@@ -92,6 +92,7 @@ ForwardIterator lower_bound (ForwardIterator first, ForwardIterator last,  const
 
 #### GCC built-in function
 [Web](https://gcc.gnu.org/onlinedocs/gcc/Other-Builtins.html)
+
 * `__builtin_ctz`: 这个函数作用是返回输入数二进制表示从最低位开始(右起)的连续的0的个数；如果传入0则行为未定义。三个函数分别用于unsigned int，unsigned long以及unsigned long long
     - `int __builtin_ctz (unsigned int x)`: Returns the number of trailing 0-bits in x, starting at the least significant bit position. If x is 0, the result is undefined.
     - `int __builtin_ctzl (unsigned long)`: Similar to __builtin_ctz, except the argument type is unsigned long.
@@ -147,7 +148,7 @@ i != 0时为false,输出" ";
 
 ***
 
-### STL(Standard Template Library)
+## STL(Standard Template Library)
 `<algorithm>`
 `<deque>`
 `<functional>`
@@ -163,9 +164,9 @@ i != 0时为false,输出" ";
 `<utility>`
 
 
-#### 迭代器`<iterator>`
+### 迭代器`<iterator>`
 
-##### 种类
+#### 种类
 
 * 随机访问迭代器
     * std::vector
@@ -185,15 +186,15 @@ i != 0时为false,输出" ";
     * std::unordered_muiltimap
 
 
-##### 距离
+#### 距离
 - std::distance()`<iterator>`: 返回两个迭代器之间的距离
     - 对随机访问迭代器: O(1)首尾迭代器相减
     - 对双向迭代器: O(n)遍历一遍
 
 
-#### `<vector>`
+### `<vector>`
 
-##### std::vector
+#### std::vector
 
 - emplace_back()
 允许在容器尾部直接构造元素,省去了拷贝或移动元素的过程
@@ -214,99 +215,99 @@ i != 0时为false,输出" ";
 ***
 
 
-### Standard Library
+## Standard Library
 [Web](https://en.cppreference.com/w/cpp/standard_library)
 
 
-#### `<algorithm>`
+### `<algorithm>`
 
-##### std::all_of, std::any_of, std::none_of
+#### std::all_of, std::any_of, std::none_of
 
-##### std::copy
+#### std::copy
 
-##### std::min
+#### std::min
 
-##### std::sort
+#### std::sort
 
-#### `<cctype>`
+### `<cctype>`
 `<ctype.h>` in C standard library
 
-##### std::isalnum
+#### std::isalnum
 字母或数字则true
 
-##### std::isalpha
+#### std::isalpha
 字母则true
 
-##### std::isdigit
+#### std::isdigit
 数字则true
 
 
-#### `<exception>`
+### `<exception>`
 
-##### std::exception
+#### std::exception
 Provides consistent interface to handle errors through the throw expression
 
-#### `<fstream>`
+### `<fstream>`
 
-##### std::ifstream
+#### std::ifstream
 
-##### peek()
+#### peek()
 字符流下一个
 
-#### `<functional>`
+### `<functional>`
 
-##### std::function
+#### std::function
 通用的多态函数包装器
 对C++中现有的可调用实体的一种类型安全的包裹
 
 
-##### `std::greater<T>`
+#### `std::greater<T>`
 
 
-##### `std::less<T>`
+#### `std::less<T>`
 
 
-#### `<iostream>`
+### `<iostream>`
 
-##### `std::cerr`
+#### `std::cerr`
 
 
 
-#### `<memory>`
+### `<memory>`
 
-##### `std::make_unique`
+#### `std::make_unique`
 C++14
 构建unique_ptr指向新对象
 
-##### `std::make_unique_for_overwrite`
+#### `std::make_unique_for_overwrite`
 C++20
 
-##### std::share_ptr
+#### std::share_ptr
 Added in C++11
 智能指针，它通过指针保留对象的共享所有权
 
-##### std::unique_ptr
+#### std::unique_ptr
 Added in C++11
 智能指针
 
 
-#### `<numeric>`
+### `<numeric>`
 
-##### std::gcd()
+#### std::gcd()
 Added in C++17
 
 
-#### `<stdexcept>`
+### `<stdexcept>`
 
-#### std::runtime_error
+### std::runtime_error
 class, 
 
 
-#### `<tuple>`
+### `<tuple>`
 Added in C++11
 
 
-##### std::get<index>()
+#### std::get<index>()
 ```cpp
 std::tuple<bool, int, std::string> a(true, 0, "qwe");
 bool s = std::get<0>(a);
@@ -315,15 +316,15 @@ std::get<0>(a) = false;
 ```
 
 
-##### std::ignore
+#### std::ignore
 任何值均可赋给而无效果的未指定类型的对象
 目的是令 std::tie 在解包 std::tuple 时作为不使用的参数的占位符使用
 
 
-##### std::make_tuple
+#### std::make_tuple
 
 
-##### std::tie()
+#### std::tie()
 ```cpp
 std::tuple<bool, int, std::string> a(true, 0, "qwe");
 bool s;
@@ -331,7 +332,7 @@ std::tie(s, std::ignore, std::ignore) = a;
 ```
 
 
-##### std::tuple
+#### std::tuple
 元组,类似结构体
 ```cpp
 template<class... Types>
@@ -340,23 +341,23 @@ class tuple;
 按照索引顺序访问其中的元素
 大小在编译时确定，不支持动态添加或移除元素
 
-#### `<unordered_map>`
+### `<unordered_map>`
 
-##### std::unordered_map<Key,T,Hash,KeyEqual,Allocator>::count
+#### std::unordered_map<Key,T,Hash,KeyEqual,Allocator>::count
 计算给定键的个数, 即检查是否存在键
 
 
 
-#### `<utility>`
+### `<utility>`
 
-##### std::move
+#### std::move
 将左值转化为右值, 可以被右值引用指向
 实现移动语义, 避免拷贝, 从而提升性能
 
 
-#### other
+### other
 
-##### dynamic_cast
+#### dynamic_cast
 安全地将指针和引用沿继承层次结构向上、向下和横向转换为类
 存在开销, 主要用于向下
 
@@ -364,9 +365,9 @@ class tuple;
 ***
 
 
-### Third-Party Library
+## Third-Party Library
 
-#### <gmpxx.h>
+### <gmpxx.h>
 GNU Multiple Precision Arithmetic Library (GMP)
 大整数算术运算
 
@@ -375,9 +376,9 @@ GNU Multiple Precision Arithmetic Library (GMP)
 
 ***
 
-### 语法
+## 语法
 
-#### 循环
+### 循环
 
 * `for (auto [i, i] : v){}`
     ```cpp
@@ -392,30 +393,30 @@ GNU Multiple Precision Arithmetic Library (GMP)
     ```
 
 
-#### 指令
+### 指令
 
-##### pragma
+#### pragma
 预处理器指令
 
 
 
-#### const
+### const
 
 函数名前: 返回值为const
 函数名后: 函数不能修改class的成员
 
 
-#### virtual
+### virtual
 虚函数, 位置在函数返回类型前
 函数声明中加, 函数实现中不加
 
 
-#### override
+### override
 重写虚函数, 位置在函数名后
 函数声明中加, 函数实现中不加
 
 
-#### static
+### static
 函数声明中加, 函数实现中不加
 
 
@@ -425,7 +426,7 @@ GNU Multiple Precision Arithmetic Library (GMP)
 ***
 
 
-### CRTP
+## CRTP
 Curiously Recurring Template Pattern
 奇异递归模板模式
 
