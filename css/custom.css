@@ -7,6 +7,54 @@
 }
 /* }}} */
 /**********************************************************************/
+/* 亮色主题 {{{ */
+[data-md-color-scheme="default"] { /* 亮色模式 */
+  /* --md-code-fg-color: #002233; /* `文字` */
+  --md-default-bg-color: #f0f0f0; /* 背景颜色 */
+  /* --md-default-fg-color--lightest: #ff0000; /* 一些小图标 */
+  /* --md-primary-fg-color: #101010; /* primary 导航栏背景颜色 */
+  --md-typeset-color: #002233; /* 正文文字 */
+}
+
+/**********************************************************************/
+/* 顶部导航栏 {{{ */
+[data-md-color-scheme="default"] .md-header {
+  /* !important 是 CSS 权重强制提升标记，写在样式声明末尾，分号之前。
+   * 作用：无视正常 CSS 优先级规则，强制让这条样式生效。 */
+  /* height: 2rem; /* 高度 */
+  background-color: #f0f0f0 !important;
+  border-bottom: 1px solid #002233;
+  color: #002233;
+}
+[data-md-color-scheme="default"] .md-header .md-header__button,
+[data-md-color-scheme="default"] .md-header .md-header__title,
+[data-md-color-scheme="default"] .md-header .md-nav__link,
+[data-md-color-scheme="default"] .md-header .md-search,
+[data-md-color-scheme="default"] .md-search__form,
+[data-md-color-scheme="default"] .md-search__icon.md-icon,
+[data-md-color-scheme="default"] .md-search__input,
+[data-md-color-scheme="default"] .md-search__output,
+[data-md-color-scheme="default"] .md-header__source {
+  color: #002233;
+}
+
+[data-md-color-scheme="default"] .md-tabs { /* 亮色模式 */
+  background-color: #f0f0f0 !important;
+  border-bottom: 1px solid #002233;
+  color: #002233;
+}
+/* }}} */
+/**********************************************************************/
+/* 底部 {{{ */
+[data-md-color-scheme="default"] .md-footer { /* 亮色模式 */
+  /* background-color: #ffffff !important; */
+  /* border-top: 1px solid #002233; */
+  /* color: #002233; */
+}
+/* }}} */
+/**********************************************************************/
+/* }}} */
+/**********************************************************************/
 /* 暗色主题 {{{ */
 [data-md-color-scheme="slate"] { /* 暗色模式 */
   --md-code-fg-color: #99ddff; /* `文字` */
@@ -26,27 +74,26 @@
   color: #bbddff;
 }
 
-.md-search {
+[data-md-color-scheme="slate"] .md-search {
   /* height: 2rem; /* 将此值修改为你想要的高度 */
 }
 
-.md-search__input {
+[data-md-color-scheme="slate"] .md-search__input {
   /* height: 1rem; /* 将此值修改为你想要的高度 */
 }
 [data-md-color-scheme="slate"] .md-header .md-header__button,
-.md-header .md-header__title,
-.md-header .md-nav__link,
-.md-header .md-search,
-.md-search__form,
-.md-search__icon.md-icon,
-.md-search__input,
-.md-search__output,
-.md-header__source {
+[data-md-color-scheme="slate"] .md-header .md-header__title,
+[data-md-color-scheme="slate"] .md-header .md-nav__link,
+[data-md-color-scheme="slate"] .md-header .md-search,
+[data-md-color-scheme="slate"] .md-search__form,
+[data-md-color-scheme="slate"] .md-search__icon.md-icon,
+[data-md-color-scheme="slate"] .md-search__input,
+[data-md-color-scheme="slate"] .md-search__output,
+[data-md-color-scheme="slate"] .md-header__source {
   color: #bbddff;
 }
 
 /* .md-header__button.md-logo svg { height: 1rem; } /**/
-/* }}} */
 /**********************************************************************/
 [data-md-color-scheme="slate"] .md-tabs { /* 暗色模式 */
   background-color: #101010 !important;
@@ -56,6 +103,20 @@
 
 /* }}} */
 /**********************************************************************/
+/* 底部 {{{ */
+[data-md-color-scheme="slate"] .md-footer { /* 暗色模式 */
+  background-color: #101010;
+  border-top: 1px solid #bbddff;
+  color: #bbddff;
+}
+[data-md-color-scheme="slate"] .md-copyright {
+  /* color: #bbddff; */
+}
+/* }}} */
+/**********************************************************************/
+/* }}} */
+/**********************************************************************/
+
 /* 侧边栏下边框
 nav[data-md-level="0"] > .md-nav__list > .md-nav__item { border-bottom: 1px solid #eee; } */
 
