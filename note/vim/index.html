@@ -1556,6 +1556,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        其他
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1628,7 +1639,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         ~
@@ -1639,7 +1650,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
         .
@@ -1884,7 +1895,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
         查看
@@ -2390,6 +2401,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        其他
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2462,7 +2484,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         ~
@@ -2473,7 +2495,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
         .
@@ -2718,7 +2740,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
         查看
@@ -2860,14 +2882,14 @@
 <h4 id="_1">切换到取代模式</h4>
 <ul>
 <li><kbd>r</kbd> 替代光标所在处一次</li>
-<li><kbd>R</kbd> 替代光标所在处,直到esc </li>
+<li><kbd>R</kbd> 替代光标所在处,直到esc</li>
 </ul>
 <hr />
 <h4 id="to-visual-mode">to visual mode</h4>
 <ul>
-<li><kbd>v</kbd> </li>
-<li><kbd>V</kbd> </li>
-<li><kbd>crtl</kbd>+<kbd>v</kbd> </li>
+<li><kbd>v</kbd></li>
+<li><kbd>V</kbd></li>
+<li><kbd>crtl</kbd>+<kbd>v</kbd></li>
 </ul>
 <hr />
 <h2 id="normal">normal</h2>
@@ -2904,7 +2926,7 @@
 <hr />
 <h4 id="_5">下移</h4>
 <ul>
-<li><kbd>j</kbd> </li>
+<li><kbd>j</kbd></li>
 <li><kbd>ctrl</kbd>+<kbd>d</kbd> 下移1/2页</li>
 <li><kbd>ctrl</kbd>+<kbd>f</kbd> 下移1页</li>
 <li><kbd>G</kbd> 移至文件末行</li>
@@ -2912,6 +2934,7 @@
 <li><kbd>}</kbd> 下一段首</li>
 </ul>
 <hr />
+<h4 id="_6">其他</h4>
 <ul>
 <li><kbd>[[</kbd> 移至上一部分</li>
 <li><kbd>]]</kbd> 移至下一部分</li>
@@ -2955,7 +2978,7 @@
 </ul>
 </li>
 <li><kbd>c</kbd><ul>
-<li><kbd>d</kbd><kbd>d</kbd> delete this line and into insert mode</li>
+<li><kbd>c</kbd><kbd>c</kbd> delete this line and into insert mode</li>
 <li><kbd>c</kbd><kbd>move</kbd> delect to the move and into insert mode</li>
 </ul>
 </li>
@@ -2982,9 +3005,9 @@
 <li><kbd>p</kbd>: paste a line below</li>
 </ul>
 <hr />
-<h3 id="_6"><code>~</code></h3>
+<h3 id="_7"><kbd>~</kbd></h3>
 <p>change the case of the characters that currently selected </p>
-<h3 id="_7"><kbd>.</kbd></h3>
+<h3 id="_8"><kbd>.</kbd></h3>
 <p>repeat the previous editing command that was made</p>
 <h3 id="fold">fold</h3>
 <ul>
@@ -3046,14 +3069,16 @@
 <p>if <code>{string}</code> is an empty string, will delete <code>{target}</code></p>
 <p>Instead of the slash character (/), you can use any other non-alphanumeric single-byte character except as a delimiter.</p>
 <h4 id="range">range</h4>
-<p>When no range is specified the substitute command operates only in the current line.
-* <code>%</code>: entire file, every line
-* <code>.</code>: the current line
-* <code>$</code>: the last line of file
-* <code>,</code>: a range between two lines, the range is inclusive, which means that the first and last lines are included in the range.
+<p>When no range is specified the substitute command operates only in the current line.</p>
+<ul>
+<li><code>%</code>: entire file, every line</li>
+<li><code>.</code>: the current line</li>
+<li><code>$</code>: the last line of file</li>
+<li><code>,</code>: a range between two lines, the range is inclusive, which means that the first and last lines are included in the range.
     <code>#: line 3 to line 10
-    :3,10s/foo/bar/g</code>
-* <code>+</code>/<code>-</code>: followed by a number that is added or subtracted from the preceding line number. If the number after the symbol is omitted, it defaults to 1.</p>
+    :3,10s/foo/bar/g</code></li>
+<li><code>+</code>/<code>-</code>: followed by a number that is added or subtracted from the preceding line number. If the number after the symbol is omitted, it defaults to 1.</li>
+</ul>
 <h4 id="flags">flags</h4>
 <ul>
 <li><code>g</code>: to replace all target in the current line</li>
@@ -3068,7 +3093,7 @@
 <pre><code>:s/\&lt;foo\&gt;/boo/
 </code></pre>
 <h3 id="highlight">highlight</h3>
-<h4 id="_8">查看</h4>
+<h4 id="_9">查看</h4>
 <ul>
 <li><code>:highlight</code>: 查看所有.</li>
 <li><code>:hi</code>: 缩写.</li>
@@ -3122,6 +3147,10 @@ there isn't necessarily a one-to-one correspondence between buffers and windows<
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Wijkqwe | Code：<a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank">AGPL-3.0</a> | Docs：<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="_blank">CC BY-SA 4.0</a>
+    </div>
   
   
     Made with
