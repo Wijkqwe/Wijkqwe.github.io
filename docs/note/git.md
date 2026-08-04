@@ -111,7 +111,7 @@ print out the content
 
 
 ### `git add`
-* `-p`: interactively
+- `-p`: interactively
 
 
 ### `git blame`
@@ -140,8 +140,8 @@ print out the content
 ### branch and merge
 
 #### `git branch`
-* `--set-upstream-to=<branch>`: 
-* `-m [<旧分支名>] <新分支名>`: 重命名。
+- `--set-upstream-to=<branch>`:
+- `-m [<旧分支名>] <新分支名>`: 重命名。
 
 
 #### `git checkout`
@@ -164,8 +164,8 @@ throw away the change and back to the HEAD
 
 可以直接将远程分支合并到本地分支。
 
-* `--abort`: back to
-* `--continue`: after deal with merge conflect file and add them, continue merge
+- `--abort`: back to
+- `--continue`: after deal with merge conflect file and add them, continue merge
 
 ##### `git mergetool`
 
@@ -212,8 +212,8 @@ throw away the change and back to the HEAD
 ### remote
 
 #### `git remote`
-* `add <name> <url>`: 
-* `rename <name> <new-name>`:
+- `add <name> <url>`:
+- `rename <name> <new-name>`:
 - `remove <name>`: 删除
 
 
