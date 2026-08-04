@@ -91,6 +91,8 @@
 
 ---
 
+#### 其他
+
 - <kbd>[[</kbd> 移至上一部分
 - <kbd>]]</kbd> 移至下一部分
 - <kbd>[]</kbd> 移至上一部分末
@@ -126,7 +128,7 @@
 	- <kbd>d</kbd><kbd>d</kbd> delete this line
 	- <kbd>d</kbd><kbd>move</kbd> delect to the move
 - <kbd>c</kbd>
-	- <kbd>d</kbd><kbd>d</kbd> delete this line and into insert mode
+	- <kbd>c</kbd><kbd>c</kbd> delete this line and into insert mode
 	- <kbd>c</kbd><kbd>move</kbd> delect to the move and into insert mode
 - <kbd>x</kbd>
 
@@ -153,7 +155,7 @@
 
 ---
 
-### `~`
+### <kbd>~</kbd>
 change the case of the characters that currently selected 
 
 ### <kbd>.</kbd>
