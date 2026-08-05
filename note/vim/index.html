@@ -2930,7 +2930,6 @@
 <li><kbd>ctrl</kbd>+<kbd>d</kbd> 下移1/2页</li>
 <li><kbd>ctrl</kbd>+<kbd>f</kbd> 下移1页</li>
 <li><kbd>G</kbd> 移至文件末行</li>
-<li><kbd></kbd></li>
 <li><kbd>}</kbd> 下一段首</li>
 </ul>
 <hr />
@@ -2941,31 +2940,41 @@
 <li><kbd>[]</kbd> 移至上一部分末</li>
 <li><kbd>][</kbd> 移至下一部分末</li>
 <li><kbd>%</kbd> when cursor hovering on a different type of grouping, jump between matching parentheres.</li>
+<li><kbd>]d</kbd> 移至下一诊断位置</li>
+<li><kbd>[d</kbd> 移至上一诊断位置</li>
 </ul>
 <hr />
 <h3 id="find">find</h3>
 <ul>
 <li>
-<p><kbd>f</kbd>
-    <kbd>f</kbd><kbd>a</kbd> move to the first <code>a</code> after cursor this line </p>
+<p><kbd>f</kbd></p>
+<ul>
+<li><kbd>f</kbd><kbd>a</kbd> move to the first <code>a</code> after cursor this line</li>
+</ul>
 </li>
 <li>
-<p><kbd>F</kbd>
-    <kbd>F</kbd><kbd>a</kbd> move to the first <code>a</code> before cursor this line </p>
+<p><kbd>F</kbd></p>
+<ul>
+<li><kbd>F</kbd><kbd>a</kbd> move to the first <code>a</code> before cursor this line</li>
+</ul>
 </li>
 <li>
-<p><kbd>t</kbd>
-    <kbd>t</kbd><kbd>a</kbd> move to left the first <code>a</code> after cursor this line</p>
+<p><kbd>t</kbd></p>
+<ul>
+<li><kbd>t</kbd><kbd>a</kbd> move to left the first <code>a</code> after cursor this line</li>
+</ul>
 </li>
 <li>
-<p><kbd>T</kbd>
-    <kbd>T</kbd><kbd>a</kbd> move to right the first <code>a</code> before cursor this line</p>
+<p><kbd>T</kbd></p>
+<ul>
+<li><kbd>T</kbd><kbd>a</kbd> move to right the first <code>a</code> before cursor this line</li>
+</ul>
 </li>
 <li>
 <p><kbd>/</kbd></p>
 <ul>
 <li><kbd>n</kbd> to next</li>
-<li><kbd>N</kbd> to </li>
+<li><kbd>N</kbd> to</li>
 </ul>
 </li>
 </ul>
@@ -3099,6 +3108,15 @@
 <li><code>:hi</code>: 缩写.</li>
 <li><code>:hi &lt;&gt;</code>: 查看特定组.</li>
 <li><code>:hi &lt;&gt; &lt;&gt; &lt;&gt;</code>: 查看多个组.</li>
+<li>
+<p><code>:Inspect</code>: 查看光标位置的语法语义高亮组.</p>
+</li>
+<li>
+<p><code>:lua vim.diagnostic.open_float()</code>: 查看当前行的诊断.</p>
+</li>
+<li>
+<p><code>:lua print(vim.inspect(vim.lsp.get_clients()))</code>: 查看 lsp.</p>
+</li>
 </ul>
 <hr />
 <h2 id="buffer">buffer</h2>
