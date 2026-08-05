@@ -86,7 +86,6 @@
 - <kbd>ctrl</kbd>+<kbd>d</kbd> 下移1/2页
 - <kbd>ctrl</kbd>+<kbd>f</kbd> 下移1页
 - <kbd>G</kbd> 移至文件末行
-- <kbd></kbd>
 - <kbd>}</kbd> 下一段首
 
 ---
@@ -98,26 +97,28 @@
 - <kbd>[]</kbd> 移至上一部分末
 - <kbd>][</kbd> 移至下一部分末
 - <kbd>%</kbd> when cursor hovering on a different type of grouping, jump between matching parentheres.
+- <kbd>]d</kbd> 移至下一诊断位置
+- <kbd>[d</kbd> 移至上一诊断位置
 
 ---
 
 ### find
 
 - <kbd>f</kbd>
-	<kbd>f</kbd><kbd>a</kbd> move to the first `a` after cursor this line 
+    - <kbd>f</kbd><kbd>a</kbd> move to the first `a` after cursor this line
 
 - <kbd>F</kbd>
-	<kbd>F</kbd><kbd>a</kbd> move to the first `a` before cursor this line 
+    - <kbd>F</kbd><kbd>a</kbd> move to the first `a` before cursor this line
 
 - <kbd>t</kbd>
-	<kbd>t</kbd><kbd>a</kbd> move to left the first `a` after cursor this line
+    - <kbd>t</kbd><kbd>a</kbd> move to left the first `a` after cursor this line
 
 - <kbd>T</kbd>
-	<kbd>T</kbd><kbd>a</kbd> move to right the first `a` before cursor this line
+    - <kbd>T</kbd><kbd>a</kbd> move to right the first `a` before cursor this line
 
 - <kbd>/</kbd>
-	- <kbd>n</kbd> to next
-	- <kbd>N</kbd> to 
+    - <kbd>n</kbd> to next
+    - <kbd>N</kbd> to
 
 
 ---
@@ -269,7 +270,12 @@ use `\<` and `\>`
 - `:hi`: 缩写.
 - `:hi <>`: 查看特定组.
 - `:hi <> <> <>`: 查看多个组.
+- `:Inspect`: 查看光标位置的语法语义高亮组.
 
+
+- `:lua vim.diagnostic.open_float()`: 查看当前行的诊断.
+
+- `:lua print(vim.inspect(vim.lsp.get_clients()))`: 查看 lsp.
 
 
 ---
