@@ -9,32 +9,32 @@ nav:
     - index.md
   - Note:
     - note/index.md
+    - 编程语言:
+      - C#: note/c#.md
+      - C++: note/cpp.md
+      - Java: note/java.md
+      - Powershell: note/powershell.md
+      - Python: note/python.md
+      - Shell: note/shell.md
     - Browser Plugin: note/browser_plugin.md
-    - C#: note/c#.md
     - Cmd: note/cmd.md
-    - C++: note/cpp.md
     - Gdb: note/gdb.md
     - Git: note/git.md
-    - Java: note/java.md
     - Kitty: note/kitty.md
     - Markdown: note/markdown.md
     - Npm: note/npm.md
     - Opencode: note/opencode.md
     - Pacman: note/pacman.md
     - Potpourri:
-        - Daemons: note/potpourri/daemons.md
-        - Data Wrangling: note/potpourri/data_wrangling.md
-        - Debug: note/potpourri/debug.md
-        - Keyboard: note/potpourri/keyboard.md
-        - Make: note/potpourri/make.md
-        - Security: note/potpourri/security.md
-        - Test: note/potpourri/test.md
-        - Version: note/potpourri/version.md
-        - VPN: note/potpourri/VPN.md
-    - Powershell: note/powershell.md
-    - Python: note/python.md
-    - Shell: note/shell.md
-    - Stow: note/stow.md
+      - Daemons: note/potpourri/daemons.md
+      - Data Wrangling: note/potpourri/data_wrangling.md
+      - Debug: note/potpourri/debug.md
+      - Keyboard: note/potpourri/keyboard.md
+      - Make: note/potpourri/make.md
+      - Security: note/potpourri/security.md
+      - Test: note/potpourri/test.md
+      - Version: note/potpourri/version.md
+      - VPN: note/potpourri/VPN.md
     - Tmux: note/tmux.md
     - Tools: note/tools.md
     - Vim: note/vim.md

@@ -21,6 +21,12 @@ as such: `rm -- -r` or `ssh machine --for-ssh -- foo --for-foo`.after this will
 follow this to find where command is,
 
 
+### `curl`
+
+- `-O [path]`: 下载文件, 保留原始文件名.
+- `-o [new name] [path]`: 下载并重命名文件.
+
+
 ### `which`
 find command
 ```bash
@@ -49,11 +55,8 @@ create an empty file or change timestamps of file
 diff [选项] 文件1 文件2
 ```
 
-#### 选项
-
 - `-c`: 显示上下文，默认3行
 - `-u`: 统一格式（git使用的格式），更紧凑
-
 
 ```bash
 diff <(ls qwe) <(ls asd)
@@ -82,7 +85,6 @@ find . -name "*.tmp" -exec rm {} \;
 - `-L [string]`: 检索不包含 string 的文件
 
 
-
 ### `history`
 
 ### `less`
@@ -98,7 +100,6 @@ ln [目标路径] [链接路径]
 
 - `-s`: 创建软链接
 - `-f`: 强制执行，如果目标位置已存在同名链接，会直接覆盖，无需手动删除旧链接
-
 
 
 ### `wc`
@@ -121,6 +122,14 @@ allow to send any sort of Unix signal
 ```bash
 kill -STOP %1
 ```
+
+
+### `tar`
+
+- `-f`: 指定文件.
+- `-v`: 详细信息.
+- `-x`: 解包.
+- `-z`: 通过 gzip 解压缩(处理 `.gz`).
 
 
 ### `nohup`
@@ -255,12 +264,8 @@ is kind of like a special device in Unix system where can write and it will be d
 ### variable
 use `$`.
 
-#### in `""`
-was expanded
-
-
-#### in `''`
-just itself
+- in `""`: was expanded.
+- in `''`: just itself.
 
 
 #### `$*`
@@ -288,7 +293,6 @@ just itself
 * `$#` the number of arguments that be giving to the command
 * `$$` the process ID of this command that is running
 * `$@` will expand to all the arguments 
-
 
 
 ### `#!`
@@ -331,30 +335,32 @@ Equal `test ...`.
 
 ## tool
 
-### `shellcheck`
+### shellcheck
 
-### `man`
+### man
 
-### `tldr`
+### tldr
 neat tool
 will have some nice kind of explanatory examples of how you want to use this command
 
-### `fd`
+### fd
 by default will use regex and will ignore gitfiles.
 color-code, have better Unicode support.
 
+### tree
 
-### `tree`
+### broot
 
+### ncdu
 
-### `broot`
+### lsof
 
+### stow
 
-### `ncdu`
+批量建立软链接，可用于管理配置文件.
 
-
-### `lsof`
-
+- `-n`: 模拟操作，不实际执行
+- `-v`: 显示详情
 
 
 ## job control
