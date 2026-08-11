@@ -7,11 +7,11 @@
 
 /* active状态展开 */
 [data-md-component="toc"] > .md-nav__item > .md-nav__link.md-nav__link--passed.md-nav__link--active + .md-nav {
-  max-height: 999px !important;
+  max-height: none !important;
   overflow: visible !important;
 }
 
 [data-md-component="toc"] > .md-nav__item:has(.md-nav__link--passed.md-nav__link--active) > .md-nav {
-  max-height: 999px !important;
+  max-height: none !important;
   overflow: visible !important;
 }
