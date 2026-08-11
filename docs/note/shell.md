@@ -2,23 +2,8 @@
 
 ## command
 
-### `#`
-as root
-
-
-### `--`
-Sometimes, you want to pass something that _looks_ like a flag as a
-normal argument. For example, imagine you wanted to remove a file
-called `-r`. Or you want to run one program "through" another, like
-`ssh machine foo`, and you want to pass a flag to the "inner" program
-(`foo`). The special argument `--` makes a program _stop_ processing
-flags and options (things starting with `-`) in what follows, letting
-you pass things that look like flags without them being interpreted
-as such: `rm -- -r` or `ssh machine --for-ssh -- foo --for-foo`.after this will
-
-
-### $PATH
-follow this to find where command is,
+### `column`
+- `-t`: 
 
 
 ### `curl`
@@ -27,34 +12,11 @@ follow this to find where command is,
 - `-o [new name] [path]`: 下载并重命名文件.
 
 
-### `which`
-find command
-```bash
-which echo
-```
-
-
-### `pwd`
-echo current location
-
-
-### `tee`
-takes its input and writes it to a file, but also to standard out.
-
-
-### `touch`
-create an empty file or change timestamps of file
-
-
-### `column`
-- `-t`: 
-
-
 ### `diff`
+
 ```bash
 diff [选项] 文件1 文件2
 ```
-
 - `-c`: 显示上下文，默认3行
 - `-u`: 统一格式（git使用的格式），更紧凑
 
@@ -84,6 +46,25 @@ find . -name "*.tmp" -exec rm {} \;
 - `-l`: 仅显示路径，不显示行号和内容
 - `-L [string]`: 检索不包含 string 的文件
 
+
+
+### `pwd`
+echo current location
+
+
+### `tee`
+takes its input and writes it to a file, but also to standard out.
+
+
+### `touch`
+create an empty file or change timestamps of file
+
+
+### `which`
+find command
+```bash
+which echo
+```
 
 ### `history`
 
@@ -140,52 +121,12 @@ encapsulating whatever command you're executing and ignoring wherever you get a 
 
 ### history substring search
 
-### `&`
-make program running in the background
-
-### `!!`
-execute last command
-
-### `;`
-Concatenate command in the same line.
-
-### `<(...)`
-execute `...` and get the output to kind of like a temporary file and it will give the file handle to the command
-```bash
-cat <(ls) <(ls ..)
-```
-
-### globbing
-#### `*`
-match any length of characters
-
-
-#### `?`
-match any single character
-
-#### `{}`
-
-```bash
-cat qwe.{c,h}
-## equal
-cat qwe.c qwe.h
-
-touch pro{1,2}/test{1,2,3}.py
-## equal
-touch pro1/test1.py pro1/test2.py pro1/test3.py pro2/test1.py pro2/test2.py pro2/test3.py
-
-touch {a..j}
-## equal
-touch a b ... j
-```
-
 ### `more`
 
 - <kbd>space</kbd>: 下一屏
 - <kbd>enter</kbd>: 下一行
 - <kbd>b</kbd>: 前一屏
 - <kbd>q</kbd>: 退出
-
 
 
 ## stream
@@ -230,6 +171,71 @@ append
 is kind of like a special device in Unix system where can write and it will be discarded
 
 
+## 特殊参数/符号
+
+### `&`
+make program running in the background
+
+### `!!`
+execute last command
+
+### `;`
+Concatenate command in the same line.
+
+### `<(...)`
+execute `...` and get the output to kind of like a temporary file and it will give the file handle to the command
+```bash
+cat <(ls) <(ls ..)
+```
+
+### `#`
+as root
+
+
+### `--`
+
+停止处理后续标志.
+
+Sometimes, you want to pass something that _looks_ like a flag as a
+normal argument. For example, imagine you wanted to remove a file
+called `-r`. Or you want to run one program "through" another, like
+`ssh machine foo`, and you want to pass a flag to the "inner" program
+(`foo`). The special argument `--` makes a program _stop_ processing
+flags and options (things starting with `-`) in what follows, letting
+you pass things that look like flags without them being interpreted
+as such: `rm -- -r` or `ssh machine --for-ssh -- foo --for-foo`.after this will
+
+### globbing
+
+#### `*`
+match any length of characters
+
+
+#### `?`
+match any single character
+
+#### `{}`
+
+```bash
+cat qwe.{c,h}
+## equal
+cat qwe.c qwe.h
+
+touch pro{1,2}/test{1,2,3}.py
+## equal
+touch pro1/test1.py pro1/test2.py pro1/test3.py pro2/test1.py pro2/test2.py pro2/test3.py
+
+touch {a..j}
+## equal
+touch a b ... j
+```
+
+## 环境变量
+
+### $PATH
+follow this to find where command is,
+
+
 ## 命令行快捷键
 
 ### 移动
@@ -240,8 +246,6 @@ is kind of like a special device in Unix system where can write and it will be d
 
 
 ### 删除/剪切
-
-
 
 
 ## script
