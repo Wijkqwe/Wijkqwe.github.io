@@ -35,9 +35,6 @@ extra_css:
   - css/custom.css
   - css/toc-fold.css
 
-extra_javascript:
-  - js/toc-fold.js
-
 nav:
   - Home:
     - index.md
