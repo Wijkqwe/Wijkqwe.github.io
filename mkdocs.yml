@@ -4,6 +4,40 @@ repo_url: https://github.com/Wijkqwe/Wijkqwe.github.io
 remote_branch: site
 copyright: Copyright &copy; 2026 Wijkqwe | Code：<a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank">AGPL-3.0</a> | Docs：<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="_blank">CC BY-SA 4.0</a>
 
+
+theme:
+  name: material
+  language: zh
+  features: #: 开启功能（导航、返回顶部等）
+    - content.code.annotate
+    - content.code.copy #: 为代码块开启复制选项
+    - navigation.tabs #: 将顶级导航部分渲染为顶部标签栏
+    - navigation.indexes #: 为每个导航部分关联一个索引界面
+    - navigation.top #: 返回顶部按钮
+    - search.highlight #: 在搜索结果中高亮关键词
+    - toc.follow
+  palette: #: 颜色方案（支持亮/暗切换）
+    - media: "(prefers-color-scheme: light)"
+      scheme: default #: 配色方案：浅色模式
+      # primary: indigo #: 原色，默认蓝，用于标题、侧边栏、文本链接和其他几个组件
+      # accent: pink #: 强调色，默认蓝，可以交互的元素如悬停链接、按钮和滚动条
+      toggle:
+        icon: material/weather-sunny #: 图标，太阳
+        name: 切换到暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate   #: 暗色模式
+      # primary: blue
+      toggle:
+        icon: material/weather-night #: 图标，月亮
+        name: 切换到亮色模式
+
+extra_css:
+  - css/custom.css
+  - css/toc-fold.css
+
+extra_javascript:
+  - js/toc-fold.js
+
 nav:
   - Home:
     - index.md
@@ -18,6 +52,7 @@ nav:
       - Shell: note/shell.md
     - Browser Plugin: note/browser_plugin.md
     - Cmd: note/cmd.md
+    - CSS: note/css.md
     - Gdb: note/gdb.md
     - Git: note/git.md
     - Kitty: note/kitty.md
@@ -46,32 +81,3 @@ nav:
     - Arch Linux:
       - Arch in VMWare: virtual_machine/Arch_VMware/main.md
       - Arch in Virtual: virtual_machine/Arch_VirtualBox/main.md
-
-
-theme:
-  name: material
-  language: zh
-  features: #: 开启功能（导航、返回顶部等）
-    - content.code.annotate
-    - content.code.copy #: 为代码块开启复制选项
-    - navigation.tabs #: 将顶级导航部分渲染为顶部标签栏
-    - navigation.indexes #: 为每个导航部分关联一个索引界面
-    - navigation.top #: 返回顶部按钮
-    - search.highlight #: 在搜索结果中高亮关键词
-  palette: #: 颜色方案（支持亮/暗切换）
-    - media: "(prefers-color-scheme: light)"
-      scheme: default #: 配色方案：浅色模式
-      # primary: indigo #: 原色，默认蓝，用于标题、侧边栏、文本链接和其他几个组件
-      # accent: pink #: 强调色，默认蓝，可以交互的元素如悬停链接、按钮和滚动条
-      toggle:
-        icon: material/weather-sunny #: 图标，太阳
-        name: 切换到暗色模式
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate   #: 暗色模式
-      # primary: blue
-      toggle:
-        icon: material/weather-night #: 图标，月亮
-        name: 切换到亮色模式
-
-extra_css:
-  - css/custom.css

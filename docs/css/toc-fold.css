@@ -1,0 +1,39 @@
+/* 目标：H2对应的直接子ul（H3/H4列表）默认折叠 */
+[data-md-component="toc"] > .md-nav__item > .md-nav {
+  max-height: 4px !important;
+  overflow: hidden !important;
+  transition: max-height 0s ease !important; /* 延迟过渡 */
+}
+
+/* active状态展开 */
+[data-md-component="toc"] > .md-nav__item > .md-nav__link.md-nav__link--passed.md-nav__link--active + .md-nav {
+  max-height: 999px !important;
+  overflow: visible !important;
+}
+
+/* 箭头 */
+[data-md-component="toc"] > .md-nav__item > .md-nav__link {
+  /*position: relative;
+  padding-right: 1.4rem !important;*/
+}
+
+[data-md-component="toc"] > .md-nav__item:not(.md-nav__item--active) > .md-nav__link::after {
+  /*content: "▶";
+  position: absolute;
+  right: 0.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.7rem;
+  opacity: 0.6;*/
+}
+
+
+[data-md-component="toc"] > .md-nav__item > .md-nav__link.md-nav__link--passed.md-nav__link--active::after {
+  /*content: "▼";
+  position: absolute;
+  right: 0.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.7rem;
+  opacity: 0.6;*/
+}
