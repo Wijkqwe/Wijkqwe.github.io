@@ -54,6 +54,7 @@ nav:
     - Git: note/git.md
     - Kitty: note/kitty.md
     - Markdown: note/markdown.md
+    - MkDocs: note/mkdocs.md
     - Npm: note/npm.md
     - Opencode: note/opencode.md
     - Pacman: note/pacman.md
