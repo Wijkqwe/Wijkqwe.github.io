@@ -21,10 +21,10 @@ prefix key <kbd>mod</kbd>: <kbd>ctrl</kbd>+<kbd>b</kbd>
 #### normal
 
 #### copy
+
 By <kbd>mod</kbd> <kbd>[</kbd>. <kbd>q</kbd> to exit.
 
 Move like vim by `setw -g mode-keys vi`.
-
 
 #### command 
 By <kbd>mod</kbd> <kbd>:</kbd>.
@@ -33,18 +33,18 @@ By <kbd>mod</kbd> <kbd>:</kbd>.
 ### config
 
 #### path
+
 `~/.tmux.conf`
 
-
 #### 设置选项
+
 - `set`: equal `set-option`.
 - `setw`: equal `set-window-option`.
 
-
 #### 加载配置
+
 - `tmux source-file ~/.tumx.conf`: in shell.
 - <kbd>mod</kbd> <kbd>:</kbd>, `source-file ~/.tumx.conf`.
-
 
 ### color
 ```bash
@@ -80,27 +80,29 @@ tmux kill-server
 - <kbd>mod</kbd> <kbd>s</kbd>: display the list of session to selection and switching
 - <kbd>mod</kbd> <kbd>:</kbd>: enter command line mode
 
-
 ---
 
 ## window
 
 ### create
+
 - <kbd>mod</kbd> <kbd>c</kbd>: create a new window
 
 ### close
+
 - <kbd>mod</kbd> <kbd>&</kbd>: close the current window
 
 ### switch
+
 - <kbd>mod</kbd> <kbd>p</kbd>: go to the previous window
 - <kbd>mod</kbd> <kbd>n</kbd>: go to the next window
 - <kbd>mod</kbd> <kbd>num</kbd>: go to the number window
 - <kbd>mod</kbd> <kbd>w</kbd>: choose window from list
 
 ### rename
-<kbd>mod</kbd> <kbd>,</kbd>: rename window
-<kbd>mod</kbd> <kbd>.</kbd>: rename window number
 
+- <kbd>mod</kbd> <kbd>,</kbd>: rename window
+- <kbd>mod</kbd> <kbd>.</kbd>: rename window number
 
 ---
 
@@ -132,20 +134,19 @@ tmux kill-server
 
 - <kbd>mod</kbd> <kbd>x</kbd>: close the current pane
 
-
 ### resize
 
 - <kbd>mod</kbd> <kbd>ctrl</kbd>+<kbd>arrow</kbd>: resize the current pane size
 - In command mode, `resize-pane -[U/D/L/R] [num]`
 
 ### information
+
 - <kbd>mod</kbd> <kbd>q</kbd>: display pane number
 - <kbd>mod</kbd> <kbd>t</kbd>: show clock
 
-
 ### zoom
-- <kbd>mod</kbd> <kbd>z</kbd>: zoom current pane
 
+- <kbd>mod</kbd> <kbd>z</kbd>: zoom current pane
 
 ---
 
@@ -156,20 +157,20 @@ tmux kill-server
 ....../tmux-plugin-manager/bin/install_plugins
 ....../tmux-plugin-manager/bin/updata_plugins all
 ....../tmux-plugin-manager/bin/updata_plugins tmux-resurrect
-
 ```
 
 ### resurrect
-<kbd>mod</kbd> <kbd>ctrl</kbd>+<kbd>s</kbd>: save
-<kbd>mod</kbd> <kbd>ctrl</kbd>+<kbd>r</kbd>: restore
+
+- <kbd>mod</kbd> <kbd>ctrl</kbd>+<kbd>s</kbd>: save
+- <kbd>mod</kbd> <kbd>ctrl</kbd>+<kbd>r</kbd>: restore
 
 
 
 #!/bin/bash
 
 
-tmux -V
-tmux list-session
+- tmux -V
+- tmux list-session
 
 
 

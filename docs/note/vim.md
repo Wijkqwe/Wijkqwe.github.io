@@ -106,17 +106,14 @@
 
 - <kbd>f</kbd>
     - <kbd>f</kbd><kbd>a</kbd> move to the first `a` after cursor this line
-
 - <kbd>F</kbd>
     - <kbd>F</kbd><kbd>a</kbd> move to the first `a` before cursor this line
-
 - <kbd>t</kbd>
     - <kbd>t</kbd><kbd>a</kbd> move to left the first `a` after cursor this line
-
 - <kbd>T</kbd>
     - <kbd>T</kbd><kbd>a</kbd> move to right the first `a` before cursor this line
-
 - <kbd>/</kbd>
+    `/<string>`.
     - <kbd>n</kbd> to next
     - <kbd>N</kbd> to
 
@@ -262,7 +259,6 @@ use `\<` and `\>`
 :s/\<foo\>/boo/
 ```
 
-
 ### highlight
 
 #### 查看
@@ -272,32 +268,34 @@ use `\<` and `\>`
 - `:hi <> <> <>`: 查看多个组.
 - `:Inspect`: 查看光标位置的语法语义高亮组.
 
+### LSP
 
-- `:lua vim.diagnostic.open_float()`: 查看当前行的诊断.
-
-- `:lua print(vim.inspect(vim.lsp.get_clients()))`: 查看 lsp.
-
+- `:lua vim.diagnostic.open_float()`[neovim]: 查看当前行的诊断.
+- `:lua print(vim.inspect(vim.lsp.get_clients()))`[neovim]: 查看 lsp.
 
 ---
+
+## 按功能分类
+
+### marks
+
+- <kbd>m</kbd> anykey: 设置标记, 记录光标当前位置. 小写字母用于文件内跳转, 大写字母用于跨文件跳转.
+- <kbd>'</kbd> anykey: 跳转到标记行首.
+- `:marks`: 查看全部标记.
+- `:delmarks`: 删除标记.
+    - `:delmarks anykey`: 删除特定标记.
+    - `:delmarks!`: 删除当前缓冲区全部标记.
 
 ## buffer
 use for open files
 there isn't necessarily a one-to-one correspondence between buffers and windows
 
----
-
 ## game
 
-### vim golf
+- vim golf.
 
 ## leader key
 
 ## vim macros
-
-## marks
-
-- <kbd>m</kbd>+anykey
-- <kbd>'</kbd>+anykey
-
 
 

@@ -47,7 +47,6 @@ find . -name "*.tmp" -exec rm {} \;
 - `-L [string]`: 检索不包含 string 的文件
 
 
-
 ### `pwd`
 echo current location
 
@@ -342,6 +341,17 @@ Equal `test ...`.
 ### shellcheck
 
 ### man
+
+### colorstorm
+
+主题构建工具[github](https://github.com/benbusby/colorstorm).
+
+`colorstorm`: 生成一个随机的深色主题进入编辑.
+
+- `-l`: 生成随机浅色主题.
+- `-m`: 生成随机单色主题.
+- `-i <path>`: 加载参考图片.
+- `-f <path>`: 加载已有主题.
 
 ### tldr
 neat tool

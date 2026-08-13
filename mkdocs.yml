@@ -48,6 +48,7 @@ nav:
       - Python: note/python.md
       - Shell: note/shell.md
     - Browser Plugin: note/browser_plugin.md
+    - Clangd: note/clangd.md
     - Cmd: note/cmd.md
     - CSS: note/css.md
     - Gdb: note/gdb.md
