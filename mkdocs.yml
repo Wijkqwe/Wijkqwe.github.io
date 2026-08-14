@@ -1,4 +1,4 @@
-site_name: Website
+site_name: Wijkqwe
 site_url: https://wijkqwe.github.io/
 repo_url: https://github.com/Wijkqwe/Wijkqwe.github.io
 remote_branch: site
@@ -80,3 +80,8 @@ nav:
     - Arch Linux:
       - Arch in VMWare: virtual_machine/Arch_VMware/main.md
       - Arch in Virtual: virtual_machine/Arch_VirtualBox/main.md
+  - Website:
+    - website/index.md
+    - Compiler:
+      - OpenACC: website/compiler/OpenACC.md
+      - TSP架构: website/compiler/TSP.md
