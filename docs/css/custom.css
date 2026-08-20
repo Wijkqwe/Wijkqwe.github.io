@@ -114,10 +114,17 @@
 }
 /* }}} */
 /**********************************************************************/
+/* “返回顶部”按钮 {{{ */
+[data-md-color-scheme="slate"] .md-top {
+  border: 1px solid #bbddff;
+  color: #bbddff;
+}
+[data-md-color-scheme="slate"] .md-top.md-icon:hover {
+  background-color: #bbddff;
+  color: #000000;
+}
 /* }}} */
 /**********************************************************************/
-
-/* 侧边栏下边框
-nav[data-md-level="0"] > .md-nav__list > .md-nav__item { border-bottom: 1px solid #eee; } */
-
+/* }}} */
+/**********************************************************************/
 
