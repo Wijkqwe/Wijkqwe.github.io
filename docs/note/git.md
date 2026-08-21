@@ -61,12 +61,11 @@ references = map<string string>
 	- `--merges <特定分支>`: 仅显示发生合并操作的提交
 	- `--stat`: 查看统计情况
 	- `--pretty=<format> / format:"<自定义格式>"`: 设置输出格式。
-		`format` 有一些内置格式: 
-		- oneline
-		- full
-		- ...
-
-		同时，可以通过占位符和颜色自定义`format`的样式。
+	    - `format` 有一些内置格式: 
+		    - oneline
+		    - full
+		    - ...
+		- 同时，可以通过占位符和颜色自定义`format`的样式。
 	- `--decorate`: 在提交信息旁显示分支、标签等引用信息
 - `git blame <file>`: 逐行查看每行代码的最后修改的提交(时间, 编辑者).
 
@@ -82,6 +81,15 @@ references = map<string string>
 	- `--staged`: 查看所有已暂存(未`commit`)文件的修改
 	- `--stat`: 查看统计情况
 	- `[file]`: 查看特定文件的修改
+
+#### 分支
+
+- `git branch`: 列出本地分支
+    - `-a`: 包括远程分支
+    - `-v`: 更多分支(不包括远程分支)
+    - `-vv`: show extra information
+    - `--merged`: 已合并到当前分支的分支
+    - `--no-merged`: 未合并到当前分支的分支
 
 ### 改
 
