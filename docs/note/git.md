@@ -41,7 +41,7 @@ references = map<string string>
 
 ## command
 
-### 查看
+### 查
 
 #### 帮助
 
@@ -68,15 +68,13 @@ references = map<string string>
 
 		同时，可以通过占位符和颜色自定义`format`的样式。
 	- `--decorate`: 在提交信息旁显示分支、标签等引用信息
-
-
+- `git blame <file>`: 逐行查看每行代码的最后修改的提交(时间, 编辑者).
 
 #### 状态
 
 - `git status`:查看git仓库当前状态
 	- `-s`: 简洁信息
 	- `-u`: 详细信息
-
 
 #### 更改
 
@@ -85,71 +83,69 @@ references = map<string string>
 	- `--stat`: 查看统计情况
 	- `[file]`: 查看特定文件的修改
 
-
-### 修改
+### 改
 
 #### 提交
 
+- `git commit --amend [-m ""]`: 修改最近一次提交的信息.
 
+### 删
+
+#### 更改
+
+- `git store <path>`: 恢复未暂存(未`add`)的文件.
+
+### 增
+
+#### 更改
+
+- `git add <path>`: 暂存.
+    - `-p / --patch`: 交互式提交, 依次处理每一个修改块.
 
 ---
 
+### 提交
 
-### `git commit`
-`--amend`: 打开编辑器修改最近一次提交的信息
-`--amend -m ""`: 直接指定最近一次提交的信息
+- `git commit`
+    - `--amend`: 打开编辑器修改最近一次提交的信息
+    - `--amend -m ""`: 直接指定最近一次提交的信息
+- `git stash`: 临时保存未提交的修改.
+    - `git stash pop`
+- `git bisect`: 通过二分查找定位引入 bug 的具体提交.
+- `git rebase`: 压缩提交，压缩后需强制推送
+    - `HEAD~n`: 从`HEAD`开始的n个提交
+    - `-i`: 交互式
+    - `--abort`: 放弃正在进行的操作
 
+### 初始化
 
-### `git init`
+- `git init`
 
-### `git cat-file`
+### 对象库
 
-```bash
-git cat-file -P <hash>
-```
-print out the content
-
-
-### `git add`
-- `-p`: interactively
-
-
-### `git blame`
-
-### `git diff`
-比较`modified`文件的差异。
-
-### `git stash`
-
-#### `git stash pop`
-
-### `git bisect`
-
-
-### status
-
-#### `git restore`
-撤销未add的修改。
-
-
-### `git commit`
-`--amend`: 打开编辑器修改最近一次提交的信息
-`--amend -m ""`: 直接指定最近一次提交的信息
-
+- `git cat-file`
+    ```bash
+    git cat-file -P <hash>
+    ```
+    print out the content
 
 ### branch and merge
 
 #### `git branch`
+
 - `--set-upstream-to=<branch>`:
 - `-m [<旧分支名>] <新分支名>`: 重命名。
 
-
 #### `git checkout`
+
 ##### move the head pointer 
+
 ```bash
 git checkout <hash/reference>
 ```
+
 ##### abanden
+
 ```bash
 git checkout <file>
 ```
@@ -159,7 +155,6 @@ throw away the change and back to the HEAD
 
 - `--orphan`: create a new branch without a commit.
 
-
 #### `git merge`
 
 可以直接将远程分支合并到本地分支。
@@ -168,7 +163,6 @@ throw away the change and back to the HEAD
 - `--continue`: after deal with merge conflect file and add them, continue merge
 
 ##### `git mergetool`
-
 
 #### list branches
 - `git branch`: 列出本地分支
@@ -197,16 +191,6 @@ throw away the change and back to the HEAD
 - `git branch -d <branch-name>`: 删除已合并分支
 - `git branch -D <branch-name>`: 强制删除分支（即使未合并）
 - `git push origin --delete <remote-branch-name>`: 删除远程分支
-
-
-### commit
-
-#### `git rebase`
-压缩提交，压缩后需强制推送
-- `HEAD~n`: 从`HEAD`开始的n个提交
-- `-i`: 交互式
-- `--abort`: 放弃正在进行的操作
-
 
 
 ### remote
@@ -245,12 +229,9 @@ git pull <远程主机> <远程分支>[:<本地分支>]
 - `--bare`: 仅克隆裸仓库，可从裸仓库克隆完整工作目录
 - `--recursive`: 克隆包含子模块（submodule）的仓库时，自动初始化并更新全部子模块，一次性获得完整项目代码。
 
-
-
 ### config
 
 #### `git config`
-
 
 ### tag
 
@@ -265,5 +246,4 @@ git pull <远程主机> <远程分支>[:<本地分支>]
 
 
 ## shell integration
-
 
