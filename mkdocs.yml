@@ -4,10 +4,10 @@ repo_url: https://github.com/Wijkqwe/Wijkqwe.github.io
 remote_branch: site
 copyright: Copyright &copy; 2026 Wijkqwe | Code：<a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank">AGPL-3.0</a> | Docs：<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="_blank">CC BY-SA 4.0</a>
 
-
 theme:
   name: material
   language: zh
+  custom_dir: docs/overrides # 启用模板覆盖目录
   features: #: 开启功能（导航、返回顶部等）
     - content.code.annotate
     - content.code.copy #: 为代码块开启复制选项
@@ -30,6 +30,15 @@ theme:
       toggle:
         icon: material/weather-night #: 图标，月亮
         name: 切换到亮色模式
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      # date：2026‑08‑25；datetime：带时分秒；timeago：“3天前”；iso_date
+      type: date
+      locale: zh_CN             # 中文本地化
+      fallback_to_build_date: true  # 文件无git提交记录时，回退为本次build时间
+      enable_creation_date: false   # 是否同时显示文档创建时间
 
 extra_css:
   - css/custom.css
