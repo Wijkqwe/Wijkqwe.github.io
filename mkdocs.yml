@@ -82,6 +82,5 @@ nav:
       - Arch in Virtual: virtual_machine/Arch_VirtualBox/main.md
   - Website:
     - website/index.md
-    - Compiler:
-      - OpenACC: website/compiler/OpenACC.md
-      - TSP架构: website/compiler/TSP.md
+    - OpenACC: website/OpenACC.md
+    - 架构: website/untitled.md
