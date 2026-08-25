@@ -1,0 +1,26 @@
+{% import "partials/language.html" as lang with context %}
+
+{% if "material/tags" in config.plugins and tags %}
+  {% include "partials/tags.html" %}
+{% endif %}
+
+{% include "partials/actions.html" %}
+
+{# 页面标题 #}
+{% if "<h1" not in page.content %}
+  <h1>{{ page.title | d(config.site_name, true)}}</h1>
+{% endif %}
+
+{# ========== 在此处输出【最后更新时间】，标题下方、正文最前面 ========== #}
+{% if page.meta.git_revision_date_localized %}
+{% include "partials/source-file.html" %}
+{% endif %}
+
+{# 正文内容 #}
+{{ page.content }}
+
+{# 下面保留原有底部组件，如果你不想页面底部再重复显示更新时间，可以删除 include source‑file.html #}
+{% include "partials/source-file.html" %}
+{% include "partials/feedback.html" %}
+{% include "partials/comments.html" %}
+
