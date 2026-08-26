@@ -28,3 +28,25 @@ Markdown is easy to get started with, and you can use it nearly
 everywhere. In fact, the lecture notes for this lecture, and all the
 others, are written in Markdown, and you can see the raw Markdown
 [here](https://raw.githubusercontent.com/missing-semester/missing-semester/master/_2020/potpourri.md).
+
+## 标准
+
+列表与段落之间需要空行。
+
+```markdown
+文本
+
+- 列表
+
+文本
+```
+
+嵌套入列表时，必须紧贴列表项的缩进层级。
+
+```markdown
+- qwe
+  > qwe
+
+1. 123
+   > qwe
+```
