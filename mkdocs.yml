@@ -52,6 +52,7 @@ nav:
     - 编程语言:
       - C#: note/c#.md
       - C++: note/cpp.md
+      - CMake: note/cmake.md
       - Java: note/java.md
       - Powershell: note/powershell.md
       - Python: note/python.md
