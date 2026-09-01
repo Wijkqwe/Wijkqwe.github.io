@@ -49,22 +49,23 @@ nav:
     - index.md
   - Note:
     - note/index.md
-    - 编程语言:
+    - Code:
       - C#: note/c#.md
       - C++: note/cpp.md
       - CMake: note/cmake.md
+      - Cmd: note/cmd.md
+      - CSS: note/css.md
       - Java: note/java.md
+      - Markdown: note/markdown.md
       - Powershell: note/powershell.md
       - Python: note/python.md
       - Shell: note/shell.md
+      - Vue: note/vue.md
     - Browser Plugin: note/browser_plugin.md
     - Clangd: note/clangd.md
-    - Cmd: note/cmd.md
-    - CSS: note/css.md
     - Gdb: note/gdb.md
     - Git: note/git.md
     - Kitty: note/kitty.md
-    - Markdown: note/markdown.md
     - MkDocs: note/mkdocs.md
     - Npm: note/npm.md
     - Opencode: note/opencode.md
@@ -83,7 +84,6 @@ nav:
     - Tools: note/tools.md
     - Vim: note/vim.md
     - Virtualbox: note/virtualbox.md
-    - Vue: note/vue.md
     # - 编译原理: note/编译原理.md
     # - 体系结构: note/体系结构.md
   - Virtual Machine:
