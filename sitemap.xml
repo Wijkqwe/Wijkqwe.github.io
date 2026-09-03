@@ -2,170 +2,178 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://wijkqwe.github.io/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/browser_plugin/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/c%23/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/clangd/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/cmake/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/cmd/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
+    </url>
+    <url>
+         <loc>https://wijkqwe.github.io/note/concept/</loc>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/cpp/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/css/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/gdb/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/git/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/java/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/kitty/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
+    </url>
+    <url>
+         <loc>https://wijkqwe.github.io/note/llvm/</loc>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/markdown/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/mkdocs/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/npm/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/opencode/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/pacman/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/powershell/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/python/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/shell/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/tmux/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/tools/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/vim/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/virtualbox/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/vue/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/potpourri/VPN/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/potpourri/daemons/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/potpourri/data_wrangling/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/potpourri/debug/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/potpourri/keyboard/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/potpourri/make/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/potpourri/security/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/potpourri/test/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/note/potpourri/version/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/virtual_machine/Arch_VMware/main/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/virtual_machine/Arch_VirtualBox/main/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/website/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/website/OpenACC/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
     <url>
          <loc>https://wijkqwe.github.io/website/untitled/</loc>
-         <lastmod>2026-09-01</lastmod>
+         <lastmod>2026-09-03</lastmod>
     </url>
 </urlset>

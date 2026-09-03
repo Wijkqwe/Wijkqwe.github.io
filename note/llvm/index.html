@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://wijkqwe.github.io/note/git/">
+        <link rel="canonical" href="https://wijkqwe.github.io/note/llvm/">
       
       
-        <link rel="prev" href="../gdb/">
+        <link rel="prev" href="../kitty/">
       
       
-        <link rel="next" href="../kitty/">
+        <link rel="next" href="../mkdocs/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Git - Wijkqwe</title>
+        <title>LLVM - Wijkqwe</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#git" class="md-skip">
+        <a href="#llvm" class="md-skip">
           跳转至
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Git
+              LLVM
             
           </span>
         </div>
@@ -1013,37 +1013,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Git
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../git/" class="md-nav__link">
         
   
   
@@ -1059,599 +1032,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#terminology" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        terminology
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="terminology">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tree" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        tree
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#blob" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        blob
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#history-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        history model
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        data structure
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="data structure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gits-on-disk-data-store" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git's on disk data store
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#command" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        command
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="command">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        查
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="查">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        帮助
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        提交
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        状态
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        更改
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        分支
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        改
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="改">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        提交
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        删
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="删">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        更改
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        增
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="增">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        更改
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        提交
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        初始化
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        对象库
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#branch-and-merge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        branch and merge
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="branch and merge">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-branch" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git branch
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-checkout" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git checkout
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="git checkout">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#move-the-head-pointer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        move the head pointer
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#abanden" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        abanden
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-merge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git merge
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="git merge">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-mergetool" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git mergetool
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#list-branches" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        list branches
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-branch" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        create branch
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        切换分支
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_17" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        删除分支
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remote" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        remote
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="remote">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-remote" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git remote
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-push" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git push
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-fetch" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git fetch
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-pull" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git pull
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-clone" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git clone
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#config" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        config
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="config">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-config" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git config
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tag" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        tag
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="tag">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-tag-tag_name" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git tag &lt;tag_name&gt; [&lt;版本号&gt;]
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-push-tags" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git push --tags
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#shell-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        shell integration
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1689,10 +1069,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../llvm/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LLVM
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1708,6 +1115,110 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        工具链
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="工具链">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#llvm-nm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        llvm-nm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#llvm-ar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        llvm-ar
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="llvm-ar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        操作
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        测试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        单元测试 check
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2642,551 +2153,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#terminology" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        terminology
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="terminology">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tree" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        tree
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#blob" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        blob
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#history-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        history model
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        data structure
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="data structure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gits-on-disk-data-store" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git's on disk data store
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#command" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        command
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="command">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        查
+        工具链
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="查">
+    <nav class="md-nav" aria-label="工具链">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#llvm-nm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        llvm-nm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#llvm-ar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        llvm-ar
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="llvm-ar">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        帮助
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        提交
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        状态
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        更改
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        分支
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        改
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="改">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        提交
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        删
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="删">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        更改
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        增
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="增">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        更改
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        提交
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        初始化
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        对象库
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#branch-and-merge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        branch and merge
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="branch and merge">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-branch" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git branch
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-checkout" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git checkout
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="git checkout">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#move-the-head-pointer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        move the head pointer
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#abanden" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        abanden
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-merge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git merge
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="git merge">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-mergetool" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git mergetool
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#list-branches" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        list branches
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-branch" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        create branch
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        切换分支
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_17" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        删除分支
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remote" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        remote
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="remote">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-remote" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git remote
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-push" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git push
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-fetch" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git fetch
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-pull" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git pull
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-clone" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git clone
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#config" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        config
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="config">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-config" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git config
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tag" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        tag
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="tag">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-tag-tag_name" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git tag &lt;tag_name&gt; [&lt;版本号&gt;]
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-push-tags" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        git push --tags
+        操作
       
     </span>
   </a>
@@ -3204,13 +2209,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#shell-integration" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        shell integration
+        测试
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        单元测试 check
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3261,7 +2283,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年8月21日 05:50:58 UTC">2026年8月21日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年9月3日 10:54:16 UTC">2026年9月3日</span>
   </span>
 
     
@@ -3273,243 +2295,48 @@
 
 
 
-<h1 id="git">git</h1>
-<h2 id="terminology">terminology</h2>
-<h3 id="tree">tree</h3>
-<p>folder</p>
-<h3 id="blob">blob</h3>
-<p>file</p>
-<h2 id="history-model">history model</h2>
-<p>directed acyclic graph</p>
-<h2 id="data-structure">data structure</h2>
-<h3 id="gits-on-disk-data-store">git's on disk data store</h3>
-<p>content address store where objects are addressed by their hash</p>
-<pre><code>type blob = array&lt;byte&gt;
-type tree = map&lt;string, tree | blob&gt;
-type commit = struct {
-    parents array&lt;commit&gt;
-    author string
-    message string
-    snapshot tree
-}
-type object = blob | tree | commit
-objects = map&lt;string, object&gt;
-
-def store(O)
-    id = sha1(O) // hash
-    objects[id] = O
-
-def load(id)
-    return objects[id]
-</code></pre>
-<pre><code>references = map&lt;string string&gt;
-</code></pre>
-<h2 id="command">command</h2>
-<h3 id="_1">查</h3>
-<h4 id="_2">帮助</h4>
-<ul>
-<li><code>git help</code>: </li>
-</ul>
-<h4 id="_3">提交</h4>
-<ul>
-<li><code>git show [commit]</code>: 查看特定提交<ul>
-<li><code>--name-only</code>: 仅列出修改了哪些文件</li>
-<li><code>[commit] -- [file]</code>: 特定提交的特定文件</li>
-</ul>
-</li>
-<li><code>git log</code>: 查看历史提交<ul>
-<li><code>--abbrev-commit</code>: 显示短哈希</li>
-<li><code>--oneline</code>: more compact representation
-    等价于<code>--pretty=oneline --abbrev-commit</code></li>
-<li><code>-- [filepath]</code>: 查看该文件有关commit</li>
-<li><code>--simplify-by-decoration</code>: 只显示有分支/标签引用的提交，隐藏那些没有分支变化的提交。</li>
-<li><code>--merges &lt;特定分支&gt;</code>: 仅显示发生合并操作的提交</li>
-<li><code>--stat</code>: 查看统计情况</li>
-<li><code>--pretty=&lt;format&gt; / format:"&lt;自定义格式&gt;"</code>: 设置输出格式。<ul>
-<li><code>format</code> 有一些内置格式: <ul>
-<li>oneline</li>
-<li>full</li>
-<li>...</li>
-</ul>
-</li>
-<li>同时，可以通过占位符和颜色自定义<code>format</code>的样式。</li>
-</ul>
-</li>
-<li><code>--decorate</code>: 在提交信息旁显示分支、标签等引用信息</li>
-</ul>
-</li>
-<li><code>git blame &lt;file&gt;</code>: 逐行查看每行代码的最后修改的提交(时间, 编辑者).</li>
-</ul>
-<h4 id="_4">状态</h4>
-<ul>
-<li><code>git status</code>:查看git仓库当前状态<ul>
-<li><code>-s</code>: 简洁信息</li>
-<li><code>-u</code>: 详细信息</li>
-</ul>
-</li>
-</ul>
-<h4 id="_5">更改</h4>
-<ul>
-<li><code>git diff</code>: 查看所有未暂存(未<code>add</code>)文件的修改<ul>
-<li><code>--staged</code>: 查看所有已暂存(未<code>commit</code>)文件的修改</li>
-<li><code>--stat</code>: 查看统计情况</li>
-<li><code>[file]</code>: 查看特定文件的修改</li>
-</ul>
-</li>
-</ul>
-<h4 id="_6">分支</h4>
-<ul>
-<li><code>git branch</code>: 列出本地分支<ul>
-<li><code>-a</code>: 包括远程分支</li>
-<li><code>-v</code>: 更多分支(不包括远程分支)</li>
-<li><code>-vv</code>: show extra information</li>
-<li><code>--merged</code>: 已合并到当前分支的分支</li>
-<li><code>--no-merged</code>: 未合并到当前分支的分支</li>
-</ul>
-</li>
-</ul>
-<h3 id="_7">改</h3>
-<h4 id="_8">提交</h4>
-<ul>
-<li><code>git commit --amend [-m ""]</code>: 修改最近一次提交的信息.</li>
-</ul>
-<h3 id="_9">删</h3>
-<h4 id="_10">更改</h4>
-<ul>
-<li><code>git store &lt;path&gt;</code>: 恢复未暂存(未<code>add</code>)的文件.</li>
-</ul>
-<h3 id="_11">增</h3>
-<h4 id="_12">更改</h4>
-<ul>
-<li><code>git add &lt;path&gt;</code>: 暂存.<ul>
-<li><code>-p / --patch</code>: 交互式提交, 依次处理每一个修改块.</li>
-</ul>
-</li>
-</ul>
-<hr />
-<h3 id="_13">提交</h3>
-<ul>
-<li><code>git commit</code><ul>
-<li><code>--amend</code>: 打开编辑器修改最近一次提交的信息</li>
-<li><code>--amend -m ""</code>: 直接指定最近一次提交的信息</li>
-</ul>
-</li>
-<li><code>git stash</code>: 临时保存未提交的修改.<ul>
-<li><code>git stash pop</code></li>
-</ul>
-</li>
-<li><code>git bisect</code>: 通过二分查找定位引入 bug 的具体提交.</li>
-<li><code>git rebase</code>: 压缩提交，压缩后需强制推送<ul>
-<li><code>HEAD~n</code>: 从<code>HEAD</code>开始的n个提交</li>
-<li><code>-i</code>: 交互式</li>
-<li><code>--abort</code>: 放弃正在进行的操作</li>
-</ul>
-</li>
-</ul>
-<h3 id="_14">初始化</h3>
-<ul>
-<li><code>git init</code></li>
-</ul>
-<h3 id="_15">对象库</h3>
-<ul>
-<li><code>git cat-file</code>
-    <code>bash
-    git cat-file -P &lt;hash&gt;</code>
-    print out the content</li>
-</ul>
-<h3 id="branch-and-merge">branch and merge</h3>
-<h4 id="git-branch"><code>git branch</code></h4>
-<ul>
-<li><code>--set-upstream-to=&lt;branch&gt;</code>:</li>
-<li><code>-m [&lt;旧分支名&gt;] &lt;新分支名&gt;</code>: 重命名。</li>
-</ul>
-<h4 id="git-checkout"><code>git checkout</code></h4>
-<h5 id="move-the-head-pointer">move the head pointer</h5>
-<pre><code class="language-bash">git checkout &lt;hash/reference&gt;
-</code></pre>
-<h5 id="abanden">abanden</h5>
-<pre><code class="language-bash">git checkout &lt;file&gt;
-</code></pre>
-<p>throw away the change and back to the HEAD</p>
-<p><code>-b</code>: create a new branch and checkout in it</p>
-<ul>
-<li><code>--orphan</code>: create a new branch without a commit.</li>
-</ul>
-<h4 id="git-merge"><code>git merge</code></h4>
-<p>可以直接将远程分支合并到本地分支。</p>
-<ul>
-<li><code>--abort</code>: back to</li>
-<li><code>--continue</code>: after deal with merge conflect file and add them, continue merge</li>
-</ul>
-<h5 id="git-mergetool"><code>git mergetool</code></h5>
-<h4 id="list-branches">list branches</h4>
-<ul>
-<li><code>git branch</code>: 列出本地分支</li>
-<li><code>git branch -a</code>: 包括远程分支</li>
-<li><code>git branch -vv</code>: show extra information</li>
-<li><code>git branch --merged</code>: 已合并到当前分支的分支</li>
-<li><code>git branch --no-merged</code>: 未合并到当前分支的分支</li>
-</ul>
-<h4 id="create-branch">create branch</h4>
-<ul>
-<li><code>git branch &lt;new-branch-name&gt;</code>: 基于当前分支创建新分支</li>
-<li><code>git branch &lt;new-branch-name&gt; &lt;commit-hash&gt;</code>: 基于特定分支创建新分支</li>
-<li><code>git checkout -b &lt;new-branch-name&gt;</code>: 创建并切换到新分支</li>
-<li><code>git checkout -b &lt;new-branch-name&gt; &lt;commit-hash&gt;</code>: 基于特定分支创建并切换到新分支</li>
-<li><code>git switch -c &lt;new-branch-name&gt;</code>: 创建并切换到新分支</li>
-</ul>
-<h4 id="_16">切换分支</h4>
-<ul>
-<li><code>git checkout &lt;branch-name&gt;</code>: 切换到已有分支</li>
-<li><code>git checkout -b &lt;new-branch-name&gt; &lt;commit-hash&gt;</code>: 基于特定分支创建并切换到新分支</li>
-<li><code>git switch &lt;branch-name&gt;</code>: 切换到已有分支</li>
-<li><code>git checkout -</code>: 切换到上一分支</li>
-</ul>
-<h4 id="_17">删除分支</h4>
-<ul>
-<li><code>git branch -d &lt;branch-name&gt;</code>: 删除已合并分支</li>
-<li><code>git branch -D &lt;branch-name&gt;</code>: 强制删除分支（即使未合并）</li>
-<li><code>git push origin --delete &lt;remote-branch-name&gt;</code>: 删除远程分支</li>
-</ul>
-<h3 id="remote">remote</h3>
-<h4 id="git-remote"><code>git remote</code></h4>
-<ul>
-<li><code>add &lt;name&gt; &lt;url&gt;</code>:</li>
-<li><code>rename &lt;name&gt; &lt;new-name&gt;</code>:</li>
-<li><code>remove &lt;name&gt;</code>: 删除</li>
-</ul>
-<h4 id="git-push"><code>git push</code></h4>
-<p><code>&lt;remote&gt; &lt;local branch&gt;:&lt;remote branch&gt;</code></p>
-<ul>
-<li><code>--tags</code>: 推送全部tag信息</li>
-<li><code>-u</code>: 记录远程分支的默认值</li>
-<li><code>--force</code>: 强制推送</li>
-<li><code>--force-with-lease</code>: 更安全地强制推送</li>
-</ul>
-<h4 id="git-fetch"><code>git fetch</code></h4>
-<pre><code class="language-bash">git fetch &lt;远程主机名&gt; [&lt;分支名&gt;]
-</code></pre>
-<h4 id="git-pull"><code>git pull</code></h4>
-<p>equal <code>git fetch, git merge</code></p>
-<pre><code class="language-bash">git pull &lt;远程主机&gt; &lt;远程分支&gt;[:&lt;本地分支&gt;]
-</code></pre>
-<h4 id="git-clone"><code>git clone</code></h4>
-<p><code>&lt;url&gt; &lt;folder name&gt;</code>
-- <code>--shallow</code>: without history
-- <code>--bare</code>: 仅克隆裸仓库，可从裸仓库克隆完整工作目录
-- <code>--recursive</code>: 克隆包含子模块（submodule）的仓库时，自动初始化并更新全部子模块，一次性获得完整项目代码。</p>
-<h3 id="config">config</h3>
-<h4 id="git-config"><code>git config</code></h4>
-<h3 id="tag">tag</h3>
-<h4 id="git-tag-tag_name"><code>git tag &lt;tag_name&gt; [&lt;版本号&gt;]</code></h4>
-<ul>
-<li><code>-a &lt;tag_name&gt;</code>: 添加</li>
-<li><code>-m &lt;说明&gt;</code></li>
-<li><code>-d &lt;tag_name&gt;</code>: 删除</li>
-</ul>
-<h4 id="git-push-tags"><code>git push --tags</code></h4>
-<p>推送全部tag信息</p>
-<h2 id="shell-integration">shell integration</h2>
+<h1 id="llvm">LLVM</h1>
+<h2 id="_1">工具链</h2>
+<h3 id="llvm-nm">llvm-nm</h3>
+<p>用于列出 LLVM 比特码 (Bitcode)、目标文件和静态库中符号表。</p>
+<h3 id="llvm-ar">llvm-ar</h3>
+<p>归档工具，它的主要用途是创建、修改和查看静态库（<code>.a</code> 文件）。
+可以把它看作一个专门用来管理 <code>.o</code> 目标文件档案的管理器。</p>
+<h4 id="_2">操作</h4>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>功能说明</th>
+<th>常用命令示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>r (replace)</td>
+<td>替换或添加文件到库中。这是最常用的操作。如果文件已存在则替换，否则追加到末尾。</td>
+<td>llvm-ar rcs libfoo.a a.o b.o</td>
+</tr>
+<tr>
+<td>t (table)</td>
+<td>列出库的内容（查看目录）。不加修饰选项只显示文件名。</td>
+<td>llvm-ar t libfoo.a</td>
+</tr>
+<tr>
+<td>x (extract)</td>
+<td>提取文件。将库中的指定文件解压到当前目录。</td>
+<td>llvm-ar x libfoo.a a.o</td>
+</tr>
+<tr>
+<td>d (delete)</td>
+<td>删除库中的指定文件。</td>
+<td>llvm-ar d libfoo.a a.o</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">测试</h2>
+<h3 id="check">单元测试 check</h3>
+<p>将 <code>check-&lt;dir&gt;</code> 作为目标进行构建，自动执行对应目录的测试。</p>
 
 
 
@@ -3532,7 +2359,7 @@ def load(id)
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年8月21日 05:50:58 UTC">2026年8月21日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年9月3日 10:54:16 UTC">2026年9月3日</span>
   </span>
 
     
