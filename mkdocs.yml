@@ -66,6 +66,7 @@ nav:
     - Gdb: note/gdb.md
     - Git: note/git.md
     - Kitty: note/kitty.md
+    - LLVM: note/llvm.md
     - MkDocs: note/mkdocs.md
     - Npm: note/npm.md
     - Opencode: note/opencode.md
@@ -86,6 +87,7 @@ nav:
     - Virtualbox: note/virtualbox.md
     # - 编译原理: note/编译原理.md
     # - 体系结构: note/体系结构.md
+    - 基础概念: note/concept.md
   - Virtual Machine:
     - Arch Linux:
       - Arch in VMWare: virtual_machine/Arch_VMware/main.md
