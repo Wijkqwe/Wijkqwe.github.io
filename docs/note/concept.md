@@ -68,6 +68,12 @@
     但实际会直接映射为特定硬件指令的特殊API.
 - **ISel**: Instruction Selection 指令选择.是编译器将平台无关的中间表示(IR)
   转换为目标机器(如x86、ARM、GPU)特有的指令过程中的第一个关键步骤.
+- **Itinerary**: 时空路径。指的是一条预先规划好的、
+  数据或指令在芯片内部各计算单元（如ALU、Matrix Unit、Bank）
+  之间移动的完整路径和时间表。
+  可以被理解为一个“时空路线图”——不仅指明数据要去哪里（空间路径），
+  还精确规定了何时出发、何时到达（时间表）。通过反链分析，
+  将冲突的操作分配到不同时钟周期，彻底消除 Bank 冲突。
 
 ## L
 
@@ -96,6 +102,7 @@
 
 ## O
 
+- **OoO**: Out of Order Execution 乱序执行.
 - **outline**: 将程序中的一段代码(通常是一个独立的代码区域)提取出来,
   封装成一个单独的函数.
 
@@ -140,6 +147,8 @@
 
 ## T
 
+- **TII**: TargetInstrInfo in LLVM llvm/include/llvm/CodeGen/TargetInstrInfo.h.
+- **TLI**: TargetLowering in LLVM llvm/include/llvm/CodeGen/TargetLowering.h.
 - **TLP**: Thread-Level Parallelism 线程级并行.
 - **TTA**: Transport Triggered Architecture 传输触发架构.
 
