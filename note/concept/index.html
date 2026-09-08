@@ -2511,7 +2511,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年9月3日 11:46:47 UTC">2026年9月3日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年9月8日 07:30:33 UTC">2026年9月8日</span>
   </span>
 
     
@@ -2557,7 +2557,9 @@
 </ul>
 <h2 id="d">D</h2>
 <ul>
+<li><strong>DFA</strong>: 确定性有限自动机.</li>
 <li><strong>DLP</strong>: Data-Level Parallelism 数据级并行.</li>
+<li><strong>DSL</strong>: Domain-Specific Language 领域特定语言.</li>
 <li><strong>DSP</strong>: Digital Signal Processor 数字信号处理器,
   是一种专门为快速处理连续数字信号流(如声音、图像、雷达回波)而设计的微处理器.</li>
 </ul>
@@ -2592,6 +2594,12 @@
     但实际会直接映射为特定硬件指令的特殊API.</li>
 <li><strong>ISel</strong>: Instruction Selection 指令选择.是编译器将平台无关的中间表示(IR)
   转换为目标机器(如x86、ARM、GPU)特有的指令过程中的第一个关键步骤.</li>
+<li><strong>Itinerary</strong>: 时空路径。指的是一条预先规划好的、
+  数据或指令在芯片内部各计算单元（如ALU、Matrix Unit、Bank）
+  之间移动的完整路径和时间表。
+  可以被理解为一个“时空路线图”——不仅指明数据要去哪里（空间路径），
+  还精确规定了何时出发、何时到达（时间表）。通过反链分析，
+  将冲突的操作分配到不同时钟周期，彻底消除 Bank 冲突。</li>
 </ul>
 <h2 id="l">L</h2>
 <ul>
@@ -2601,6 +2609,7 @@
   用极少资源快速让模型学会新技能.核心思想是：“冻结”庞大的原始模型不动, 
   只在旁边添加一个极小的“插件”进行训练.</li>
 <li><strong>LSB</strong>: Least Significant Bit 最低有效位.</li>
+<li><strong>LTO</strong>: Link-Time Optimization 链接时代码优化.</li>
 <li><strong>LUT</strong>: Lookup Table 查找表.</li>
 </ul>
 <h2 id="m">M</h2>
@@ -2614,10 +2623,12 @@
 </ul>
 <h2 id="n">N</h2>
 <ul>
+<li><strong>NFA</strong>: 非确定性有限自动机.</li>
 <li><strong>NP-hard</strong>: 非确定性多项式时间困难.</li>
 </ul>
 <h2 id="o">O</h2>
 <ul>
+<li><strong>OoO</strong>: Out of Order Execution 乱序执行.</li>
 <li><strong>outline</strong>: 将程序中的一段代码(通常是一个独立的代码区域)提取出来,
   封装成一个单独的函数.</li>
 </ul>
@@ -2628,13 +2639,16 @@
 <li><strong>Pass-through</strong>: 透传, 指一个组件或层级在传递数据时, 不对数据的内容进行解释、
   转换或验证, 只是单纯地把它转发给下一级.</li>
 <li><strong>PCIe</strong>: Peripheral Component Interconnect Express 高速串行计算机扩展总线标准.</li>
+<li><strong>PM</strong>: Product Manager 产品经理.</li>
 <li><strong>popc</strong>: Population Count 种群计数.硬件指令, 统计一个二进制数中“1”的个数.
   这个操作在计算机科学里也被称为汉明重量(Hamming weight).POPC 
   把原本可能需要多条软件指令才能完成的操作, 用一条指令在一个时钟周期内完成, 
   这能极大地提升特定算法的执行效率.</li>
+<li><strong>PRD</strong>: Product Requirements Document 产品需求文档.</li>
 </ul>
 <h2 id="r">R</h2>
 <ul>
+<li><strong>RA</strong>: Register Allocation 寄存器分配.</li>
 <li><strong>RTL</strong>:<ul>
 <li>Register Transfer Language 寄存器传输语言.</li>
 <li>Register Transfer Level 寄存器传输级.</li>
@@ -2661,6 +2675,8 @@
 </ul>
 <h2 id="t">T</h2>
 <ul>
+<li><strong>TII</strong>: TargetInstrInfo in LLVM llvm/include/llvm/CodeGen/TargetInstrInfo.h.</li>
+<li><strong>TLI</strong>: TargetLowering in LLVM llvm/include/llvm/CodeGen/TargetLowering.h.</li>
 <li><strong>TLP</strong>: Thread-Level Parallelism 线程级并行.</li>
 <li><strong>TTA</strong>: Transport Triggered Architecture 传输触发架构.</li>
 </ul>
@@ -2698,7 +2714,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年9月3日 11:46:47 UTC">2026年9月3日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年9月8日 07:30:33 UTC">2026年9月8日</span>
   </span>
 
     
