@@ -61,13 +61,14 @@ references = map<string string>
 	- `--merges <特定分支>`: 仅显示发生合并操作的提交
 	- `--stat`: 查看统计情况
 	- `--pretty=<format> / format:"<自定义格式>"`: 设置输出格式。
-	    - `format` 有一些内置格式: 
+	    - `<format>` 有一些内置格式: 
 		    - oneline
 		    - full
 		    - ...
 		- 同时，可以通过占位符和颜色自定义`format`的样式。
 	- `--decorate`: 在提交信息旁显示分支、标签等引用信息
 - `git blame <file>`: 逐行查看每行代码的最后修改的提交(时间, 编辑者).
+    - `-L <start>[,<end>]`: 从 start 行开始, 到 end 行结束. 若 end 为空则到最后一行.
 
 #### 状态
 
