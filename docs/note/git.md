@@ -132,11 +132,8 @@ references = map<string string>
 
 ### 对象库
 
-- `git cat-file`
-    ```bash
-    git cat-file -P <hash>
-    ```
-    print out the content
+- `git cat-file`:
+    - `-P <hash>`: print out the content
 
 ### branch and merge
 
@@ -147,21 +144,9 @@ references = map<string string>
 
 #### `git checkout`
 
-##### move the head pointer 
-
-```bash
-git checkout <hash/reference>
-```
-
-##### abanden
-
-```bash
-git checkout <file>
-```
-throw away the change and back to the HEAD
-
-`-b`: create a new branch and checkout in it
-
+- `git checkout <hash/reference>`: move the head pointer
+- `git checkout <file>`: abanden change, throw away the change and back to the HEAD
+- `-b`: create a new branch and checkout in it
 - `--orphan`: create a new branch without a commit.
 
 #### `git merge`
@@ -180,7 +165,6 @@ throw away the change and back to the HEAD
 - `git branch --merged`: 已合并到当前分支的分支
 - `git branch --no-merged`: 未合并到当前分支的分支
 
-
 #### create branch
 - `git branch <new-branch-name>`: 基于当前分支创建新分支
 - `git branch <new-branch-name> <commit-hash>`: 基于特定分支创建新分支
@@ -188,54 +172,57 @@ throw away the change and back to the HEAD
 - `git checkout -b <new-branch-name> <commit-hash>`: 基于特定分支创建并切换到新分支
 - `git switch -c <new-branch-name>`: 创建并切换到新分支
 
-
 #### 切换分支
 - `git checkout <branch-name>`: 切换到已有分支
 - `git checkout -b <new-branch-name> <commit-hash>`: 基于特定分支创建并切换到新分支
 - `git switch <branch-name>`: 切换到已有分支
 - `git checkout -`: 切换到上一分支
 
-
 #### 删除分支
 - `git branch -d <branch-name>`: 删除已合并分支
 - `git branch -D <branch-name>`: 强制删除分支（即使未合并）
 - `git push origin --delete <remote-branch-name>`: 删除远程分支
 
-
 ### remote
 
 #### `git remote`
+
 - `add <name> <url>`:
 - `rename <name> <new-name>`:
 - `remove <name>`: 删除
 
-
 #### `git push`
-`<remote> <local branch>:<remote branch>`
+
+```bash
+git pull <remote> <local branch>[:<remote branch>]
+```
 
 - `--tags`: 推送全部tag信息
 - `-u`: 记录远程分支的默认值
 - `--force`: 强制推送
 - `--force-with-lease`: 更安全地强制推送
 
-
 #### `git fetch`
 ```bash
 git fetch <远程主机名> [<分支名>]
 ```
 
-
 #### `git pull`
-equal `git fetch, git merge`
+
+equal `git fetch, git merge`.
 ```bash
 git pull <远程主机> <远程分支>[:<本地分支>]
 ```
 
-
 #### `git clone`
-`<url> <folder name>`
-- `--shallow`: without history
+
+```bash
+git clone <url> [folder name]
+```
+
+- `-b <分支名>`: 克隆特定分支
 - `--bare`: 仅克隆裸仓库，可从裸仓库克隆完整工作目录
+- `--shallow`: without history
 - `--recursive`: 克隆包含子模块（submodule）的仓库时，自动初始化并更新全部子模块，一次性获得完整项目代码。
 
 ### config
@@ -251,8 +238,8 @@ git pull <远程主机> <远程分支>[:<本地分支>]
 - `-d <tag_name>`: 删除
 
 #### `git push --tags`
-推送全部tag信息
 
+推送全部tag信息
 
 ## shell integration
 
