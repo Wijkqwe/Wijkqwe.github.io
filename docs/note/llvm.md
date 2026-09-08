@@ -1,7 +1,14 @@
 # LLVM
 
-## 工具链
+## CMake 配置
 
+### LLVM_LINK_LLVM_DYLIB
+
+`-DLLVM_LINK_LLVM_DYLIB=ON`: 告诉LLVM工具(如clang、opt等)链接到共享库(`libLLVM.so`), 而不是静态链接各个LLVM组件库.
+
+> 启用时, 可能对 JIT 造成影响.
+
+## Toolchain
 
 ### llvm-nm
 
