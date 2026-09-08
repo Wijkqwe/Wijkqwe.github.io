@@ -33,7 +33,9 @@
 
 ## D
 
+- **DFA**: 确定性有限自动机.
 - **DLP**: Data-Level Parallelism 数据级并行.
+- **DSL**: Domain-Specific Language 领域特定语言.
 - **DSP**: Digital Signal Processor 数字信号处理器,
   是一种专门为快速处理连续数字信号流(如声音、图像、雷达回波)而设计的微处理器.
 
@@ -75,6 +77,7 @@
   用极少资源快速让模型学会新技能.核心思想是：“冻结”庞大的原始模型不动, 
   只在旁边添加一个极小的“插件”进行训练.
 - **LSB**: Least Significant Bit 最低有效位.
+- **LTO**: Link-Time Optimization 链接时代码优化.
 - **LUT**: Lookup Table 查找表.
 
 ## M
@@ -88,6 +91,7 @@
 
 ## N
 
+- **NFA**: 非确定性有限自动机.
 - **NP-hard**: 非确定性多项式时间困难.
 
 ## O
@@ -102,13 +106,16 @@
 - **Pass-through**: 透传, 指一个组件或层级在传递数据时, 不对数据的内容进行解释、
   转换或验证, 只是单纯地把它转发给下一级.
 - **PCIe**: Peripheral Component Interconnect Express 高速串行计算机扩展总线标准.
+- **PM**: Product Manager 产品经理.
 - **popc**: Population Count 种群计数.硬件指令, 统计一个二进制数中“1”的个数.
   这个操作在计算机科学里也被称为汉明重量(Hamming weight).POPC 
   把原本可能需要多条软件指令才能完成的操作, 用一条指令在一个时钟周期内完成, 
   这能极大地提升特定算法的执行效率.
+- **PRD**: Product Requirements Document 产品需求文档.
 
 ## R
 
+- **RA**: Register Allocation 寄存器分配.
 - **RTL**:
     - Register Transfer Language 寄存器传输语言.
     - Register Transfer Level 寄存器传输级.
