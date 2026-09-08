@@ -10,6 +10,12 @@ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 
 ## VSCode
 
+### command
+
+ctrl+shift+p.
+
+- `clangd: Toggle inlay hints`: 切换提示显示.
+
 Todo.
 
 ## nvim
