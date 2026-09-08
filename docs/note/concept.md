@@ -36,6 +36,7 @@
 - **DFA**: 确定性有限自动机.
 - **DLP**: Data-Level Parallelism 数据级并行.
 - **DSL**: Domain-Specific Language 领域特定语言.
+- **DSO**: Dynamic Shared Object 动态共享对象. 即动态链接库.
 - **DSP**: Digital Signal Processor 数字信号处理器,
   是一种专门为快速处理连续数字信号流(如声音、图像、雷达回波)而设计的微处理器.
 
