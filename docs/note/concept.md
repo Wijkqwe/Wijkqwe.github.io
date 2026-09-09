@@ -26,6 +26,7 @@
 
 - **C2C**: Chip-to-Chip, 芯片到芯片. 将两颗或两颗以上独立制造、已经切割好的芯片,
   通过某种方式连接在一起, 共同工作, 以实现更强大或更复杂的系统功能.
+- **CFG**: Control Flow Graph 控制流图.
 - **CoT**: Chain of Thought 思维链.
 - **CEFR**: 英语语言级别.
 - **CSP**: 约束满足问题.不关心“最优”, 只关心“能不能找到一组赋值,
@@ -114,6 +115,9 @@
 - **Pass-through**: 透传, 指一个组件或层级在传递数据时, 不对数据的内容进行解释、
   转换或验证, 只是单纯地把它转发给下一级.
 - **PCIe**: Peripheral Component Interconnect Express 高速串行计算机扩展总线标准.
+- **Phi 操作**(Φ 函数): 用来解决问题: 当一个变量在程序的控制流汇合处(比如
+  if-else 之后)拥有多个可能的定义来源时, 如何明确地“选择”正确的那个.
+  在 SSA 中尤为重要.
 - **PM**: Product Manager 产品经理.
 - **popc**: Population Count 种群计数.硬件指令, 统计一个二进制数中“1”的个数.
   这个操作在计算机科学里也被称为汉明重量(Hamming weight).POPC 
@@ -138,6 +142,7 @@
 - **SPEC**: 规范驱动开发.
 - **SPIR-V**: 是一个开放标准的、跨平台的二进制中间语言,
   专门用于表示并行计算和图形学任务, 比如着色器(Shader)和计算内核(Compute Kernel).
+- **SSA**: Static Single Assignment 静态单赋值.
 - **Superlane**: TSP 芯片内部一种高度对称、功能完整的计算单元组合.
 - **Superscalar**: 超标量, 是一种微架构设计技术, 而不是编译技术.
   超标量指的是处理器内核能够在同一个时钟周期(Cycle)内, 通过多条并行的流水线

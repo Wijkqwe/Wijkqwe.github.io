@@ -45,6 +45,18 @@ t (table) | 列出库的内容（查看目录）。不加修饰选项只显示�
 x (extract) | 提取文件。将库中的指定文件解压到当前目录。 | llvm-ar x libfoo.a a.o
 d (delete) | 删除库中的指定文件。 | llvm-ar d libfoo.a a.o
 
+### llvm-as
+
+LLVM 汇编器（Assembler）。它将人类可读的 LLVM IR 文本格式（.ll 文件）转换为二进制位码（Bitcode）格式.
+
+### opt
+
+LLVM 优化与分析工具, 用于对 Bitcode 进行优化或执行分析 Pass.
+
+- `-passes=<pass>`: 指定要运行的 Pass.
+    - `view-cfg`: 一个分析 Pass, 它的作用是为当前模块中的每一个函数生成控制流图,
+    并调用图形化查看器(通常是 dot + 图片查看器, 如 eog 或 Preview)弹出窗口显示.
+
 ## 测试
 
 ### 单元测试 check
