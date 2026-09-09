@@ -128,6 +128,8 @@
 ## R
 
 - **RA**: Register Allocation 寄存器分配.
+- **RST**: reStructuredText 文件后缀, 是用于创建文档的轻量级标记语言. 相比于 md
+  文件, 语法更严格, 结构更严谨.
 - **RTL**:
     - Register Transfer Language 寄存器传输语言.
     - Register Transfer Level 寄存器传输级.
