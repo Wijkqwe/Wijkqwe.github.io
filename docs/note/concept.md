@@ -27,6 +27,8 @@
 - **C2C**: Chip-to-Chip, 芯片到芯片. 将两颗或两颗以上独立制造、已经切割好的芯片,
   通过某种方式连接在一起, 共同工作, 以实现更强大或更复杂的系统功能.
 - **CFG**: Control Flow Graph 控制流图.
+- **Clause**: 子句 / 子语. 是附加在 Directive 后面的“修饰语”, 用来告诉编译器
+  “以什么方式”、“在什么条件下”、“对哪些变量”执行这个 Directive.
 - **CoT**: Chain of Thought 思维链.
 - **CEFR**: 英语语言级别.
 - **CSP**: 约束满足问题.不关心“最优”, 只关心“能不能找到一组赋值,
@@ -35,6 +37,7 @@
 ## D
 
 - **DFA**: 确定性有限自动机.
+- **Directive**: 编译指令 / 指示符. 源码中的特殊标记, 用来指导编译器、预处理器或运行时系统如何处理代码.
 - **DLP**: Data-Level Parallelism 数据级并行.
 - **DSL**: Domain-Specific Language 领域特定语言.
 - **DSO**: Dynamic Shared Object 动态共享对象. 即动态链接库.
@@ -104,6 +107,8 @@
 
 ## O
 
+- **ODR**: One Definition Rule 单一定义规则.
+  > C++ 在头文件中定义变量和函数时容易违反 ODR.
 - **OoO**: Out of Order Execution 乱序执行.
 - **outline**: 将程序中的一段代码(通常是一个独立的代码区域)提取出来,
   封装成一个单独的函数.
@@ -159,6 +164,11 @@
 - **TLI**: TargetLowering in LLVM llvm/include/llvm/CodeGen/TargetLowering.h.
 - **TLP**: Thread-Level Parallelism 线程级并行.
 - **TTA**: Transport Triggered Architecture 传输触发架构.
+
+## V
+
+- **Variable mutation**: 变量突变. 指的是程序中的变量在初次赋值后,
+  其值可以被再次修改的特性.
 
 ## W
 

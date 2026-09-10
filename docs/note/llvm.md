@@ -55,7 +55,8 @@ LLVM 优化与分析工具, 用于对 Bitcode 进行优化或执行分析 Pass.
 
 - `-passes=<pass>`: 指定要运行的 Pass.
     - `view-cfg`: 一个分析 Pass, 它的作用是为当前模块中的每一个函数生成控制流图,
-    并调用图形化查看器(通常是 dot + 图片查看器, 如 eog 或 Preview)弹出窗口显示.
+      并调用图形化查看器(通常是 dot + 图片查看器, 如 eog 或 Preview)弹出窗口显示.
+    - `mem2reg`: 将类似 allocas 的操作转换为 SSA 寄存器操作, 并适时插入 Phi 节点.
 
 ## 测试
 

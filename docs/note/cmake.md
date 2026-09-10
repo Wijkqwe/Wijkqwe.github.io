@@ -6,6 +6,18 @@
 - `--target <构建目标>`: 指定构建目标.
 - `-j` / `--parallel`: 线程数.
 
+## 变量
+
+- `CMAKE_CURRENT_BINARY_DIR`: 当前 CMakeLists.txt 对应的构建目录.
+- `CMAKE_CURRENT_SOURCE_DIR`: 当前 CMakeLists.txt 所在的源码目录.
+- `CMAKE_BINARY_DIR`: 整个项目的顶层构建目录.
+- `CMAKE_SOURCE_DIR`: 整个项目的顶层源码目录.
+
+## 函数
+
+调用函数时, 没有匹配具名形参的参数, 被传给 `cmake_parse_arguments` 进行处理,
+其中无法识别的参数被传给 `ARG_UNPARSED_ARGUMENTS`.
+
 ## 关键字
 
 ### 库类型
@@ -36,4 +48,4 @@ $<qwe:asd>
 
 ### 内置表达式
 
-- COMPILE_LANGUAGE: CMake 3.0 版本之后被引入. 通过 `$<COMPILE_LANGUAGE:lang1,lang2,...>` 作为**信息表达式**使用, 返回一个布尔值.
+- `COMPILE_LANGUAGE`: CMake 3.0 版本之后被引入. 通过 `$<COMPILE_LANGUAGE:lang1,lang2,...>` 作为**信息表达式**使用, 返回一个布尔值.
