@@ -2,6 +2,10 @@
 
 ## flag
 
+```bash
+python [flag] [<script> [script_flag]]
+```
+
 - `-s`: 跳过 site 模块对用户级目录的加载.
 - `-v`: 详细信息, 可叠加.
 
