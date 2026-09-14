@@ -8,7 +8,7 @@
 
 > 启用时, 可能对 JIT 造成影响.
 
-## Toolchain
+## Tool
 
 ### llc
 
@@ -49,6 +49,17 @@ d (delete) | 删除库中的指定文件。 | llvm-ar d libfoo.a a.o
 
 LLVM 汇编器（Assembler）。它将人类可读的 LLVM IR 文本格式（.ll 文件）转换为二进制位码（Bitcode）格式.
 
+### llvm-dwarfdump
+
+是 LLVM 工具链中一个专门用于解析、转储和验证 DWARF 调试信息的命令行工具.
+用于把二进制文件（如可执行文件、目标文件、静态库或 .dSYM 包）里那些给调试器看的、机器码级别的 DWARF 调试信息，转换成人类可以阅读的格式.
+
+- `--debug-info`: 查看和解析二进制文件中 `.debug_info` 调试信息节.
+
+### mlir-tblgen
+
+加载了 MLIR 特有的后端(如 ODS 相关后端), 输入 `.td` 输出 C++ 文件.
+
 ### opt
 
 LLVM 优化与分析工具, 用于对 Bitcode 进行优化或执行分析 Pass.
@@ -63,4 +74,17 @@ LLVM 优化与分析工具, 用于对 Bitcode 进行优化或执行分析 Pass.
 ### 单元测试 check
 
 将 `check-<dir>` 作为目标进行构建，自动执行对应目录的测试。
+
+## TableGen
+
+通过 `.td` 文件声明式地描述数据结构, 再由 `llvm-tblgen` / `mlir-tblgen` 工具生成 C++ 代码.
+
+### MLIR
+
+TableGen 是方言定义与转换的引擎. 主要服务于 Dialect（方言）的声明式定义和重写规则的描述.
+
+### LLVM
+
+TableGen 用于解决目标后端开发中大量重复、易错的手写代码问题.
+包括: 指令定义与模式匹配、寄存器与调度信息.
 

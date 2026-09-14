@@ -82,4 +82,7 @@
     - `child`: 跟踪子进程, 父进程继续运行
     - `parent`: 跟踪父进程, 子进程继续运行
     - `ask`: 每次 fork() 时询问
+- `set substitute-path <from> <to>`: 重写源文件的路径.
+
+- `directory <dir> ...`: 指定 GDB 搜索源文件的额外目录.
 

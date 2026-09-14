@@ -2,6 +2,7 @@
 
 ## A
 
+- **aarch64**: ARM 架构.
 - **AGU**: 地址生成单元. 处理器内部专门负责计算和生成内存访问地址的硬件单元.
   可与 ALU 并行.
 - **Antichain**: 反链, 是图论(特别是偏序集理论)中的一个重要概念.
@@ -39,10 +40,13 @@
 - **DFA**: 确定性有限自动机.
 - **Directive**: 编译指令 / 指示符. 源码中的特殊标记, 用来指导编译器、预处理器或运行时系统如何处理代码.
 - **DLP**: Data-Level Parallelism 数据级并行.
+- **DRR**: Declarative Rewrite Rules 声明式重写规则. 是 MLIR
+  框架中一个配套的核心机制.
 - **DSL**: Domain-Specific Language 领域特定语言.
 - **DSO**: Dynamic Shared Object 动态共享对象. 即动态链接库.
 - **DSP**: Digital Signal Processor 数字信号处理器,
   是一种专门为快速处理连续数字信号流(如声音、图像、雷达回波)而设计的微处理器.
+- **DWARF**: 一种标准化的调试信息格式.
 
 ## F
 
@@ -69,8 +73,9 @@
     - 整数线性规划.在线性约束条件下, 求整数决策变量的最优解
       (最大化或最小化某个目标).
 - **Intrinsics**: 内联函数/内置函数.
-  - 在编译器 (如LLVM, GCC) 的语境下, 指的是编译器提供的一组看起来像函数, 
+    - 在编译器 (如LLVM, GCC) 的语境下, 指的是编译器提供的一组看起来像函数, 
     但实际会直接映射为特定硬件指令的特殊API.
+- **ISA**: Instruction Set Architecture 指令集架构.
 - **ISel**: Instruction Selection 指令选择.是编译器将平台无关的中间表示(IR)
   转换为目标机器(如x86、ARM、GPU)特有的指令过程中的第一个关键步骤.
 - **Itinerary**: 时空路径。指的是一条预先规划好的、
@@ -109,6 +114,8 @@
 
 - **ODR**: One Definition Rule 单一定义规则.
   > C++ 在头文件中定义变量和函数时容易违反 ODR.
+- **ODS**: Operation Definition Specification 操作定义规范. 是一套基于 TableGen
+  语言的 DSL, 是 MLIR 框架中一个非常核心的声明式定义机制.
 - **OoO**: Out of Order Execution 乱序执行.
 - **outline**: 将程序中的一段代码(通常是一个独立的代码区域)提取出来,
   封装成一个单独的函数.

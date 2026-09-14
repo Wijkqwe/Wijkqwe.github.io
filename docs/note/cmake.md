@@ -12,6 +12,7 @@
 - `CMAKE_CURRENT_SOURCE_DIR`: 当前 CMakeLists.txt 所在的源码目录.
 - `CMAKE_BINARY_DIR`: 整个项目的顶层构建目录.
 - `CMAKE_SOURCE_DIR`: 整个项目的顶层源码目录.
+- `CMAKE_<LANG>_FLAGS`: 设置整个语言的编译选项.
 
 ## 函数
 
