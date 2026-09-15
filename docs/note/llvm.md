@@ -60,6 +60,19 @@ LLVM 汇编器（Assembler）。它将人类可读的 LLVM IR 文本格式（.ll
 
 加载了 MLIR 特有的后端(如 ODS 相关后端), 输入 `.td` 输出 C++ 文件.
 
+- `-gen-*-decls`: 生成声明(头文件).
+- `-gen-*-defs`: 生成定义(源文件).
+- `-gen-*-doc`: 生成文档.
+
+其中 `*` 包括:
+
+- `op`
+- `dialect`
+- `typedef`
+- `enum`
+- `struct-attr`
+- `pass`
+
 ### opt
 
 LLVM 优化与分析工具, 用于对 Bitcode 进行优化或执行分析 Pass.
