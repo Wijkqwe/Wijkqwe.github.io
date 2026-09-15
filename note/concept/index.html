@@ -2533,7 +2533,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年9月10日 10:40:10 UTC">2026年9月10日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年9月15日 11:18:38 UTC">2026年9月15日</span>
   </span>
 
     
@@ -2548,6 +2548,7 @@
 <h1 id="_1">基础概念</h1>
 <h2 id="a">A</h2>
 <ul>
+<li><strong>aarch64</strong>: ARM 架构.</li>
 <li><strong>AGU</strong>: 地址生成单元. 处理器内部专门负责计算和生成内存访问地址的硬件单元.
   可与 ALU 并行.</li>
 <li><strong>Antichain</strong>: 反链, 是图论(特别是偏序集理论)中的一个重要概念.</li>
@@ -2585,10 +2586,13 @@
 <li><strong>DFA</strong>: 确定性有限自动机.</li>
 <li><strong>Directive</strong>: 编译指令 / 指示符. 源码中的特殊标记, 用来指导编译器、预处理器或运行时系统如何处理代码.</li>
 <li><strong>DLP</strong>: Data-Level Parallelism 数据级并行.</li>
+<li><strong>DRR</strong>: Declarative Rewrite Rules 声明式重写规则. 是 MLIR
+  框架中一个配套的核心机制.</li>
 <li><strong>DSL</strong>: Domain-Specific Language 领域特定语言.</li>
 <li><strong>DSO</strong>: Dynamic Shared Object 动态共享对象. 即动态链接库.</li>
 <li><strong>DSP</strong>: Digital Signal Processor 数字信号处理器,
   是一种专门为快速处理连续数字信号流(如声音、图像、雷达回波)而设计的微处理器.</li>
+<li><strong>DWARF</strong>: 一种标准化的调试信息格式.</li>
 </ul>
 <h2 id="f">F</h2>
 <ul>
@@ -2616,9 +2620,12 @@
   (最大化或最小化某个目标).</li>
 </ul>
 </li>
-<li><strong>Intrinsics</strong>: 内联函数/内置函数.</li>
+<li><strong>Intrinsics</strong>: 内联函数/内置函数.<ul>
 <li>在编译器 (如LLVM, GCC) 的语境下, 指的是编译器提供的一组看起来像函数, 
-    但实际会直接映射为特定硬件指令的特殊API.</li>
+但实际会直接映射为特定硬件指令的特殊API.</li>
+</ul>
+</li>
+<li><strong>ISA</strong>: Instruction Set Architecture 指令集架构.</li>
 <li><strong>ISel</strong>: Instruction Selection 指令选择.是编译器将平台无关的中间表示(IR)
   转换为目标机器(如x86、ARM、GPU)特有的指令过程中的第一个关键步骤.</li>
 <li><strong>Itinerary</strong>: 时空路径。指的是一条预先规划好的、
@@ -2659,6 +2666,8 @@
 <p>C++ 在头文件中定义变量和函数时容易违反 ODR.</p>
 </blockquote>
 </li>
+<li><strong>ODS</strong>: Operation Definition Specification 操作定义规范. 是一套基于 TableGen
+  语言的 DSL, 是 MLIR 框架中一个非常核心的声明式定义机制.</li>
 <li><strong>OoO</strong>: Out of Order Execution 乱序执行.</li>
 <li><strong>outline</strong>: 将程序中的一段代码(通常是一个独立的代码区域)提取出来,
   封装成一个单独的函数.</li>
@@ -2698,6 +2707,7 @@
   它动态跟踪每条指令所需的操作数是否就绪、功能单元是否空闲,
   从而允许指令在满足条件时提前执行, 而不是死板地按程序顺序执行.</li>
 <li><strong>SDF</strong>: Synchronous Data Flow 同步数据流.</li>
+<li><strong>SNR</strong>: Script Number Register 脚本编号寄存器.</li>
 <li><strong>SPEC</strong>: 规范驱动开发.</li>
 <li><strong>SPIR-V</strong>: 是一个开放标准的、跨平台的二进制中间语言,
   专门用于表示并行计算和图形学任务, 比如着色器(Shader)和计算内核(Compute Kernel).</li>
@@ -2756,7 +2766,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年9月10日 10:40:10 UTC">2026年9月10日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年9月15日 11:18:38 UTC">2026年9月15日</span>
   </span>
 
     
