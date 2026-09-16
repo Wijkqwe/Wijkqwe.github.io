@@ -92,7 +92,3 @@ nav:
     - Arch Linux:
       - Arch in VMWare: virtual_machine/Arch_VMware/main.md
       - Arch in Virtual: virtual_machine/Arch_VirtualBox/main.md
-  - Website:
-    - website/index.md
-    - OpenACC: website/OpenACC.md
-    - 架构: website/untitled.md
