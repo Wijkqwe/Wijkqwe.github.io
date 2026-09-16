@@ -30,6 +30,7 @@
 - **CFG**: Control Flow Graph 控制流图.
 - **Clause**: 子句 / 子语. 是附加在 Directive 后面的“修饰语”, 用来告诉编译器
   “以什么方式”、“在什么条件下”、“对哪些变量”执行这个 Directive.
+- **CNN**: Convolutional Neural Network 卷积神经网络.
 - **CoT**: Chain of Thought 思维链.
 - **CEFR**: 英语语言级别.
 - **CSP**: 约束满足问题.不关心“最优”, 只关心“能不能找到一组赋值,
@@ -37,11 +38,14 @@
 
 ## D
 
+- **DCE**: Dead Code Elimination 死代码消除.
 - **DFA**: 确定性有限自动机.
 - **Directive**: 编译指令 / 指示符. 源码中的特殊标记, 用来指导编译器、预处理器或运行时系统如何处理代码.
+- **DL**: Deep Learning 深度学习.
 - **DLP**: Data-Level Parallelism 数据级并行.
 - **DRR**: Declarative Rewrite Rules 声明式重写规则. 是 MLIR
   框架中一个配套的核心机制.
+  > Declarative, rule-based pattern-match and rewrite.
 - **DSL**: Domain-Specific Language 领域特定语言.
 - **DSO**: Dynamic Shared Object 动态共享对象. 即动态链接库.
 - **DSP**: Digital Signal Processor 数字信号处理器,
@@ -93,6 +97,7 @@
   用极少资源快速让模型学会新技能.核心思想是：“冻结”庞大的原始模型不动, 
   只在旁边添加一个极小的“插件”进行训练.
 - **LSB**: Least Significant Bit 最低有效位.
+- **LSTM**: Long Short Term Memory 长短期记忆网络.
 - **LTO**: Link-Time Optimization 链接时代码优化.
 - **LUT**: Lookup Table 查找表.
 
@@ -140,6 +145,9 @@
 ## R
 
 - **RA**: Register Allocation 寄存器分配.
+- **RNN**: Recurrent neural network 循环神经网络.
+- **RoundTrip**: 往返转换, 是将数据从格式 A 转换为格式 B, 再从格式 B 转换回格式
+  A, 然后验证转换后的结果是否与原始数据完全一致的过程.
 - **RST**: reStructuredText 文件后缀, 是用于创建文档的轻量级标记语言. 相比于 md
   文件, 语法更严格, 结构更严谨.
 - **RTL**:
