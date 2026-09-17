@@ -44,6 +44,11 @@ extra_css:
   - css/custom.css
   - css/toc-fold.css
 
+markdown_extensions:
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
 nav:
   - Home:
     - index.md

@@ -2,15 +2,29 @@
 
 ## command
 
+### `alias`
+
+- `alias`: 列出已定义的别名.
+- `alias <别名>`: 查看其定义.
+- `alias <别名>=<cmd>`: 定义别名.
+
+### `bg`
+
+make suspended process continued in background
+```bash
+bg %1
+```
+"%" is referring to the fact that I want to refer to the specific process
+
+> [fg](#fg) | [jobs](#jobs)
+
 ### `column`
 - `-t`: 
-
 
 ### `curl`
 
 - `-O [path]`: 下载文件, 保留原始文件名.
 - `-o [new name] [path]`: 下载并重命名文件.
-
 
 ### `diff`
 
@@ -24,40 +38,44 @@ diff [选项] 文件1 文件2
 diff <(ls qwe) <(ls asd)
 ```
 
-
 ### `du`
-* `-h`: human avaible
 
+- `-h`: human avaible
+
+### `fg`
+
+> [bg](#bg) | [jobs](#jobs)
 
 ### `find`
+
 ```bash
 find . -name src -type d
 find . -path '**/test/*.py' -type f
 find . -mtime -1
 find . -name "*.tmp" -exec rm {} \;
 ```
+- `-name <name>`: 按名称匹配.
+- `-iname <name>`: 忽略名称大小写.
+- `-path <path>`: 按路径匹配.
+- `-ipath <path>`: 忽略路径大小写.
 - `-maxdepth n`: 全局选项，最多递归n层
-
 
 ### `grep`
 
-- `-r`: 递归
-- `-n`: 
+- `-r` / `--recursive`: 递归
+- `-n` / `--line-number`: 显示行号.
 - `-l`: 仅显示路径，不显示行号和内容
 - `-L [string]`: 检索不包含 string 的文件
-
+- `--color=auto`: 显示颜色.
 
 ### `pwd`
 echo current location
 
-
 ### `tee`
 takes its input and writes it to a file, but also to standard out.
 
-
 ### `touch`
 create an empty file or change timestamps of file
-
 
 ### `which`
 find command
@@ -81,20 +99,11 @@ ln [目标路径] [链接路径]
 - `-s`: 创建软链接
 - `-f`: 强制执行，如果目标位置已存在同名链接，会直接覆盖，无需手动删除旧链接
 
-
 ### `wc`
 
 ### `jobs`
 
-### `bg`
-make suspended process continued in background
-```bash
-bg %1
-```
-"%" is referring to the fact that I want to refer to the specific process
-
-
-### `fg`
+> [bg](#bg) | [fg](#fg)
 
 ### `kill`
 kill jobs.
@@ -103,7 +112,6 @@ allow to send any sort of Unix signal
 kill -STOP %1
 ```
 
-
 ### `tar`
 
 - `-f`: 指定文件.
@@ -111,12 +119,8 @@ kill -STOP %1
 - `-x`: 解包.
 - `-z`: 通过 gzip 解压缩(处理 `.gz`).
 
-
 ### `nohup`
 encapsulating whatever command you're executing and ignoring wherever you get a hang up signal
-
-
-### `ctrl`+`r` 
 
 ### history substring search
 
@@ -181,15 +185,24 @@ execute last command
 ### `;`
 Concatenate command in the same line.
 
-### `<(...)`
-execute `...` and get the output to kind of like a temporary file and it will give the file handle to the command
+### `<(cmd)`
+
+进程替换. 相当于将 `cmd` 的输出变成一个可读文件.
+Execute `cmd` and get the output to kind of like a temporary file and it will
+give the file handle to the command.
 ```bash
-cat <(ls) <(ls ..)
+echo <(echo echo)
+```
+
+#### `cmd <() <()`
+
+把两个进程替换的结果作为两个参数传给 cmd. 每个参数都是一个临时文件路径.
+```bash
+diff <(ls) <(ls)
 ```
 
 ### `#`
 as root
-
 
 ### `--`
 
@@ -208,7 +221,6 @@ as such: `rm -- -r` or `ssh machine --for-ssh -- foo --for-foo`.after this will
 
 #### `*`
 match any length of characters
-
 
 #### `?`
 match any single character
@@ -234,7 +246,6 @@ touch a b ... j
 ### $PATH
 follow this to find where command is,
 
-
 ## 命令行快捷键
 
 ### 移动
@@ -243,9 +254,11 @@ follow this to find where command is,
 - ctrl+e: 光标移动到行尾
 - ctrl+左右方向键: 单词间移动
 
-
 ### 删除/剪切
 
+### 查找
+
+- `ctrl`+`r`: 查找命令历史.
 
 ## script
 

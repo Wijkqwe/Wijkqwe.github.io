@@ -67,6 +67,7 @@ LLVM 汇编器（Assembler）。它将人类可读的 LLVM IR 文本格式（.ll
 其中 `*` 包括:
 
 - `op`
+- `op-interface`
 - `dialect`
 - `typedef`
 - `enum`
@@ -102,16 +103,25 @@ TableGen 是方言定义与转换的引擎. 主要服务于 Dialect（方言）�
 
 ###### Trait
 
-- `[Pure]`: 用来标记一个操作没有副作用且结果只取决于操作数.
-  使用示例:
-  ```tablegen
-  def MyAddOp : MyDialect_Op<"add", [Pure]> {
-  }
-  ```
-  标记 Pure 后，MLIR 会自动:
+- `Pure`: `mlir/include/mlir/Interfaces/SideEffectInterfaces.td`.
+
+    用来标记一个操作没有副作用且结果只取决于操作数.
+    使用示例:
+
+    ```tablegen
+    def MyAddOp : MyDialect_Op<"add", [Pure]> {
+    }
+    ```
+
+    标记 Pure 后，MLIR 会自动:
+
     - 允许该操作被死代码消除（DCE）——如果结果没被使用，直接删除。
     - 允许该操作被公共子表达式消除（CSE）——如果两个相同的 MyAddOp 出现，合并为一个。
     - 允许该操作被常量折叠——如果 lhs 和 rhs 都是常量，直接算出结果.
+
+- `DeclareOpInterfaceMethods<X>`: `mlir/include/mlir/IR/Interfaces.td`.
+    - 给 op 挂上对应接口 Trait.
+    - 自动生成方法声明.
 
 #### in LLVM
 

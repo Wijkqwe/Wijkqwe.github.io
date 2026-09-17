@@ -35,6 +35,7 @@
 - **CEFR**: 英语语言级别.
 - **CSP**: 约束满足问题.不关心“最优”, 只关心“能不能找到一组赋值,
   让所有约束都同时满足”.
+- **CSR**: Compressed Sparse Row 压缩稀疏行. 用于高效存储稀疏矩阵.
 
 ## D
 
@@ -74,7 +75,7 @@
 - **ICU**: Instruction Control Unit 指令控制单元.
 - **ILP**:
     - 指令级并行.
-    - 整数线性规划.在线性约束条件下, 求整数决策变量的最优解
+    - Integer Linear Programming 整数线性规划.在线性约束条件下, 求整数决策变量的最优解
       (最大化或最小化某个目标).
 - **Intrinsics**: 内联函数/内置函数.
     - 在编译器 (如LLVM, GCC) 的语境下, 指的是编译器提供的一组看起来像函数, 
@@ -179,6 +180,8 @@
 - **TII**: TargetInstrInfo in LLVM llvm/include/llvm/CodeGen/TargetInstrInfo.h.
 - **TLI**: TargetLowering in LLVM llvm/include/llvm/CodeGen/TargetLowering.h.
 - **TLP**: Thread-Level Parallelism 线程级并行.
+- **ToB**: To Business.
+- **ToC**: To Consumer.
 - **TTA**: Transport Triggered Architecture 传输触发架构.
 
 ## V
