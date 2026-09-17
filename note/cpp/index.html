@@ -3857,36 +3857,36 @@
 
 
 
-<h1 id="cpp">CPP</h1>
-<h3 id="_1">函数</h3>
-<h4 id="_2">绝对值</h4>
+<h1 id="cpp">CPP<a class="headerlink" href="#cpp" title="Permanent link">&para;</a></h1>
+<h3 id="_1">函数<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h4 id="_2">绝对值<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>abs(): 整数绝对值</li>
 <li>fabs(): 浮点数绝对值</li>
 </ul>
-<h4 id="_3">位运算</h4>
+<h4 id="_3">位运算<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
 <ul>
 <li>lowbit(): 计算二进制中最低位的1
 <code>#define lowbit(x) ((x)&amp;(-x))</code></li>
 </ul>
-<h4 id="_4">幂运算</h4>
-<h5 id="_5">快速模幂运算</h5>
-<pre><code class="language-cpp">//: 快速模幂运算 a ^ s mod d
-ll quick_mod_pow(ll a, ll s, ll d)
-{
-    ll res = 1;
-    a %= d;
-    while (s)
-    {
-        if (s &amp; 1)
-            res = (res * a) % d;
-        s &gt;&gt;= 1;
-        a = (a * a) % d;
-    }
-    return res;
-}
-</code></pre>
-<h4 id="gcd">gcd最大公约数</h4>
+<h4 id="_4">幂运算<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<h5 id="_5">快速模幂运算<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="c1">//: 快速模幂运算 a ^ s mod d</span>
+<span class="n">ll</span><span class="w"> </span><span class="nf">quick_mod_pow</span><span class="p">(</span><span class="n">ll</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">ll</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">ll</span><span class="w"> </span><span class="n">d</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">ll</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="n">a</span><span class="w"> </span><span class="o">%=</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">s</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="w">            </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">res</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
+<span class="w">        </span><span class="n">s</span><span class="w"> </span><span class="o">&gt;&gt;=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">        </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">res</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="gcd">gcd最大公约数<a class="headerlink" href="#gcd" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>std::gcd()
@@ -3897,44 +3897,44 @@ Add in C++17<code>&lt;numeric&gt;</code></p>
 <code>&lt;algorithm&gt;</code>特定于libstdc++内部</p>
 </li>
 <li>
-<p>欧几里得算法</p>
+<p>欧几里得算法
+<div class="highlight"><pre><span></span><code><span class="c1">//: 欧几里得算法求两数 GCD</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">ojld_gcd</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">        </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">        </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">temp</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Stein算法
+<div class="highlight"><pre><span></span><code><span class="c1">//: Stein算法</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">binary_gcd</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">u</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">v</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">u</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">v</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">v</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">u</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">shift</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">__builtin_ctz</span><span class="p">(</span><span class="n">u</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">v</span><span class="p">);</span><span class="w">  </span><span class="c1">// 公共因子 2 的幂次</span>
+<span class="w">    </span><span class="n">u</span><span class="w"> </span><span class="o">&gt;&gt;=</span><span class="w"> </span><span class="n">__builtin_ctz</span><span class="p">(</span><span class="n">u</span><span class="p">);</span><span class="w">            </span><span class="c1">// 移除 u 中的因子 2</span>
+<span class="w">    </span><span class="k">do</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">v</span><span class="w"> </span><span class="o">&gt;&gt;=</span><span class="w"> </span><span class="n">__builtin_ctz</span><span class="p">(</span><span class="n">v</span><span class="p">);</span><span class="w">  </span><span class="c1">// 移除 v 中的因子 2</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">u</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">v</span><span class="p">)</span>
+<span class="w">            </span><span class="n">swap</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="p">);</span>
+<span class="w">        </span><span class="n">v</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">u</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">v</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">u</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">shift</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
 </li>
 </ul>
-<pre><code class="language-cpp">//: 欧几里得算法求两数 GCD
-int ojld_gcd(int a, int b)
-{
-    while (b != 0)
-    {
-        int temp = b;
-        b = a % b;
-        a = temp;
-    }
-    return a;
-}
-</code></pre>
-<ul>
-<li>Stein算法</li>
-</ul>
-<pre><code class="language-cpp">//: Stein算法
-int binary_gcd(int u, int v)
-{
-    if (u == 0)
-        return v;
-    if (v == 0)
-        return u;
-    int shift = __builtin_ctz(u | v);  // 公共因子 2 的幂次
-    u &gt;&gt;= __builtin_ctz(u);            // 移除 u 中的因子 2
-    do
-    {
-        v &gt;&gt;= __builtin_ctz(v);  // 移除 v 中的因子 2
-        if (u &gt; v)
-            swap(u, v);
-        v -= u;
-    } while (v != 0);
-    return u &lt;&lt; shift;
-}
-</code></pre>
-<h4 id="_6">查找</h4>
+<h4 id="_6">查找<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
 <ul>
 <li>lower_bound()<code>#include &lt;algorithm&gt;</code>
 底层二分,有序查找,返回第一个不小于val的位置
@@ -3943,7 +3943,7 @@ ForwardIterator lower_bound (ForwardIterator first, ForwardIterator last,  const
 <li>upper_bound()<code>#include &lt;algorithm&gt;</code>
 底层二分,有序查找,返回第一个不大于val的位置</li>
 </ul>
-<h4 id="gcc-built-in-function">GCC built-in function</h4>
+<h4 id="gcc-built-in-function">GCC built-in function<a class="headerlink" href="#gcc-built-in-function" title="Permanent link">&para;</a></h4>
 <p><a href="https://gcc.gnu.org/onlinedocs/gcc/Other-Builtins.html">Web</a></p>
 <ul>
 <li>
@@ -3953,36 +3953,36 @@ ForwardIterator lower_bound (ForwardIterator first, ForwardIterator last,  const
 <li><code>int __builtin_ctzl (unsigned long)</code>: Similar to __builtin_ctz, except the argument type is unsigned long.</li>
 <li><code>int __builtin_ctzll (unsigned long long)</code>: Similar to __builtin_ctz, except the argument type is unsigned long long.</li>
 </ul>
-<p><code>c
-int __builtin_ctzl(unsigned long x) 
-{
-    for (int i = 0; i != 64; ++i)
-        if (x &gt;&gt; i &amp; 1) 
-            return i;
-    return 0;
-}</code>
-<code>c
-int __builtin_ctzl(unsigned long x) 
-{
-    int r = 63;
-    x &amp;= ~x + 1;
-    if (x &amp; 0x00000000FFFFFFFF) r -= 32;
-    if (x &amp; 0x0000FFFF0000FFFF) r -= 16;
-    if (x &amp; 0x00FF00FF00FF00FF) r -= 8;
-    if (x &amp; 0x0F0F0F0F0F0F0F0F) r -= 4;
-    if (x &amp; 0x3333333333333333) r -= 2;
-    if (x &amp; 0x5555555555555555) r -= 1;
-    return r;
-}</code></p>
+<p><div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">__builtin_ctzl</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">64</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">__builtin_ctzl</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">63</span><span class="p">;</span>
+<span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">&amp;=</span><span class="w"> </span><span class="o">~</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x00000000FFFFFFFF</span><span class="p">)</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">32</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x0000FFFF0000FFFF</span><span class="p">)</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">16</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x00FF00FF00FF00FF</span><span class="p">)</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x0F0F0F0F0F0F0F0F</span><span class="p">)</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x3333333333333333</span><span class="p">)</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x5555555555555555</span><span class="p">)</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">r</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
 </li>
 </ul>
 <hr />
-<h3 id="_7">输出</h3>
-<h4 id="cout-ni-0"><code>cout &lt;&lt; " \n"[i == 0];</code></h4>
+<h3 id="_7">输出<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h4 id="cout-ni-0"><code>cout &lt;&lt; " \n"[i == 0];</code><a class="headerlink" href="#cout-ni-0" title="Permanent link">&para;</a></h4>
 <p>i == 0时为true,输出"\n";
 i != 0时为false,输出" ";</p>
-<h4 id="_8">浮点数</h4>
-<h5 id="_9">位数</h5>
+<h4 id="_8">浮点数<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<h5 id="_9">位数<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h5>
 <ul>
 <li>
 <p><code>cout.precision(x)</code>
@@ -3993,16 +3993,16 @@ i != 0时为false,输出" ";</p>
 .后x位</p>
 </li>
 </ul>
-<h5 id="_10">格式</h5>
+<h5 id="_10">格式<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h5>
 <ul>
 <li><code>cout &lt;&lt; fixed;</code>
 非科学计数法,定点表示法表示浮点数</li>
 </ul>
-<h2 id="namespace">namespace</h2>
+<h2 id="namespace">namespace<a class="headerlink" href="#namespace" title="Permanent link">&para;</a></h2>
 <p><code>::</code> 开头的名称总是从全局作用域开始解析，不受当前所在命名空间影响.</p>
 <p>在类成员函数内部, <code>::name</code> 也能用来访问全局的 <code>name</code>, 绕过类的成员.</p>
 <hr />
-<h2 id="stlstandard-template-library">STL(Standard Template Library)</h2>
+<h2 id="stlstandard-template-library">STL(Standard Template Library)<a class="headerlink" href="#stlstandard-template-library" title="Permanent link">&para;</a></h2>
 <p><code>&lt;algorithm&gt;</code>
 <code>&lt;deque&gt;</code>
 <code>&lt;functional&gt;</code>
@@ -4016,8 +4016,8 @@ i != 0时为false,输出" ";</p>
 <code>&lt;set&gt;</code>
 <code>&lt;stack&gt;</code>
 <code>&lt;utility&gt;</code></p>
-<h3 id="iterator">迭代器<code>&lt;iterator&gt;</code></h3>
-<h4 id="_11">种类</h4>
+<h3 id="iterator">迭代器<code>&lt;iterator&gt;</code><a class="headerlink" href="#iterator" title="Permanent link">&para;</a></h3>
+<h4 id="_11">种类<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
 <ul>
 <li>随机访问迭代器<ul>
 <li>std::vector</li>
@@ -4042,7 +4042,7 @@ i != 0时为false,输出" ";</p>
 </ul>
 </li>
 </ul>
-<h4 id="_12">距离</h4>
+<h4 id="_12">距离<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
 <ul>
 <li>std::distance()<code>&lt;iterator&gt;</code>: 返回两个迭代器之间的距离<ul>
 <li>对随机访问迭代器: O(1)首尾迭代器相减</li>
@@ -4050,15 +4050,15 @@ i != 0时为false,输出" ";</p>
 </ul>
 </li>
 </ul>
-<h3 id="vector"><code>&lt;vector&gt;</code></h3>
-<h4 id="stdvector">std::vector</h4>
+<h3 id="vector"><code>&lt;vector&gt;</code><a class="headerlink" href="#vector" title="Permanent link">&para;</a></h3>
+<h4 id="stdvector">std::vector<a class="headerlink" href="#stdvector" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>emplace_back()
 允许在容器尾部直接构造元素,省去了拷贝或移动元素的过程</p>
-<p><code>cpp
-vector&lt;pair&lt;int, int&gt;&gt; v;
-v.emplace_back(1, 1);</code></p>
+<div class="highlight"><pre><span></span><code><span class="n">vector</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">v</span><span class="p">;</span>
+<span class="n">v</span><span class="p">.</span><span class="n">emplace_back</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+</code></pre></div>
 </li>
 <li>
 <p>比较
@@ -4072,125 +4072,125 @@ v.emplace_back(1, 1);</code></p>
 </li>
 </ul>
 <hr />
-<h2 id="standard-library">Standard Library</h2>
+<h2 id="standard-library">Standard Library<a class="headerlink" href="#standard-library" title="Permanent link">&para;</a></h2>
 <p><a href="https://en.cppreference.com/w/cpp/standard_library">Web</a></p>
-<h3 id="algorithm"><code>&lt;algorithm&gt;</code></h3>
-<h4 id="stdall_of-stdany_of-stdnone_of">std::all_of, std::any_of, std::none_of</h4>
-<h4 id="stdcopy">std::copy</h4>
-<h4 id="stdmin">std::min</h4>
-<h4 id="stdsort">std::sort</h4>
-<h3 id="cctype"><code>&lt;cctype&gt;</code></h3>
+<h3 id="algorithm"><code>&lt;algorithm&gt;</code><a class="headerlink" href="#algorithm" title="Permanent link">&para;</a></h3>
+<h4 id="stdall_of-stdany_of-stdnone_of">std::all_of, std::any_of, std::none_of<a class="headerlink" href="#stdall_of-stdany_of-stdnone_of" title="Permanent link">&para;</a></h4>
+<h4 id="stdcopy">std::copy<a class="headerlink" href="#stdcopy" title="Permanent link">&para;</a></h4>
+<h4 id="stdmin">std::min<a class="headerlink" href="#stdmin" title="Permanent link">&para;</a></h4>
+<h4 id="stdsort">std::sort<a class="headerlink" href="#stdsort" title="Permanent link">&para;</a></h4>
+<h3 id="cctype"><code>&lt;cctype&gt;</code><a class="headerlink" href="#cctype" title="Permanent link">&para;</a></h3>
 <p><code>&lt;ctype.h&gt;</code> in C standard library</p>
-<h4 id="stdisalnum">std::isalnum</h4>
+<h4 id="stdisalnum">std::isalnum<a class="headerlink" href="#stdisalnum" title="Permanent link">&para;</a></h4>
 <p>字母或数字则true</p>
-<h4 id="stdisalpha">std::isalpha</h4>
+<h4 id="stdisalpha">std::isalpha<a class="headerlink" href="#stdisalpha" title="Permanent link">&para;</a></h4>
 <p>字母则true</p>
-<h4 id="stdisdigit">std::isdigit</h4>
+<h4 id="stdisdigit">std::isdigit<a class="headerlink" href="#stdisdigit" title="Permanent link">&para;</a></h4>
 <p>数字则true</p>
-<h3 id="exception"><code>&lt;exception&gt;</code></h3>
-<h4 id="stdexception">std::exception</h4>
+<h3 id="exception"><code>&lt;exception&gt;</code><a class="headerlink" href="#exception" title="Permanent link">&para;</a></h3>
+<h4 id="stdexception">std::exception<a class="headerlink" href="#stdexception" title="Permanent link">&para;</a></h4>
 <p>Provides consistent interface to handle errors through the throw expression</p>
-<h3 id="fstream"><code>&lt;fstream&gt;</code></h3>
-<h4 id="stdifstream">std::ifstream</h4>
-<h4 id="peek">peek()</h4>
+<h3 id="fstream"><code>&lt;fstream&gt;</code><a class="headerlink" href="#fstream" title="Permanent link">&para;</a></h3>
+<h4 id="stdifstream">std::ifstream<a class="headerlink" href="#stdifstream" title="Permanent link">&para;</a></h4>
+<h4 id="peek">peek()<a class="headerlink" href="#peek" title="Permanent link">&para;</a></h4>
 <p>字符流下一个</p>
-<h3 id="functional"><code>&lt;functional&gt;</code></h3>
-<h4 id="stdfunction">std::function</h4>
+<h3 id="functional"><code>&lt;functional&gt;</code><a class="headerlink" href="#functional" title="Permanent link">&para;</a></h3>
+<h4 id="stdfunction">std::function<a class="headerlink" href="#stdfunction" title="Permanent link">&para;</a></h4>
 <p>通用的多态函数包装器
 对C++中现有的可调用实体的一种类型安全的包裹</p>
-<h4 id="stdgreatert"><code>std::greater&lt;T&gt;</code></h4>
-<h4 id="stdlesst"><code>std::less&lt;T&gt;</code></h4>
-<h3 id="iostream"><code>&lt;iostream&gt;</code></h3>
-<h4 id="stdcerr"><code>std::cerr</code></h4>
-<h3 id="memory"><code>&lt;memory&gt;</code></h3>
-<h4 id="stdmake_unique"><code>std::make_unique</code></h4>
+<h4 id="stdgreatert"><code>std::greater&lt;T&gt;</code><a class="headerlink" href="#stdgreatert" title="Permanent link">&para;</a></h4>
+<h4 id="stdlesst"><code>std::less&lt;T&gt;</code><a class="headerlink" href="#stdlesst" title="Permanent link">&para;</a></h4>
+<h3 id="iostream"><code>&lt;iostream&gt;</code><a class="headerlink" href="#iostream" title="Permanent link">&para;</a></h3>
+<h4 id="stdcerr"><code>std::cerr</code><a class="headerlink" href="#stdcerr" title="Permanent link">&para;</a></h4>
+<h3 id="memory"><code>&lt;memory&gt;</code><a class="headerlink" href="#memory" title="Permanent link">&para;</a></h3>
+<h4 id="stdmake_unique"><code>std::make_unique</code><a class="headerlink" href="#stdmake_unique" title="Permanent link">&para;</a></h4>
 <p>C++14
 构建unique_ptr指向新对象</p>
-<h4 id="stdmake_unique_for_overwrite"><code>std::make_unique_for_overwrite</code></h4>
+<h4 id="stdmake_unique_for_overwrite"><code>std::make_unique_for_overwrite</code><a class="headerlink" href="#stdmake_unique_for_overwrite" title="Permanent link">&para;</a></h4>
 <p>C++20</p>
-<h4 id="stdshare_ptr">std::share_ptr</h4>
+<h4 id="stdshare_ptr">std::share_ptr<a class="headerlink" href="#stdshare_ptr" title="Permanent link">&para;</a></h4>
 <p>Added in C++11
 智能指针，它通过指针保留对象的共享所有权</p>
-<h4 id="stdunique_ptr">std::unique_ptr</h4>
+<h4 id="stdunique_ptr">std::unique_ptr<a class="headerlink" href="#stdunique_ptr" title="Permanent link">&para;</a></h4>
 <p>Added in C++11
 智能指针</p>
-<h3 id="numeric"><code>&lt;numeric&gt;</code></h3>
-<h4 id="stdgcd">std::gcd()</h4>
+<h3 id="numeric"><code>&lt;numeric&gt;</code><a class="headerlink" href="#numeric" title="Permanent link">&para;</a></h3>
+<h4 id="stdgcd">std::gcd()<a class="headerlink" href="#stdgcd" title="Permanent link">&para;</a></h4>
 <p>Added in C++17</p>
-<h3 id="stdexcept"><code>&lt;stdexcept&gt;</code></h3>
-<h3 id="stdruntime_error">std::runtime_error</h3>
+<h3 id="stdexcept"><code>&lt;stdexcept&gt;</code><a class="headerlink" href="#stdexcept" title="Permanent link">&para;</a></h3>
+<h3 id="stdruntime_error">std::runtime_error<a class="headerlink" href="#stdruntime_error" title="Permanent link">&para;</a></h3>
 <p>class, </p>
-<h3 id="tuple"><code>&lt;tuple&gt;</code></h3>
+<h3 id="tuple"><code>&lt;tuple&gt;</code><a class="headerlink" href="#tuple" title="Permanent link">&para;</a></h3>
 <p>Added in C++11</p>
-<h4 id="stdget">std::get<index>()</h4>
-<pre><code class="language-cpp">std::tuple&lt;bool, int, std::string&gt; a(true, 0, &quot;qwe&quot;);
-bool s = std::get&lt;0&gt;(a);
-int d = std::get&lt;1&gt;(a);
-std::get&lt;0&gt;(a) = false;
-</code></pre>
-<h4 id="stdignore">std::ignore</h4>
+<h4 id="stdget">std::get<index>()<a class="headerlink" href="#stdget" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="kt">bool</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">a</span><span class="p">(</span><span class="nb">true</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;qwe&quot;</span><span class="p">);</span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">get</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">&gt;</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">get</span><span class="o">&lt;</span><span class="mi">1</span><span class="o">&gt;</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">get</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">&gt;</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+</code></pre></div>
+<h4 id="stdignore">std::ignore<a class="headerlink" href="#stdignore" title="Permanent link">&para;</a></h4>
 <p>任何值均可赋给而无效果的未指定类型的对象
 目的是令 std::tie 在解包 std::tuple 时作为不使用的参数的占位符使用</p>
-<h4 id="stdmake_tuple">std::make_tuple</h4>
-<h4 id="stdtie">std::tie()</h4>
-<pre><code class="language-cpp">std::tuple&lt;bool, int, std::string&gt; a(true, 0, &quot;qwe&quot;);
-bool s;
-std::tie(s, std::ignore, std::ignore) = a;
-</code></pre>
-<h4 id="stdtuple">std::tuple</h4>
-<p>元组,类似结构体</p>
-<pre><code class="language-cpp">template&lt;class... Types&gt;
-class tuple;
-</code></pre>
-<p>按照索引顺序访问其中的元素
+<h4 id="stdmake_tuple">std::make_tuple<a class="headerlink" href="#stdmake_tuple" title="Permanent link">&para;</a></h4>
+<h4 id="stdtie">std::tie()<a class="headerlink" href="#stdtie" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="kt">bool</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">a</span><span class="p">(</span><span class="nb">true</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;qwe&quot;</span><span class="p">);</span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">s</span><span class="p">;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tie</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">ignore</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">ignore</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+</code></pre></div>
+<h4 id="stdtuple">std::tuple<a class="headerlink" href="#stdtuple" title="Permanent link">&para;</a></h4>
+<p>元组,类似结构体
+<div class="highlight"><pre><span></span><code><span class="k">template</span><span class="o">&lt;</span><span class="k">class</span><span class="p">...</span><span class="w"> </span><span class="n">Types</span><span class="o">&gt;</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">tuple</span><span class="p">;</span>
+</code></pre></div>
+按照索引顺序访问其中的元素
 大小在编译时确定，不支持动态添加或移除元素</p>
-<h3 id="unordered_map"><code>&lt;unordered_map&gt;</code></h3>
-<h4 id="stdunordered_mapcount">std::unordered_map<Key,T,Hash,KeyEqual,Allocator>::count</h4>
+<h3 id="unordered_map"><code>&lt;unordered_map&gt;</code><a class="headerlink" href="#unordered_map" title="Permanent link">&para;</a></h3>
+<h4 id="stdunordered_mapcount">std::unordered_map<Key,T,Hash,KeyEqual,Allocator>::count<a class="headerlink" href="#stdunordered_mapcount" title="Permanent link">&para;</a></h4>
 <p>计算给定键的个数, 即检查是否存在键</p>
-<h3 id="utility"><code>&lt;utility&gt;</code></h3>
-<h4 id="stdmove">std::move</h4>
+<h3 id="utility"><code>&lt;utility&gt;</code><a class="headerlink" href="#utility" title="Permanent link">&para;</a></h3>
+<h4 id="stdmove">std::move<a class="headerlink" href="#stdmove" title="Permanent link">&para;</a></h4>
 <p>将左值转化为右值, 可以被右值引用指向
 实现移动语义, 避免拷贝, 从而提升性能</p>
-<h3 id="other">other</h3>
-<h4 id="dynamic_cast">dynamic_cast</h4>
+<h3 id="other">other<a class="headerlink" href="#other" title="Permanent link">&para;</a></h3>
+<h4 id="dynamic_cast">dynamic_cast<a class="headerlink" href="#dynamic_cast" title="Permanent link">&para;</a></h4>
 <p>安全地将指针和引用沿继承层次结构向上、向下和横向转换为类
 存在开销, 主要用于向下</p>
 <hr />
-<h2 id="third-party-library">Third-Party Library</h2>
-<h3 id="_13"><gmpxx.h></h3>
+<h2 id="third-party-library">Third-Party Library<a class="headerlink" href="#third-party-library" title="Permanent link">&para;</a></h2>
+<h3 id="_13"><gmpxx.h><a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
 <p>GNU Multiple Precision Arithmetic Library (GMP)
 大整数算术运算</p>
 <hr />
-<h2 id="_14">语法</h2>
-<h3 id="_15">循环</h3>
+<h2 id="_14">语法<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<h3 id="_15">循环<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
 <ul>
 <li><code>for (auto [i, i] : v){}</code>
-    <code>cpp
-    vector&lt;pair&lt;int, int&gt;&gt; v;
-    for (auto [i, j] : v){}
-    //: ||
-    for (auto ij : v)
-    {
-        auto i = ij.first;
-        auto j = ij.second;
-    }</code></li>
+    <div class="highlight"><pre><span></span><code><span class="n">vector</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">v</span><span class="p">;</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">v</span><span class="p">){}</span>
+<span class="c1">//: ||</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">ij</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">v</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ij</span><span class="p">.</span><span class="n">first</span><span class="p">;</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ij</span><span class="p">.</span><span class="n">second</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></li>
 </ul>
-<h3 id="_16">指令</h3>
-<h4 id="pragma">pragma</h4>
+<h3 id="_16">指令<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<h4 id="pragma">pragma<a class="headerlink" href="#pragma" title="Permanent link">&para;</a></h4>
 <p>预处理器指令</p>
-<h3 id="const">const</h3>
+<h3 id="const">const<a class="headerlink" href="#const" title="Permanent link">&para;</a></h3>
 <p>函数名前: 返回值为const
 函数名后: 函数不能修改class的成员</p>
-<h3 id="virtual">virtual</h3>
+<h3 id="virtual">virtual<a class="headerlink" href="#virtual" title="Permanent link">&para;</a></h3>
 <p>虚函数, 位置在函数返回类型前
 函数声明中加, 函数实现中不加</p>
-<h3 id="override">override</h3>
+<h3 id="override">override<a class="headerlink" href="#override" title="Permanent link">&para;</a></h3>
 <p>重写虚函数, 位置在函数名后
 函数声明中加, 函数实现中不加</p>
-<h3 id="static">static</h3>
+<h3 id="static">static<a class="headerlink" href="#static" title="Permanent link">&para;</a></h3>
 <p>函数声明中加, 函数实现中不加</p>
 <hr />
-<h2 id="crtp">CRTP</h2>
+<h2 id="crtp">CRTP<a class="headerlink" href="#crtp" title="Permanent link">&para;</a></h2>
 <p>Curiously Recurring Template Pattern
 奇异递归模板模式</p>
 

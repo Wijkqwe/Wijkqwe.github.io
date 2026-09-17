@@ -2617,8 +2617,8 @@
 
 
 
-<h1 id="tmux">tmux</h1>
-<h2 id="main">main</h2>
+<h1 id="tmux">tmux<a class="headerlink" href="#tmux" title="Permanent link">&para;</a></h1>
+<h2 id="main">main<a class="headerlink" href="#main" title="Permanent link">&para;</a></h2>
 <ul>
 <li>session<ul>
 <li>window<ul>
@@ -2642,46 +2642,46 @@
 <p><kbd>shift</kbd>+<kbd>mouse</kbd>选中文本 if <code>set -g mouse on</code>.</p>
 </li>
 </ul>
-<h3 id="modes">modes</h3>
-<h4 id="normal">normal</h4>
-<h4 id="copy">copy</h4>
+<h3 id="modes">modes<a class="headerlink" href="#modes" title="Permanent link">&para;</a></h3>
+<h4 id="normal">normal<a class="headerlink" href="#normal" title="Permanent link">&para;</a></h4>
+<h4 id="copy">copy<a class="headerlink" href="#copy" title="Permanent link">&para;</a></h4>
 <p>By <kbd>mod</kbd> <kbd>[</kbd>. <kbd>q</kbd> to exit.</p>
 <p>Move like vim by <code>setw -g mode-keys vi</code>.</p>
-<h4 id="command">command</h4>
+<h4 id="command">command<a class="headerlink" href="#command" title="Permanent link">&para;</a></h4>
 <p>By <kbd>mod</kbd> <kbd>:</kbd>.</p>
-<h3 id="config">config</h3>
-<h4 id="path">path</h4>
+<h3 id="config">config<a class="headerlink" href="#config" title="Permanent link">&para;</a></h3>
+<h4 id="path">path<a class="headerlink" href="#path" title="Permanent link">&para;</a></h4>
 <p><code>~/.tmux.conf</code></p>
-<h4 id="_1">设置选项</h4>
+<h4 id="_1">设置选项<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>set</code>: equal <code>set-option</code>.</li>
 <li><code>setw</code>: equal <code>set-window-option</code>.</li>
 </ul>
-<h4 id="_2">加载配置</h4>
+<h4 id="_2">加载配置<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>tmux source-file ~/.tumx.conf</code>: in shell.</li>
 <li><kbd>mod</kbd> <kbd>:</kbd>, <code>source-file ~/.tumx.conf</code>.</li>
 </ul>
-<h3 id="color">color</h3>
-<pre><code class="language-bash">for i in {0..255}; do printf &quot;\x1b[38;5;${i}mcolor${i} - ██████████\n&quot;; done
-</code></pre>
+<h3 id="color">color<a class="headerlink" href="#color" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="o">{</span><span class="m">0</span>..255<span class="o">}</span><span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;\x1b[38;5;</span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2">mcolor</span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2"> - ██████████\n&quot;</span><span class="p">;</span><span class="w"> </span><span class="k">done</span>
+</code></pre></div>
 <hr />
-<h2 id="session">session</h2>
-<pre><code class="language-bash">#: create new session
-tmux [new -s session-name -n window-name]
+<h2 id="session">session<a class="headerlink" href="#session" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1">#: create new session</span>
+tmux<span class="w"> </span><span class="o">[</span>new<span class="w"> </span>-s<span class="w"> </span>session-name<span class="w"> </span>-n<span class="w"> </span>window-name<span class="o">]</span>
 
-#: restore session
-tmux at [-t session-name]
+<span class="c1">#: restore session</span>
+tmux<span class="w"> </span>at<span class="w"> </span><span class="o">[</span>-t<span class="w"> </span>session-name<span class="o">]</span>
 
-#: list sessions
-tmux ls
+<span class="c1">#: list sessions</span>
+tmux<span class="w"> </span>ls
 
-#: close session
-tmux kill-session -t session-name
+<span class="c1">#: close session</span>
+tmux<span class="w"> </span>kill-session<span class="w"> </span>-t<span class="w"> </span>session-name
 
-#: close server
-tmux kill-server
-</code></pre>
+<span class="c1">#: close server</span>
+tmux<span class="w"> </span>kill-server
+</code></pre></div>
 <ul>
 <li><kbd>mod</kbd> <kbd>d</kbd>: detach</li>
 <li><kbd>mod</kbd> <kbd>D</kbd>: select to detach</li>
@@ -2695,30 +2695,30 @@ tmux kill-server
 <li><kbd>mod</kbd> <kbd>:</kbd>: enter command line mode</li>
 </ul>
 <hr />
-<h2 id="window">window</h2>
-<h3 id="create">create</h3>
+<h2 id="window">window<a class="headerlink" href="#window" title="Permanent link">&para;</a></h2>
+<h3 id="create">create<a class="headerlink" href="#create" title="Permanent link">&para;</a></h3>
 <ul>
 <li><kbd>mod</kbd> <kbd>c</kbd>: create a new window</li>
 </ul>
-<h3 id="close">close</h3>
+<h3 id="close">close<a class="headerlink" href="#close" title="Permanent link">&para;</a></h3>
 <ul>
 <li><kbd>mod</kbd> <kbd>&amp;</kbd>: close the current window</li>
 </ul>
-<h3 id="switch">switch</h3>
+<h3 id="switch">switch<a class="headerlink" href="#switch" title="Permanent link">&para;</a></h3>
 <ul>
 <li><kbd>mod</kbd> <kbd>p</kbd>: go to the previous window</li>
 <li><kbd>mod</kbd> <kbd>n</kbd>: go to the next window</li>
 <li><kbd>mod</kbd> <kbd>num</kbd>: go to the number window</li>
 <li><kbd>mod</kbd> <kbd>w</kbd>: choose window from list</li>
 </ul>
-<h3 id="rename">rename</h3>
+<h3 id="rename">rename<a class="headerlink" href="#rename" title="Permanent link">&para;</a></h3>
 <ul>
 <li><kbd>mod</kbd> <kbd>,</kbd>: rename window</li>
 <li><kbd>mod</kbd> <kbd>.</kbd>: rename window number</li>
 </ul>
 <hr />
-<h2 id="pane">pane</h2>
-<h3 id="split">split</h3>
+<h2 id="pane">pane<a class="headerlink" href="#pane" title="Permanent link">&para;</a></h2>
+<h3 id="split">split<a class="headerlink" href="#split" title="Permanent link">&para;</a></h3>
 <ul>
 <li><kbd>mod</kbd> <kbd>"</kbd>: split current display into two different panes</li>
 <li>
@@ -2728,7 +2728,7 @@ tmux kill-server
 <p><kbd>mod</kbd> <kbd>!</kbd>: split the current pane into a window</p>
 </li>
 </ul>
-<h3 id="move">move</h3>
+<h3 id="move">move<a class="headerlink" href="#move" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p><kbd>mod</kbd> <kbd>arrow</kbd>: navigate through the different pane</p>
@@ -2753,37 +2753,37 @@ tmux kill-server
 </li>
 <li><kbd>mod</kbd> <kbd>}</kbd>: the current pane swaps with the next pane</li>
 </ul>
-<h3 id="delete">delete</h3>
+<h3 id="delete">delete<a class="headerlink" href="#delete" title="Permanent link">&para;</a></h3>
 <ul>
 <li><kbd>mod</kbd> <kbd>x</kbd>: close the current pane</li>
 </ul>
-<h3 id="resize">resize</h3>
+<h3 id="resize">resize<a class="headerlink" href="#resize" title="Permanent link">&para;</a></h3>
 <ul>
 <li><kbd>mod</kbd> <kbd>ctrl</kbd>+<kbd>arrow</kbd>: resize the current pane size</li>
 <li>In command mode, <code>resize-pane -[U/D/L/R] [num]</code></li>
 </ul>
-<h3 id="information">information</h3>
+<h3 id="information">information<a class="headerlink" href="#information" title="Permanent link">&para;</a></h3>
 <ul>
 <li><kbd>mod</kbd> <kbd>q</kbd>: display pane number</li>
 <li><kbd>mod</kbd> <kbd>t</kbd>: show clock</li>
 </ul>
-<h3 id="zoom">zoom</h3>
+<h3 id="zoom">zoom<a class="headerlink" href="#zoom" title="Permanent link">&para;</a></h3>
 <ul>
 <li><kbd>mod</kbd> <kbd>z</kbd>: zoom current pane</li>
 </ul>
 <hr />
-<h2 id="plugin">plugin</h2>
-<h3 id="opertor">opertor</h3>
-<pre><code>....../tmux-plugin-manager/bin/install_plugins
+<h2 id="plugin">plugin<a class="headerlink" href="#plugin" title="Permanent link">&para;</a></h2>
+<h3 id="opertor">opertor<a class="headerlink" href="#opertor" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>....../tmux-plugin-manager/bin/install_plugins
 ....../tmux-plugin-manager/bin/updata_plugins all
 ....../tmux-plugin-manager/bin/updata_plugins tmux-resurrect
-</code></pre>
-<h3 id="resurrect">resurrect</h3>
+</code></pre></div>
+<h3 id="resurrect">resurrect<a class="headerlink" href="#resurrect" title="Permanent link">&para;</a></h3>
 <ul>
 <li><kbd>mod</kbd> <kbd>ctrl</kbd>+<kbd>s</kbd>: save</li>
 <li><kbd>mod</kbd> <kbd>ctrl</kbd>+<kbd>r</kbd>: restore</li>
 </ul>
-<h1 id="binbash">!/bin/bash</h1>
+<h1 id="binbash">!/bin/bash<a class="headerlink" href="#binbash" title="Permanent link">&para;</a></h1>
 <ul>
 <li>tmux -V</li>
 <li>tmux list-session</li>

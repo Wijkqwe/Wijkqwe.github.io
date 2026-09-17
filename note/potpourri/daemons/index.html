@@ -1933,21 +1933,21 @@ Systemd can be interacted with the <code>systemctl</code> command in order to <c
 <p>More interestingly, <code>systemd</code> has a fairly accessible interface for configuring and enabling new daemons (or services).
 Below is an example of a daemon for running a simple Python app.
 We won't go in the details but as you can see most of the fields are pretty self explanatory.</p>
-<pre><code class="language-ini"># /etc/systemd/system/myapp.service
-[Unit]
-Description=My Custom App
-After=network.target
+<div class="highlight"><pre><span></span><code><span class="c1"># /etc/systemd/system/myapp.service</span>
+<span class="k">[Unit]</span>
+<span class="na">Description</span><span class="o">=</span><span class="s">My Custom App</span>
+<span class="na">After</span><span class="o">=</span><span class="s">network.target</span>
 
-[Service]
-User=foo
-Group=foo
-WorkingDirectory=/home/foo/projects/mydaemon
-ExecStart=/usr/bin/local/python3.7 app.py
-Restart=on-failure
+<span class="k">[Service]</span>
+<span class="na">User</span><span class="o">=</span><span class="s">foo</span>
+<span class="na">Group</span><span class="o">=</span><span class="s">foo</span>
+<span class="na">WorkingDirectory</span><span class="o">=</span><span class="s">/home/foo/projects/mydaemon</span>
+<span class="na">ExecStart</span><span class="o">=</span><span class="s">/usr/bin/local/python3.7 app.py</span>
+<span class="na">Restart</span><span class="o">=</span><span class="s">on-failure</span>
 
-[Install]
-WantedBy=multi-user.target
-</code></pre>
+<span class="k">[Install]</span>
+<span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
+</code></pre></div>
 <p>Also, if you just want to run some program with a given frequency there is no need to build a custom daemon, you can use <a href="https://www.man7.org/linux/man-pages/man8/cron.8.html"><code>cron</code></a>, a daemon your system already runs to perform scheduled tasks.</p>
 
 

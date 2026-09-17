@@ -2175,14 +2175,14 @@
 
 
 
-<h1 id="cmake">CMake</h1>
-<h2 id="command">command</h2>
+<h1 id="cmake">CMake<a class="headerlink" href="#cmake" title="Permanent link">&para;</a></h1>
+<h2 id="command">command<a class="headerlink" href="#command" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>--build &lt;构建目录&gt;</code>: 调用底层构建工具进行构建.</li>
 <li><code>--target &lt;构建目标&gt;</code>: 指定构建目标.</li>
 <li><code>-j</code> / <code>--parallel</code>: 线程数.</li>
 </ul>
-<h2 id="_1">变量</h2>
+<h2 id="_1">变量<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>CMAKE_CURRENT_BINARY_DIR</code>: 当前 CMakeLists.txt 对应的构建目录.</li>
 <li><code>CMAKE_CURRENT_SOURCE_DIR</code>: 当前 CMakeLists.txt 所在的源码目录.</li>
@@ -2190,11 +2190,11 @@
 <li><code>CMAKE_SOURCE_DIR</code>: 整个项目的顶层源码目录.</li>
 <li><code>CMAKE_&lt;LANG&gt;_FLAGS</code>: 设置整个语言的编译选项.</li>
 </ul>
-<h2 id="_2">函数</h2>
+<h2 id="_2">函数<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>调用函数时, 没有匹配具名形参的参数, 被传给 <code>cmake_parse_arguments</code> 进行处理,
 其中无法识别的参数被传给 <code>ARG_UNPARSED_ARGUMENTS</code>.</p>
-<h2 id="_3">关键字</h2>
-<h3 id="_4">库类型</h3>
+<h2 id="_3">关键字<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">库类型<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>用于 <code>add_library()</code> 命令中, 指定库类型的 <code>&lt;type&gt;</code> 参数.</p>
 <ul>
 <li><code>STATIC</code>：静态库. 在链接其他目标时使用的目标文件归档文件.</li>
@@ -2204,17 +2204,17 @@
 <li><code>INTERFACE</code>：接口库. 它自身不编译源文件, 也不在磁盘上生成库文件, 通常用于表示一个仅头文件（header-only）库, 或为依赖它的目标传递编译选项、宏定义等使用要求.</li>
 <li><code>IMPORTED</code>：导入库. 用于描述一个位于当前项目外部的、已经存在的库目标. 它本身不生成构建规则, 只为方便地在项目中引用外部库文件.</li>
 </ul>
-<h2 id="_5">生成器表达式</h2>
+<h2 id="_5">生成器表达式<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>语法 <code>$&lt;...&gt;</code>, 它的值会在构建系统生成时或实际编译时才被计算.</p>
-<h3 id="_6">分类</h3>
+<h3 id="_6">分类<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <p>根据文档中的标准区分.</p>
-<pre><code class="language-cmake">$&lt;qwe:asd&gt;
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="err">$&lt;qwe:asd&gt;</span>
+</code></pre></div>
 <ul>
 <li>条件表达式: qwe 是能得出布尔值的表达式, asd 是条件为真时的返回值.</li>
 <li>信息表达式: qwe 是一个查询命令, asd 是参数.</li>
 </ul>
-<h3 id="_7">内置表达式</h3>
+<h3 id="_7">内置表达式<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
 <ul>
 <li><code>COMPILE_LANGUAGE</code>: CMake 3.0 版本之后被引入. 通过 <code>$&lt;COMPILE_LANGUAGE:lang1,lang2,...&gt;</code> 作为<strong>信息表达式</strong>使用, 返回一个布尔值.</li>
 </ul>

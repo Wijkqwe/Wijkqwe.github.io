@@ -3063,18 +3063,18 @@
 
 
 
-<h1 id="git">git</h1>
-<h2 id="terminology">terminology</h2>
-<h3 id="tree">tree</h3>
+<h1 id="git">git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h1>
+<h2 id="terminology">terminology<a class="headerlink" href="#terminology" title="Permanent link">&para;</a></h2>
+<h3 id="tree">tree<a class="headerlink" href="#tree" title="Permanent link">&para;</a></h3>
 <p>folder</p>
-<h3 id="blob">blob</h3>
+<h3 id="blob">blob<a class="headerlink" href="#blob" title="Permanent link">&para;</a></h3>
 <p>file</p>
-<h2 id="history-model">history model</h2>
+<h2 id="history-model">history model<a class="headerlink" href="#history-model" title="Permanent link">&para;</a></h2>
 <p>directed acyclic graph</p>
-<h2 id="data-structure">data structure</h2>
-<h3 id="gits-on-disk-data-store">git's on disk data store</h3>
-<p>content address store where objects are addressed by their hash</p>
-<pre><code>type blob = array&lt;byte&gt;
+<h2 id="data-structure">data structure<a class="headerlink" href="#data-structure" title="Permanent link">&para;</a></h2>
+<h3 id="gits-on-disk-data-store">git's on disk data store<a class="headerlink" href="#gits-on-disk-data-store" title="Permanent link">&para;</a></h3>
+<p>content address store where objects are addressed by their hash
+<div class="highlight"><pre><span></span><code>type blob = array&lt;byte&gt;
 type tree = map&lt;string, tree | blob&gt;
 type commit = struct {
     parents array&lt;commit&gt;
@@ -3091,16 +3091,16 @@ def store(O)
 
 def load(id)
     return objects[id]
-</code></pre>
-<pre><code>references = map&lt;string string&gt;
-</code></pre>
-<h2 id="command">command</h2>
-<h3 id="_1">查</h3>
-<h4 id="_2">帮助</h4>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>references = map&lt;string string&gt;
+</code></pre></div></p>
+<h2 id="command">command<a class="headerlink" href="#command" title="Permanent link">&para;</a></h2>
+<h3 id="_1">查<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h4 id="_2">帮助<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>git help</code>: </li>
 </ul>
-<h4 id="_3">提交</h4>
+<h4 id="_3">提交<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>git show [commit]</code>: 查看特定提交<ul>
 <li><code>--name-only</code>: 仅列出修改了哪些文件</li>
@@ -3133,7 +3133,7 @@ def load(id)
 </ul>
 </li>
 </ul>
-<h4 id="_4">状态</h4>
+<h4 id="_4">状态<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>git status</code>:查看git仓库当前状态<ul>
 <li><code>-s</code>: 简洁信息</li>
@@ -3141,7 +3141,7 @@ def load(id)
 </ul>
 </li>
 </ul>
-<h4 id="_5">更改</h4>
+<h4 id="_5">更改<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>git diff</code>: 查看所有未暂存(未<code>add</code>)文件的修改<ul>
 <li><code>--staged</code>: 查看所有已暂存(未<code>commit</code>)文件的修改</li>
@@ -3150,7 +3150,7 @@ def load(id)
 </ul>
 </li>
 </ul>
-<h4 id="_6">分支</h4>
+<h4 id="_6">分支<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>git branch</code>: 列出本地分支<ul>
 <li><code>-a</code>: 包括远程分支</li>
@@ -3161,18 +3161,18 @@ def load(id)
 </ul>
 </li>
 </ul>
-<h3 id="_7">改</h3>
-<h4 id="_8">提交</h4>
+<h3 id="_7">改<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h4 id="_8">提交<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>git commit --amend [-m ""]</code>: 修改最近一次提交的信息.</li>
 </ul>
-<h3 id="_9">删</h3>
-<h4 id="_10">更改</h4>
+<h3 id="_9">删<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<h4 id="_10">更改<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>git store &lt;path&gt;</code>: 恢复未暂存(未<code>add</code>)的文件.</li>
 </ul>
-<h3 id="_11">增</h3>
-<h4 id="_12">更改</h4>
+<h3 id="_11">增<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<h4 id="_12">更改<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>git add &lt;path&gt;</code>: 暂存.<ul>
 <li><code>-p / --patch</code>: 交互式提交, 依次处理每一个修改块.</li>
@@ -3180,7 +3180,7 @@ def load(id)
 </li>
 </ul>
 <hr />
-<h3 id="_13">提交</h3>
+<h3 id="_13">提交<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
 <ul>
 <li><code>git commit</code><ul>
 <li><code>--amend</code>: 打开编辑器修改最近一次提交的信息</li>
@@ -3199,38 +3199,38 @@ def load(id)
 </ul>
 </li>
 </ul>
-<h3 id="_14">初始化</h3>
+<h3 id="_14">初始化<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
 <ul>
 <li><code>git init</code></li>
 </ul>
-<h3 id="_15">对象库</h3>
+<h3 id="_15">对象库<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
 <ul>
 <li><code>git cat-file</code>:<ul>
 <li><code>-P &lt;hash&gt;</code>: print out the content</li>
 </ul>
 </li>
 </ul>
-<h3 id="branch-and-merge">branch and merge</h3>
-<h4 id="git-branch"><code>git branch</code></h4>
+<h3 id="branch-and-merge">branch and merge<a class="headerlink" href="#branch-and-merge" title="Permanent link">&para;</a></h3>
+<h4 id="git-branch"><code>git branch</code><a class="headerlink" href="#git-branch" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>--set-upstream-to=&lt;branch&gt;</code>:</li>
 <li><code>-m [&lt;旧分支名&gt;] &lt;新分支名&gt;</code>: 重命名。</li>
 </ul>
-<h4 id="git-checkout"><code>git checkout</code></h4>
+<h4 id="git-checkout"><code>git checkout</code><a class="headerlink" href="#git-checkout" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>git checkout &lt;hash/reference&gt;</code>: move the head pointer</li>
 <li><code>git checkout &lt;file&gt;</code>: abanden change, throw away the change and back to the HEAD</li>
 <li><code>-b</code>: create a new branch and checkout in it</li>
 <li><code>--orphan</code>: create a new branch without a commit.</li>
 </ul>
-<h4 id="git-merge"><code>git merge</code></h4>
+<h4 id="git-merge"><code>git merge</code><a class="headerlink" href="#git-merge" title="Permanent link">&para;</a></h4>
 <p>可以直接将远程分支合并到本地分支。</p>
 <ul>
 <li><code>--abort</code>: back to</li>
 <li><code>--continue</code>: after deal with merge conflect file and add them, continue merge</li>
 </ul>
-<h5 id="git-mergetool"><code>git mergetool</code></h5>
-<h4 id="list-branches">list branches</h4>
+<h5 id="git-mergetool"><code>git mergetool</code><a class="headerlink" href="#git-mergetool" title="Permanent link">&para;</a></h5>
+<h4 id="list-branches">list branches<a class="headerlink" href="#list-branches" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>git branch</code>: 列出本地分支</li>
 <li><code>git branch -a</code>: 包括远程分支</li>
@@ -3238,7 +3238,7 @@ def load(id)
 <li><code>git branch --merged</code>: 已合并到当前分支的分支</li>
 <li><code>git branch --no-merged</code>: 未合并到当前分支的分支</li>
 </ul>
-<h4 id="create-branch">create branch</h4>
+<h4 id="create-branch">create branch<a class="headerlink" href="#create-branch" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>git branch &lt;new-branch-name&gt;</code>: 基于当前分支创建新分支</li>
 <li><code>git branch &lt;new-branch-name&gt; &lt;commit-hash&gt;</code>: 基于特定分支创建新分支</li>
@@ -3246,63 +3246,63 @@ def load(id)
 <li><code>git checkout -b &lt;new-branch-name&gt; &lt;commit-hash&gt;</code>: 基于特定分支创建并切换到新分支</li>
 <li><code>git switch -c &lt;new-branch-name&gt;</code>: 创建并切换到新分支</li>
 </ul>
-<h4 id="_16">切换分支</h4>
+<h4 id="_16">切换分支<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>git checkout &lt;branch-name&gt;</code>: 切换到已有分支</li>
 <li><code>git checkout -b &lt;new-branch-name&gt; &lt;commit-hash&gt;</code>: 基于特定分支创建并切换到新分支</li>
 <li><code>git switch &lt;branch-name&gt;</code>: 切换到已有分支</li>
 <li><code>git checkout -</code>: 切换到上一分支</li>
 </ul>
-<h4 id="_17">删除分支</h4>
+<h4 id="_17">删除分支<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>git branch -d &lt;branch-name&gt;</code>: 删除已合并分支</li>
 <li><code>git branch -D &lt;branch-name&gt;</code>: 强制删除分支（即使未合并）</li>
 <li><code>git push origin --delete &lt;remote-branch-name&gt;</code>: 删除远程分支</li>
 </ul>
-<h3 id="remote">remote</h3>
-<h4 id="git-remote"><code>git remote</code></h4>
+<h3 id="remote">remote<a class="headerlink" href="#remote" title="Permanent link">&para;</a></h3>
+<h4 id="git-remote"><code>git remote</code><a class="headerlink" href="#git-remote" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>add &lt;name&gt; &lt;url&gt;</code>:</li>
 <li><code>rename &lt;name&gt; &lt;new-name&gt;</code>:</li>
 <li><code>remove &lt;name&gt;</code>: 删除</li>
 </ul>
-<h4 id="git-push"><code>git push</code></h4>
-<pre><code class="language-bash">git pull &lt;remote&gt; &lt;local branch&gt;[:&lt;remote branch&gt;]
-</code></pre>
+<h4 id="git-push"><code>git push</code><a class="headerlink" href="#git-push" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>&lt;remote&gt;<span class="w"> </span>&lt;<span class="nb">local</span><span class="w"> </span>branch&gt;<span class="o">[</span>:&lt;remote<span class="w"> </span>branch&gt;<span class="o">]</span>
+</code></pre></div>
 <ul>
 <li><code>--tags</code>: 推送全部tag信息</li>
 <li><code>-u</code>: 记录远程分支的默认值</li>
 <li><code>--force</code>: 强制推送</li>
 <li><code>--force-with-lease</code>: 更安全地强制推送</li>
 </ul>
-<h4 id="git-fetch"><code>git fetch</code></h4>
-<pre><code class="language-bash">git fetch &lt;远程主机名&gt; [&lt;分支名&gt;]
-</code></pre>
-<h4 id="git-pull"><code>git pull</code></h4>
-<p>equal <code>git fetch, git merge</code>.</p>
-<pre><code class="language-bash">git pull &lt;远程主机&gt; &lt;远程分支&gt;[:&lt;本地分支&gt;]
-</code></pre>
-<h4 id="git-clone"><code>git clone</code></h4>
-<pre><code class="language-bash">git clone &lt;url&gt; [folder name]
-</code></pre>
+<h4 id="git-fetch"><code>git fetch</code><a class="headerlink" href="#git-fetch" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>&lt;远程主机名&gt;<span class="w"> </span><span class="o">[</span>&lt;分支名&gt;<span class="o">]</span>
+</code></pre></div>
+<h4 id="git-pull"><code>git pull</code><a class="headerlink" href="#git-pull" title="Permanent link">&para;</a></h4>
+<p>equal <code>git fetch, git merge</code>.
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>&lt;远程主机&gt;<span class="w"> </span>&lt;远程分支&gt;<span class="o">[</span>:&lt;本地分支&gt;<span class="o">]</span>
+</code></pre></div></p>
+<h4 id="git-clone"><code>git clone</code><a class="headerlink" href="#git-clone" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>&lt;url&gt;<span class="w"> </span><span class="o">[</span>folder<span class="w"> </span>name<span class="o">]</span>
+</code></pre></div>
 <ul>
 <li><code>-b &lt;分支名&gt;</code>: 克隆特定分支</li>
 <li><code>--bare</code>: 仅克隆裸仓库，可从裸仓库克隆完整工作目录</li>
 <li><code>--shallow</code>: without history</li>
 <li><code>--recursive</code>: 克隆包含子模块（submodule）的仓库时，自动初始化并更新全部子模块，一次性获得完整项目代码。</li>
 </ul>
-<h3 id="config">config</h3>
-<h4 id="git-config"><code>git config</code></h4>
-<h3 id="tag">tag</h3>
-<h4 id="git-tag-tag_name"><code>git tag &lt;tag_name&gt; [&lt;版本号&gt;]</code></h4>
+<h3 id="config">config<a class="headerlink" href="#config" title="Permanent link">&para;</a></h3>
+<h4 id="git-config"><code>git config</code><a class="headerlink" href="#git-config" title="Permanent link">&para;</a></h4>
+<h3 id="tag">tag<a class="headerlink" href="#tag" title="Permanent link">&para;</a></h3>
+<h4 id="git-tag-tag_name"><code>git tag &lt;tag_name&gt; [&lt;版本号&gt;]</code><a class="headerlink" href="#git-tag-tag_name" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>-a &lt;tag_name&gt;</code>: 添加</li>
 <li><code>-m &lt;说明&gt;</code></li>
 <li><code>-d &lt;tag_name&gt;</code>: 删除</li>
 </ul>
-<h4 id="git-push-tags"><code>git push --tags</code></h4>
+<h4 id="git-push-tags"><code>git push --tags</code><a class="headerlink" href="#git-push-tags" title="Permanent link">&para;</a></h4>
 <p>推送全部tag信息</p>
-<h2 id="shell-integration">shell integration</h2>
+<h2 id="shell-integration">shell integration<a class="headerlink" href="#shell-integration" title="Permanent link">&para;</a></h2>
 
 
 
