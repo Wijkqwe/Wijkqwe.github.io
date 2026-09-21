@@ -71,6 +71,24 @@ find . -name "*.tmp" -exec rm {} \;
 ### `pwd`
 echo current location
 
+### `readlink`
+
+```bash
+man readlink
+readlink [option] <file>
+```
+
+- `-f`: 输出文件绝对路径.
+
+### `realpath`
+
+输出文件绝对路径.
+
+```bash
+man realpath
+realpath [option] <file>
+```
+
 ### `tee`
 takes its input and writes it to a file, but also to standard out.
 

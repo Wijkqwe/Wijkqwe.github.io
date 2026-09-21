@@ -10,6 +10,8 @@
 - **Attention Mechanism**: 注意力机制, 是当今几乎所有主流大模型(如GPT、LLaMA、
   DeepSeek)最核心的底层技术.可以通俗地理解为一种让模型在处理信息时“抓重点、
   懂关联”的能力.
+- **AVX**: Advanced Vector Extensions 高级向量扩展.
+  Intel 随 Sandy Bridge 推出的指令集.
 
 ## B
 
@@ -33,6 +35,7 @@
 - **CNN**: Convolutional Neural Network 卷积神经网络.
 - **CoT**: Chain of Thought 思维链.
 - **CEFR**: 英语语言级别.
+- **CSE**: Common Subexpression Elimination 公共子表达式消除.
 - **CSP**: 约束满足问题.不关心“最优”, 只关心“能不能找到一组赋值,
   让所有约束都同时满足”.
 - **CSR**: Compressed Sparse Row 压缩稀疏行. 用于高效存储稀疏矩阵.
@@ -106,6 +109,10 @@
 
 - **MAC tree**: Multiply-Accumulate Tree 乘加树.
 - **ML**: Machine Learning 机器学习.
+- **MMX**: MultiMedia Extensions 多媒体扩展. Intel 随 Pentium 处理器推出的一项
+  SIMD 指令集扩展.
+  包含 8 个 64 位寄存器(MM0-MM7), 直接复用了 x87 浮点运算单元(FPU)的 8 个 80
+  位数据寄存器的低 64 位.
 - **MoE**: Mixture of Experts 混合专家模型.
 - **Multi-casting**: 在 AI 编译器领域, 指将一份数据(如一个张量、一个权重矩阵、
   一个激活值)同时分发到多个计算单元(如Matrix Unit、Vector Unit、或者不同的Bank),
@@ -113,6 +120,7 @@
 
 ## N
 
+- **NEON**: ARM 随 ARM Cortex-A8（2005）推出的 SIMD 指令集.
 - **NFA**: 非确定性有限自动机.
 - **NP-hard**: 非确定性多项式时间困难.
 
@@ -133,7 +141,7 @@
 - **Pass-through**: 透传, 指一个组件或层级在传递数据时, 不对数据的内容进行解释、
   转换或验证, 只是单纯地把它转发给下一级.
 - **PCIe**: Peripheral Component Interconnect Express 高速串行计算机扩展总线标准.
-- **Phi 操作**(Φ 函数): 用来解决问题: 当一个变量在程序的控制流汇合处(比如
+- **Phi 操作**(Φ/φ 函数): 用来解决问题: 当一个变量在程序的控制流汇合处(比如
   if-else 之后)拥有多个可能的定义来源时, 如何明确地“选择”正确的那个.
   在 SSA 中尤为重要.
 - **PM**: Product Manager 产品经理.
@@ -146,9 +154,14 @@
 ## R
 
 - **RA**: Register Allocation 寄存器分配.
+- **RIG**: Register Interference Graph 寄存器干涉图. 是编译器在寄存器分配
+  (Register Allocation) 阶段使用的一种核心数据结构. RIG 是一个无向图,
+  用于描述程序中哪些变量(或临时值)的"生命周期"存在重叠, 从而不能共享同一个物理寄存器.
 - **RNN**: Recurrent neural network 循环神经网络.
 - **RoundTrip**: 往返转换, 是将数据从格式 A 转换为格式 B, 再从格式 B 转换回格式
   A, 然后验证转换后的结果是否与原始数据完全一致的过程.
+- **RP**: Register Pressure 寄存器压力. 指程序在某个执行点, 需要同时存放在寄存器中的活跃变量数量,
+  超过了硬件实际可提供的寄存器数量, 从而迫使编译器将部分变量"溢出(Spill)"到内存中.
 - **RST**: reStructuredText 文件后缀, 是用于创建文档的轻量级标记语言. 相比于 md
   文件, 语法更严格, 结构更严谨.
 - **RTL**:
@@ -157,6 +170,7 @@
 
 ## S
 
+- **Scope**: 是程序中一个名字(变量、函数、类型)能够被有效引用和访问的代码区域.
 - **Scoreboard**: 是计算机体系结构中一种用于实现指令乱序执行(Out-of-Order
   Execution)的硬件调度机制.Scoreboard 是一个集中式的硬件表格,
   它动态跟踪每条指令所需的操作数是否就绪、功能单元是否空闲,
@@ -167,6 +181,8 @@
 - **SPIR-V**: 是一个开放标准的、跨平台的二进制中间语言,
   专门用于表示并行计算和图形学任务, 比如着色器(Shader)和计算内核(Compute Kernel).
 - **SSA**: Static Single Assignment 静态单赋值.
+- **SSE**: Streaming SIMD Extensions 流式 SIMD 扩展.
+  Intel 随 Pentium III 推出的指令集. 8 个 128 位寄存器, 不再复用 FPU.
 - **Superlane**: TSP 芯片内部一种高度对称、功能完整的计算单元组合.
 - **Superscalar**: 超标量, 是一种微架构设计技术, 而不是编译技术.
   超标量指的是处理器内核能够在同一个时钟周期(Cycle)内, 通过多条并行的流水线

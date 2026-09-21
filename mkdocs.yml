@@ -70,6 +70,7 @@ nav:
     - Clangd: note/clangd.md
     - Gdb: note/gdb.md
     - Git: note/git.md
+    - i3wm: note/i3wm.md
     - Kitty: note/kitty.md
     - LLVM: note/llvm.md
     - MkDocs: note/mkdocs.md
