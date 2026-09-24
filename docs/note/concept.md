@@ -34,6 +34,8 @@
   “以什么方式”、“在什么条件下”、“对哪些变量”执行这个 Directive.
 - **CNN**: Convolutional Neural Network 卷积神经网络.
 - **CoT**: Chain of Thought 思维链.
+- **CP0**: Co-processor 0 协处理器 0. MIPS 架构中集成在 CPU 核心内部的一组专用寄存器.
+  负责管理处理器最核心的系统功能, 包括: 内存管理、异常处理和中断控制.
 - **CEFR**: 英语语言级别.
 - **CSE**: Common Subexpression Elimination 公共子表达式消除.
 - **CSP**: 约束满足问题.不关心“最优”, 只关心“能不能找到一组赋值,
@@ -65,6 +67,7 @@
 - **GDSII**: Graphic Design System II 图形设计系统二代是芯片设计领域最关键、
   应用最广泛的数据库文件格式.
 - **GeMM**: General Matrix Multiply 通用矩阵乘法.
+- **GPR**: General Purpose Register 通用寄存器.
 
 ## H
 
@@ -83,6 +86,9 @@
 - **Intrinsics**: 内联函数/内置函数.
     - 在编译器 (如LLVM, GCC) 的语境下, 指的是编译器提供的一组看起来像函数, 
     但实际会直接映射为特定硬件指令的特殊API.
+- **IPC**:
+    - Instructions Per Cycle 每周期指令数.
+    - Inter-Process Communication 进程间通信.
 - **ISA**: Instruction Set Architecture 指令集架构.
 - **ISel**: Instruction Selection 指令选择.是编译器将平台无关的中间表示(IR)
   转换为目标机器(如x86、ARM、GPU)特有的指令过程中的第一个关键步骤.
@@ -151,6 +157,11 @@
   这能极大地提升特定算法的执行效率.
 - **PRD**: Product Requirements Document 产品需求文档.
 
+## Q
+
+- **QCL**: Quantum Computation Language 量子计算语言. 属于命令式量子编程语言.
+- **QLC**: Quad-Level Cell 四层存储单元. NAND 闪存(SSD) 的一种类型.
+
 ## R
 
 - **RA**: Register Allocation 寄存器分配.
@@ -158,6 +169,7 @@
   (Register Allocation) 阶段使用的一种核心数据结构. RIG 是一个无向图,
   用于描述程序中哪些变量(或临时值)的"生命周期"存在重叠, 从而不能共享同一个物理寄存器.
 - **RNN**: Recurrent neural network 循环神经网络.
+- **ROI**: Return on Investment 投资回报率.
 - **RoundTrip**: 往返转换, 是将数据从格式 A 转换为格式 B, 再从格式 B 转换回格式
   A, 然后验证转换后的结果是否与原始数据完全一致的过程.
 - **RP**: Register Pressure 寄存器压力. 指程序在某个执行点, 需要同时存放在寄存器中的活跃变量数量,
@@ -193,6 +205,8 @@
 
 ## T
 
+- **TCO**: Total Cost of Ownership 总拥有成本.
+  指一个系统或产品从采购到报废的全生命周期内, 所有相关成本的总和.
 - **TII**: TargetInstrInfo in LLVM llvm/include/llvm/CodeGen/TargetInstrInfo.h.
 - **TLI**: TargetLowering in LLVM llvm/include/llvm/CodeGen/TargetLowering.h.
 - **TLP**: Thread-Level Parallelism 线程级并行.

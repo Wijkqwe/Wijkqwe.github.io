@@ -91,6 +91,7 @@ nav:
     - Tools: note/tools.md
     - Vim: note/vim.md
     - Virtualbox: note/virtualbox.md
+    - Word: note/word.md
     # - 编译原理: note/编译原理.md
     # - 体系结构: note/体系结构.md
     - 基础概念: note/concept.md

@@ -11,30 +11,32 @@ python [flag] [<script> [script_flag]]
 
 ## pip
 
+### 查
+
+- `pip list`: 查看安装了哪些包.
+    - `--not-required`: 查看非依赖项.
+
 ## 虚拟环境
 
 ### venv
 
 Python 3.3+ 版本提供了一个叫做 venv 的模块.
 
-创建虚拟环境.
-
 ```bash
+#: 创建虚拟环境.
 python -m venv <envname>
-```
 
-激活虚拟环境.
-
-```bash
+#: 激活虚拟环境.
 $ source <envname>/bin/activate
-```
 
-```bash
 (<envname>) $
+
+#: 退出虚拟环境.
+(<envname>) $ deactivate
 ```
 
-退出虚拟环境.
 ```bash
-(<envname>) $ deactivate
+#: 查看安装了哪些包.
+<envname>/bin/pip list
 ```
 

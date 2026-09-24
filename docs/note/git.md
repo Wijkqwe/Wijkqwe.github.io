@@ -1,5 +1,7 @@
 # git
 
+- [git 官方文档](https://git-scm.com/about)
+
 ## terminology
 
 ### tree
@@ -40,6 +42,9 @@ references = map<string string>
 ```
 
 ## command
+
+- [cheat sheet](https://git-scm.com/cheat-sheet)
+- [git commands](https://git-scm.com/docs/git#_git_commands)
 
 ### 查
 
@@ -92,17 +97,21 @@ references = map<string string>
     - `--merged`: 已合并到当前分支的分支
     - `--no-merged`: 未合并到当前分支的分支
 
+#### 对象
+
+- `git ls-files`: 列出所有被跟踪的文件.
+    - `[dir]`: 列出指定目录下被跟踪的文件.
+    - `--stage`: 查看索引中的文件及其对象哈希.
+
 ### 改
 
 #### 提交
 
 - `git commit --amend [-m ""]`: 修改最近一次提交的信息.
+- `git store <path>`: 恢复未暂存(未`add`)的文件.
+    `--staged`:  从暂存区中恢复, 工作区修改保留.
 
 ### 删
-
-#### 更改
-
-- `git store <path>`: 恢复未暂存(未`add`)的文件.
 
 ### 增
 
