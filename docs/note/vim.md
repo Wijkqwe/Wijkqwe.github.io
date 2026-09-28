@@ -267,6 +267,14 @@ use `\<` and `\>`
 - `:lua vim.diagnostic.open_float()`[neovim]: 查看当前行的诊断.
 - `:lua print(vim.inspect(vim.lsp.get_clients()))`[neovim]: 查看 lsp.
 
+### other
+
+#### filetype
+
+`filetype` / `ft`.
+
+- `set ft?`: 查看当前文件类型.
+
 ## Script
 
 ### 作用域

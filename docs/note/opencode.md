@@ -6,6 +6,11 @@
 
 `opencode session list`
 
+### update
+
+```shell
+opencode upgrade
+```
 
 ## tui
 

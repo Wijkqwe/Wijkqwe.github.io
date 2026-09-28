@@ -103,6 +103,11 @@ references = map<string string>
     - `[dir]`: 列出指定目录下被跟踪的文件.
     - `--stage`: 查看索引中的文件及其对象哈希.
 
+#### 远程
+
+- `git remote`:
+    - `-v`:
+
 ### 改
 
 #### 提交
@@ -111,7 +116,16 @@ references = map<string string>
 - `git store <path>`: 恢复未暂存(未`add`)的文件.
     `--staged`:  从暂存区中恢复, 工作区修改保留.
 
+#### 远程
+
+- `git remote rename <name> <new-name>`: 修改名称.
+- `git remote set-url <name> <url>`: 修改 URL.
+
 ### 删
+
+#### 远程
+
+- `git remote remove <name>`:
 
 ### 增
 

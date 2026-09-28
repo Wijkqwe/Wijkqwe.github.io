@@ -3,6 +3,7 @@
 ## A
 
 - **aarch64**: ARM 架构.
+- **AGI**: Artificial General Intelligence 通用人工智能.
 - **AGU**: 地址生成单元. 处理器内部专门负责计算和生成内存访问地址的硬件单元.
   可与 ALU 并行.
 - **Antichain**: 反链, 是图论(特别是偏序集理论)中的一个重要概念.
@@ -30,8 +31,12 @@
 - **C2C**: Chip-to-Chip, 芯片到芯片. 将两颗或两颗以上独立制造、已经切割好的芯片,
   通过某种方式连接在一起, 共同工作, 以实现更强大或更复杂的系统功能.
 - **CFG**: Control Flow Graph 控制流图.
+- **CFI**: LLVM Flang 中 C 与 Fortran 互操作的基石.
+- **CIM**: Computing-in-Memory 存内计算.
 - **Clause**: 子句 / 子语. 是附加在 Directive 后面的“修饰语”, 用来告诉编译器
   “以什么方式”、“在什么条件下”、“对哪些变量”执行这个 Directive.
+- **CMOS**: Complementary Metal-Oxide-Semiconductor 互补金属氧化物半导体.
+  既是一种半导体制造工艺, 也是一种电路设计风格, 是现代数字芯片(CPU、GPU、AI 芯片、内存)最基础的构建单元.
 - **CNN**: Convolutional Neural Network 卷积神经网络.
 - **CoT**: Chain of Thought 思维链.
 - **CP0**: Co-processor 0 协处理器 0. MIPS 架构中集成在 CPU 核心内部的一组专用寄存器.
@@ -78,6 +83,7 @@
 
 ## I
 
+- **IC**: Integrated Circuit 集成电路.
 - **ICU**: Instruction Control Unit 指令控制单元.
 - **ILP**:
     - 指令级并行.
@@ -115,6 +121,9 @@
 
 - **MAC tree**: Multiply-Accumulate Tree 乘加树.
 - **ML**: Machine Learning 机器学习.
+- **MLA**: Multi-Head Latent Attention 多头潜在注意力. DeepSeek 系列模型中提出的一种高效注意力机制.
+- **MLLM**: Multimodal Large Language Model 多模态大语言模型.
+- **MLP**: Multi-Layer Perceptron 多层感知机. 在 Transformer 中, MLP 通常指前馈网络(FFN, Feed-Forward Network), 是每个 Transformer 层中紧随注意力之后的第二个子层.
 - **MMX**: MultiMedia Extensions 多媒体扩展. Intel 随 Pentium 处理器推出的一项
   SIMD 指令集扩展.
   包含 8 个 64 位寄存器(MM0-MM7), 直接复用了 x87 浮点运算单元(FPU)的 8 个 80
@@ -149,6 +158,7 @@
 - **PCIe**: Peripheral Component Interconnect Express 高速串行计算机扩展总线标准.
 - **Phi 操作**(Φ/φ 函数): 用来解决问题: 当一个变量在程序的控制流汇合处(比如
   if-else 之后)拥有多个可能的定义来源时, 如何明确地“选择”正确的那个.
+- **PIM**: Processing-in-Memory 存内处理.
   在 SSA 中尤为重要.
 - **PM**: Product Manager 产品经理.
 - **popc**: Population Count 种群计数.硬件指令, 统计一个二进制数中“1”的个数.
@@ -213,6 +223,8 @@
 - **ToB**: To Business.
 - **ToC**: To Consumer.
 - **TTA**: Transport Triggered Architecture 传输触发架构.
+- **TTD**: Tensor-Train Decomposition 张量列分解.
+- **TTS**: Text-to-Speech 文本转语音.
 
 ## V
 
@@ -225,6 +237,7 @@
 
 ## 其他
 
+- **端侧**: 通常指"终端设备一侧". 计算和数据处理发生在设备本地, 而不是发送到云端.
 - **寄存器重命名**: 将指令中的寄存器映射到实际的物理寄存器.
 - **内核编译**: AI编译器中的内核编译, 是将高层级的AI模型描述(如PyTorch的计算图), 
   转化为能在特定硬件(如GPU或Groq LPU)上极致高效运行的、
