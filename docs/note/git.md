@@ -59,11 +59,13 @@ references = map<string string>
 	- `[commit] -- [file]`: 特定提交的特定文件
 - `git log`: 查看历史提交
 	- `--abbrev-commit`: 显示短哈希
+    - `--author="<name>"`: 列出特定作者的提交, 支持正则.
 	- `--oneline`: more compact representation
 		等价于`--pretty=oneline --abbrev-commit`
 	- `-- [filepath]`: 查看该文件有关commit
 	- `--simplify-by-decoration`: 只显示有分支/标签引用的提交，隐藏那些没有分支变化的提交。
 	- `--merges <特定分支>`: 仅显示发生合并操作的提交
+    - `--numstat`: 查看统计情况, 分别列出新增和删除的行数.
 	- `--stat`: 查看统计情况
 	- `--pretty=<format> / format:"<自定义格式>"`: 设置输出格式。
 	    - `<format>` 有一些内置格式: 

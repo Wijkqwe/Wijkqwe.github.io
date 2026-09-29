@@ -341,16 +341,31 @@ man vim
     - `:delmarks anykey`: 删除特定标记.
     - `:delmarks!`: 删除当前缓冲区全部标记.
 
-## buffer
+### buffer
 use for open files
 there isn't necessarily a one-to-one correspondence between buffers and windows
+
+### vim macros
+
+- <kbd>q</kbd> <kbd>{reg}</kbd>: 开始录制到寄存器 {reg}.
+- <kbd>q</kbd>: 结束录制.
+- <kbd>@</kbd> <kbd>{reg}</kbd>: 执行寄存器 {reg} 内的宏.
+- <kbd>@</kbd> <kbd>@</kbd>: 执行上一次执行的宏.
+
+> 其中, {reg} 使用 <kbd>a</kbd> - <kbd>z</kbd>, <kbd>A</kbd> - <kbd>Z</kbd> 会追加到已有宏.
+>
+> 在宏末尾加上<kbd>@</kbd><kbd>{reg}</kbd>可以递归调用.
+
+### leader key
+
+默认 <kbd>\\</kbd>.
+
+### diff
+
+- `vimdiff <file1> <file2>`:
+- `nvim -d <file1> <file2>`
 
 ## game
 
 - vim golf.
-
-## leader key
-
-## vim macros
-
 

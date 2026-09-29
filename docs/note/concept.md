@@ -50,6 +50,7 @@
 ## D
 
 - **DCE**: Dead Code Elimination 死代码消除.
+- **DCU**: Deep Compute Unit 深度计算单元. 特指海光信息(Hygon)研发的 GPGPU 架构 AI 加速卡.
 - **DFA**: 确定性有限自动机.
 - **Directive**: 编译指令 / 指示符. 源码中的特殊标记, 用来指导编译器、预处理器或运行时系统如何处理代码.
 - **DL**: Deep Learning 深度学习.
@@ -124,6 +125,7 @@
 - **MLA**: Multi-Head Latent Attention 多头潜在注意力. DeepSeek 系列模型中提出的一种高效注意力机制.
 - **MLLM**: Multimodal Large Language Model 多模态大语言模型.
 - **MLP**: Multi-Layer Perceptron 多层感知机. 在 Transformer 中, MLP 通常指前馈网络(FFN, Feed-Forward Network), 是每个 Transformer 层中紧随注意力之后的第二个子层.
+- **MMA**: Matrix Multiply-Accumulate 矩阵乘加.
 - **MMX**: MultiMedia Extensions 多媒体扩展. Intel 随 Pentium 处理器推出的一项
   SIMD 指令集扩展.
   包含 8 个 64 位寄存器(MM0-MM7), 直接复用了 x87 浮点运算单元(FPU)的 8 个 80
@@ -137,6 +139,7 @@
 
 - **NEON**: ARM 随 ARM Cortex-A8（2005）推出的 SIMD 指令集.
 - **NFA**: 非确定性有限自动机.
+- **NoC**: Network-on-Chip 片上网络.
 - **NP-hard**: 非确定性多项式时间困难.
 
 ## O
@@ -145,6 +148,7 @@
   > C++ 在头文件中定义变量和函数时容易违反 ODR.
 - **ODS**: Operation Definition Specification 操作定义规范. 是一套基于 TableGen
   语言的 DSL, 是 MLIR 框架中一个非常核心的声明式定义机制.
+- **OOD**: Out-of-Distribution 分布外. 用于评估模型可靠性.
 - **OoO**: Out of Order Execution 乱序执行.
 - **outline**: 将程序中的一段代码(通常是一个独立的代码区域)提取出来,
   封装成一个单独的函数.
@@ -218,21 +222,32 @@
 - **TCO**: Total Cost of Ownership 总拥有成本.
   指一个系统或产品从采购到报废的全生命周期内, 所有相关成本的总和.
 - **TII**: TargetInstrInfo in LLVM llvm/include/llvm/CodeGen/TargetInstrInfo.h.
+- **TLE**: Triton Language Extensions. FlagTree 中引入的分层语言扩展体系.
 - **TLI**: TargetLowering in LLVM llvm/include/llvm/CodeGen/TargetLowering.h.
 - **TLP**: Thread-Level Parallelism 线程级并行.
+- **TMA**: Tensor Memory Accelerator 张量内存加速器. NVIDIA 从 Hopper 架构开始引入的一个专用硬件引擎.
 - **ToB**: To Business.
 - **ToC**: To Consumer.
+- **TSP**: Tensor Streaming Processor.
 - **TTA**: Transport Triggered Architecture 传输触发架构.
 - **TTD**: Tensor-Train Decomposition 张量列分解.
 - **TTS**: Text-to-Speech 文本转语音.
+
+## U
+
+- **ULP**: Unit in the Last Place 最后一位单位.
+  ULP 是浮点数在某个数值附近, 两个相邻可表示数之间的间距. 它代表了该浮点数格式在该量级下能分辨的最小精度单位.
 
 ## V
 
 - **Variable mutation**: 变量突变. 指的是程序中的变量在初次赋值后,
   其值可以被再次修改的特性.
+- **VLA**: Vision-Language-Action 视觉-语言-动作. 它是当前具身智能和机器人学习领域的模型架构之一.
+- **VLM**: Vision-Language Model 视觉-语言模型.
 
 ## W
 
+- **WAM**: World Action Model 世界行动模型. 机器人学习和具身智能领域的模型架构之一.
 - **WASM**: WebAssembly 是一种可移植、体积小、加载快且安全的二进制指令格式.
 
 ## 其他

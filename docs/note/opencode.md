@@ -12,11 +12,10 @@
 opencode upgrade
 ```
 
+`--method <way>`: 指定安装方式.
+
 ## tui
 
 ### prefix
 ctrl+x
-
-
-
 
