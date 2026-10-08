@@ -64,6 +64,10 @@
   是一种专门为快速处理连续数字信号流(如声音、图像、雷达回波)而设计的微处理器.
 - **DWARF**: 一种标准化的调试信息格式.
 
+## E
+
+- **EOS**: End of Sequence 序列结束符.
+
 ## F
 
 - **FP16**: Floating-Point 16-bit 16位浮点数.
@@ -131,6 +135,7 @@
   包含 8 个 64 位寄存器(MM0-MM7), 直接复用了 x87 浮点运算单元(FPU)的 8 个 80
   位数据寄存器的低 64 位.
 - **MoE**: Mixture of Experts 混合专家模型.
+- **MPI**: Message Passing Interface 消息传递接口.
 - **Multi-casting**: 在 AI 编译器领域, 指将一份数据(如一个张量、一个权重矩阵、
   一个激活值)同时分发到多个计算单元(如Matrix Unit、Vector Unit、或者不同的Bank),
   让它们并行处理, 而不需要复制多份数据占用额外存储.
@@ -196,12 +201,15 @@
 
 ## S
 
+- **SAXPY**: Scalar Alpha X Plus Y. 是 BLAS(基础线性代数子程序库)中的一种基础运算.
+  是衡量硬件性能和编译器优化能力的标尺.
 - **Scope**: 是程序中一个名字(变量、函数、类型)能够被有效引用和访问的代码区域.
 - **Scoreboard**: 是计算机体系结构中一种用于实现指令乱序执行(Out-of-Order
   Execution)的硬件调度机制.Scoreboard 是一个集中式的硬件表格,
   它动态跟踪每条指令所需的操作数是否就绪、功能单元是否空闲,
   从而允许指令在满足条件时提前执行, 而不是死板地按程序顺序执行.
 - **SDF**: Synchronous Data Flow 同步数据流.
+- **SLP**: Superword Level Parallelism 超字级并行.
 - **SNR**: Script Number Register 脚本编号寄存器.
 - **SPEC**: 规范驱动开发.
 - **SPIR-V**: 是一个开放标准的、跨平台的二进制中间语言,
@@ -209,12 +217,14 @@
 - **SSA**: Static Single Assignment 静态单赋值.
 - **SSE**: Streaming SIMD Extensions 流式 SIMD 扩展.
   Intel 随 Pentium III 推出的指令集. 8 个 128 位寄存器, 不再复用 FPU.
+- **SSG**: Static Site Generation 静态站点生成.
 - **Superlane**: TSP 芯片内部一种高度对称、功能完整的计算单元组合.
 - **Superscalar**: 超标量, 是一种微架构设计技术, 而不是编译技术.
   超标量指的是处理器内核能够在同一个时钟周期(Cycle)内, 通过多条并行的流水线
   (功能单元), 同时发射(Issue)并执行多条独立的指令. 这些指令必须没有数据依赖性
   (即不能读写同一个寄存器/内存地址). 如果第二条指令依赖第一条的计算结果,
   即使硬件有能力并行, 也只能等待.
+- **SVG**: Scalable Vector Extension 可伸缩向量扩展. Arm 架构中一种 SIMD 指令集.
 - **Systolic Array**: 脉冲阵列. 是一种为了高效执行矩阵乘法、卷积这类计算密集型任务而专门设计的并行计算硬件架构.
 
 ## T
@@ -231,6 +241,8 @@
 - **TSP**: Tensor Streaming Processor.
 - **TTA**: Transport Triggered Architecture 传输触发架构.
 - **TTD**: Tensor-Train Decomposition 张量列分解.
+- **TTFB**: Time To First Byte 首字节时间.
+  表示从客户端发出请求, 到收到服务器返回的第一个字节数据所经历的时间.
 - **TTS**: Text-to-Speech 文本转语音.
 
 ## U

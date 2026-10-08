@@ -72,7 +72,9 @@ nav:
     - Git: note/git.md
     - i3wm: note/i3wm.md
     - Kitty: note/kitty.md
-    - LLVM: note/llvm.md
+    - LLVM:
+      - note/llvm.md
+      - Vectorize: note/llvm-vectorize.md
     - MkDocs: note/mkdocs.md
     - Npm: note/npm.md
     - Opencode: note/opencode.md

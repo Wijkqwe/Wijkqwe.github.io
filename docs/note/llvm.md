@@ -14,6 +14,7 @@
 
 将 `.ll` / `.bc` 编译为指定目标架构的汇编代码.
 
+- `-march=`: 指定目标.
 - `--version`: 列出可用的已注册后端目标.
 
 ### llvm-lit
@@ -28,6 +29,10 @@
 
 将汇编代码转换成目标文件;
 将二进制码反汇编成汇编指令.
+
+- `-triple=`: 指定目标三元组.
+  > https://clang.llvm.org/docs/CrossCompilation.html#target-triple
+- `--version`: 列出可用的已注册后端目标.
 
 ### llvm-nm
 

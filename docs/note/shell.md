@@ -8,6 +8,24 @@
 - `alias <别名>`: 查看其定义.
 - `alias <别名>=<cmd>`: 定义别名.
 
+### `awk`
+
+按行读取文本 -> 按分隔符拆成字段 -> 对每行执行模式-动作.
+
+```shell
+awk '[模式] { [动作] }' ...
+```
+
+- 模式(pattern): 决定哪些行需要处理, 可以省略.
+- 动作(action): 对匹配的行执行什么操作, 写在 `{}` 中.
+
+如果不写模式, 则对每一行都执行动作; 如果不写动作, 则默认输出匹配的行.
+
+内置变量:
+
+- `$0`: 整行.
+- `$1`,`$2`...: 第 n 个字段.
+
 ### `bg`
 
 make suspended process continued in background
@@ -108,12 +126,13 @@ which echo
 ### `history`
 
 ### `less`
-* <kbd>ctrl</kbd>+<kbd>u</kbd> scroll up
-* <kbd>ctrl</kbd>+<kbd>d</kbd> scroll down
-* <kbd>q</kbd> quit
 
+- <kbd>ctrl</kbd>+<kbd>u</kbd> scroll up
+- <kbd>ctrl</kbd>+<kbd>d</kbd> scroll down
+- <kbd>q</kbd> quit
 
 ### `ln`
+
 ```
 ln [目标路径] [链接路径]
 ```
@@ -159,50 +178,42 @@ encapsulating whatever command you're executing and ignoring wherever you get a 
 - <kbd>b</kbd>: 前一屏
 - <kbd>q</kbd>: 退出
 
+## 特殊参数/符号
 
-## stream
+### `/dev/null`
+is kind of like a special device in Unix system where can write and it will be discarded
 
-### `|`
+### stream
 
+#### `|`
 
-### `>`
+#### `>`
 standard output
 overwrite
 
-#### 0
+##### 0
 ```sh
 sudo echo "500" > brightness
 ```
 doesnot work, cause `>` was set by shell,
 in this case, is run `sudo` with arguments `echo` and `"500"`, and send its output to the file called brightness
 
-
-### `2>`
+##### `2>`
 redirecting the standard error
 
-
-### `<`
+#### `<`
 standard input
 overwrite
 
-
-### `>>`
+#### `>>`
 append
 
-
-### `<<`
+#### `<<`
 append
 
-#### `<< 'EOF'`
+##### `<< 'EOF'`
 
 进入 here-document 输入模式, 直到单独一行的 EOF 结束
-
-
-## `/dev/null`
-is kind of like a special device in Unix system where can write and it will be discarded
-
-
-## 特殊参数/符号
 
 ### `&`
 make program running in the background
@@ -417,14 +428,23 @@ color-code, have better Unicode support.
 - `-n`: 模拟操作，不实际执行
 - `-v`: 显示详情
 
+### xdg-utils
+
+Linux 图形化环境工具包.
+
+#### xdg-open
+
+调用系统默认关联的程序去打开.
 
 ## job control
-```bash
+
+```shell
 man signal
 ```
 
-* `jobs` show jobs
-* `bg` to continue job
+- `jobs` show jobs
+- `bg` to continue job
+- `fg`
 
 ### SIGINT
 <kbd>ctrl</kbd>+<kbd>c</kbd>
@@ -437,7 +457,6 @@ cannot be captureed
 
 ### SIGSTOP
 <kbd>ctrl</kbd>+<kbd>z</kbd>
-
 
 ## remote control
 
@@ -452,7 +471,6 @@ copy files
 copy id
 
 #### `rsync`
-
 
 #### config
 

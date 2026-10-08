@@ -16,9 +16,15 @@ python [flag] [<script> [script_flag]]
 - `pip list`: 查看安装了哪些包.
     - `--not-required`: 查看非依赖项.
 
-## 虚拟环境
+## 标准库模块
 
-### venv
+```
+python -m <module> ...
+```
+
+### 虚拟环境
+
+#### venv
 
 Python 3.3+ 版本提供了一个叫做 venv 的模块.
 
@@ -39,4 +45,14 @@ $ source <envname>/bin/activate
 #: 查看安装了哪些包.
 <envname>/bin/pip list
 ```
+
+### http.server
+
+1. 在本地启动一个 HTTP 服务
+1. 将一个目录(默认当前目录)作为网站根目录对外提供文件访问
+1. 浏览器访问端口(默认 8000)即可看到目录列表并下载文件
+
+- `python -m http.server`: 默认端口 8000
+- `python -m http.server 8000`: 指定端口
+
 
