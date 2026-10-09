@@ -74,6 +74,8 @@ nav:
     - Kitty: note/kitty.md
     - LLVM:
       - note/llvm.md
+      - clang: note/llvm-clang.md
+      - flang: note/llvm-flang.md
       - Vectorize: note/llvm-vectorize.md
     - MkDocs: note/mkdocs.md
     - Npm: note/npm.md

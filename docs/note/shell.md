@@ -88,6 +88,7 @@ find . -name "*.tmp" -exec rm {} \;
 - `-n` / `--line-number`: 显示行号.
 - `-l`: 仅显示路径，不显示行号和内容
 - `-L [string]`: 检索不包含 string 的文件
+- `-i`: 不区分大小写.
 - `--color=auto`: 显示颜色.
 
 ### `pwd`

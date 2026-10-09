@@ -6,6 +6,7 @@
 - **AGI**: Artificial General Intelligence 通用人工智能.
 - **AGU**: 地址生成单元. 处理器内部专门负责计算和生成内存访问地址的硬件单元.
   可与 ALU 并行.
+- **AI Infra**: 
 - **Antichain**: 反链, 是图论(特别是偏序集理论)中的一个重要概念.
 - **ASIC**: Application-Specific Integrated Circuit 专用集成电路.
 - **Attention Mechanism**: 注意力机制, 是当今几乎所有主流大模型(如GPT、LLaMA、
@@ -70,6 +71,7 @@
 
 ## F
 
+- **False Positive**: 将正常误报为异常.
 - **FP16**: Floating-Point 16-bit 16位浮点数.
 
 ## G
@@ -78,6 +80,8 @@
   应用最广泛的数据库文件格式.
 - **GeMM**: General Matrix Multiply 通用矩阵乘法.
 - **GPR**: General Purpose Register 通用寄存器.
+- **GSoC**: Google Summer of Code. 由 Google 主办的一项全球性线上开源编程项目.
+  竞争激烈.
 
 ## H
 
@@ -88,12 +92,14 @@
 
 ## I
 
+- **IaaS**: Infrastructure as a Service 基础设施即服务.
 - **IC**: Integrated Circuit 集成电路.
 - **ICU**: Instruction Control Unit 指令控制单元.
 - **ILP**:
     - 指令级并行.
     - Integer Linear Programming 整数线性规划.在线性约束条件下, 求整数决策变量的最优解
       (最大化或最小化某个目标).
+- **infra**: Infrastructure 基础设施.
 - **Intrinsics**: 内联函数/内置函数.
     - 在编译器 (如LLVM, GCC) 的语境下, 指的是编译器提供的一组看起来像函数, 
     但实际会直接映射为特定硬件指令的特殊API.
@@ -124,6 +130,7 @@
 
 ## M
 
+- **MaaS**: Model as a Service 模型即服务.
 - **MAC tree**: Multiply-Accumulate Tree 乘加树.
 - **ML**: Machine Learning 机器学习.
 - **MLA**: Multi-Head Latent Attention 多头潜在注意力. DeepSeek 系列模型中提出的一种高效注意力机制.
@@ -160,6 +167,7 @@
 
 ## P
 
+- **PaaS**: Platform as a Service 平台即服务.
 - **Pareto Optimality**: 帕累托最优. 在不使任何一个目标变差的前提下,
   已经无法再改进其中任何一个目标的状态.
 - **Pass-through**: 透传, 指一个组件或层级在传递数据时, 不对数据的内容进行解释、
@@ -174,6 +182,8 @@
   这个操作在计算机科学里也被称为汉明重量(Hamming weight).POPC 
   把原本可能需要多条软件指令才能完成的操作, 用一条指令在一个时钟周期内完成, 
   这能极大地提升特定算法的执行效率.
+- **Predicate Functions**: 谓词函数.
+- **Predicate Loops**: 谓词循环.
 - **PRD**: Product Requirements Document 产品需求文档.
 
 ## Q
@@ -198,9 +208,14 @@
 - **RTL**:
     - Register Transfer Language 寄存器传输语言.
     - Register Transfer Level 寄存器传输级.
+- **RTOS**: Real-time operating system 实时操作系统.
+- **RT-Thread**: 一个开源 RTOS.
+- **RTTI**: Run-Time Type Information 运行时类型信息.
 
 ## S
 
+- **SaaS**: Software as a Service 软件即服务.
+- **Sanity check**: 健全性检查.
 - **SAXPY**: Scalar Alpha X Plus Y. 是 BLAS(基础线性代数子程序库)中的一种基础运算.
   是衡量硬件性能和编译器优化能力的标尺.
 - **Scope**: 是程序中一个名字(变量、函数、类型)能够被有效引用和访问的代码区域.
@@ -261,6 +276,12 @@
 
 - **WAM**: World Action Model 世界行动模型. 机器人学习和具身智能领域的模型架构之一.
 - **WASM**: WebAssembly 是一种可移植、体积小、加载快且安全的二进制指令格式.
+
+## X
+
+- **XaaS**: Everything as a Service 一切皆服务.
+  云计算的核心思想: 把任何 IT 能力都封装成"按需付费的服务".
+  有多种衍生模式.
 
 ## 其他
 

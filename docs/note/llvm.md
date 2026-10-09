@@ -13,9 +13,20 @@
 ### llc
 
 将 `.ll` / `.bc` 编译为指定目标架构的汇编代码.
+> 目标优先级: 指定目标 -> 文件内目标 -> `llc` 默认目标
 
+- `-help`:
+- `-help-hidden`:
 - `-march=`: 指定目标.
 - `--version`: 列出可用的已注册后端目标.
+- `--debug-only=<string>`: 调试选项, 输出相关日志.
+  具体值由各文件通过 `#define DEBUG_TYPE` 定义.
+    - `regalloc`: 寄存器分配相关.
+    - `isel`: 指令选择相关.
+- `--debug-pass=<value>`: 输出
+    - `Structure`
+- `-stop-after=<pass-name>[,N]`: 在某个 pass 执行 N 次(默认 1 次)后结束并输出.
+  具体值可在通过 `llc -debug-pass=Structure` 得到的 `Pass Arguments` 中找到.
 
 ### llvm-lit
 
