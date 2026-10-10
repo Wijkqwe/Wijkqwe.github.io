@@ -262,6 +262,10 @@ use `\<` and `\>`
 - `:hi <> <> <>`: 查看多个组.
 - `:Inspect`: 查看光标位置的语法语义高亮组.
 
+### change
+
+- `:changes`: 查看更改.
+
 ### LSP
 
 - `:lua vim.diagnostic.open_float()`[neovim]: 查看当前行的诊断.

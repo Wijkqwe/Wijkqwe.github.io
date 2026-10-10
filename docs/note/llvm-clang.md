@@ -28,4 +28,5 @@
   每次只传递一个选项.
     - `-disable-O0-optnone`: `clang -O0` 默认会给函数加上 `optnone` 属性,
       导致 `llc -O2` 仍然跳过所有优化 Pass.
+    - `-ast-dump`: 输出 AST, 链接时报错.
 

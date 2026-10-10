@@ -11,6 +11,7 @@ theme:
   features: #: 开启功能（导航、返回顶部等）
     - content.code.annotate
     - content.code.copy #: 为代码块开启复制选项
+    - header.autohide #: 自动隐藏顶部栏
     - navigation.tabs #: 将顶级导航部分渲染为顶部标签栏
     - navigation.indexes #: 为每个导航部分关联一个索引界面
     - navigation.top #: 返回顶部按钮

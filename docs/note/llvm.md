@@ -19,14 +19,21 @@
 - `-help-hidden`:
 - `-march=`: 指定目标.
 - `--version`: 列出可用的已注册后端目标.
-- `--debug-only=<string>`: 调试选项, 输出相关日志.
+- `--debug-only=<string>[,<string>...]`: 调试选项, 输出相关日志.
   具体值由各文件通过 `#define DEBUG_TYPE` 定义.
+    - `dagcombine`: DAG 合并.
     - `regalloc`: 寄存器分配相关.
     - `isel`: 指令选择相关.
+    - `isel-dump`: 
+    - `legalize-dag`: DAG 合法化.
+    - `legalize-types`: 类型合法化.
 - `--debug-pass=<value>`: 输出
     - `Structure`
-- `-stop-after=<pass-name>[,N]`: 在某个 pass 执行 N 次(默认 1 次)后结束并输出.
+- `-stop-after=<pass>[,N]`: 在某个 pass 执行 N 次(默认 1 次)后结束并输出.
   具体值可在通过 `llc -debug-pass=Structure` 得到的 `Pass Arguments` 中找到.
+- `-print-after-all`: 输出每个 pass 执行后的 IR.
+- `-print-after=<pass>`: 输出某 pass 执行后的 IR.
+- `-print-before=<pass>`:
 
 ### llvm-lit
 
