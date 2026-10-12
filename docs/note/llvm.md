@@ -18,7 +18,11 @@
 - `-help`:
 - `-help-hidden`:
 - `-march=`: 指定目标.
+- `-mtriple=<string>`: 指定目标三元组.
+    - 无法直接列出可用三元组, 字符串解析由各架构后端.
 - `--version`: 列出可用的已注册后端目标.
+- `-asm-show-inst`: 在注释中输出 MCInst.
+- `-asm-verbose=<bool>`: 详细模式, 在汇编中生成注释, 包括指令来源、调试信息等.
 - `--debug-only=<string>[,<string>...]`: 调试选项, 输出相关日志.
   具体值由各文件通过 `#define DEBUG_TYPE` 定义.
     - `dagcombine`: DAG 合并.
@@ -29,11 +33,16 @@
     - `legalize-types`: 类型合法化.
 - `--debug-pass=<value>`: 输出
     - `Structure`
-- `-stop-after=<pass>[,N]`: 在某个 pass 执行 N 次(默认 1 次)后结束并输出.
-  具体值可在通过 `llc -debug-pass=Structure` 得到的 `Pass Arguments` 中找到.
+- `-pass-remarks-analysis=<pattern>`: 输出 Pass 的分析类 remark.
+  `<pattern>` 是 pass 名称匹配模式.
+- `-pass-remarks-output=<file>`: 指定 Pass Remarks 输出位置.
+    - `-pass-remarks-output=-`: 输出到 stdout 标准输出.
 - `-print-after-all`: 输出每个 pass 执行后的 IR.
 - `-print-after=<pass>`: 输出某 pass 执行后的 IR.
 - `-print-before=<pass>`:
+- `-show-mc-encoding`: 在汇编中以注释形式显示每条指令的机器码编码.
+- `-stop-after=<pass>[,N]`: 在某个 pass 执行 N 次(默认 1 次)后结束并输出.
+  `<pass>` 具体值可在通过 `llc -debug-pass=Structure` 得到的 `Pass Arguments` 中找到.
 
 ### llvm-lit
 

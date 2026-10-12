@@ -4,6 +4,8 @@
 
 ### `alias`
 
+> [unalias](#unalias)
+
 - `alias`: 列出已定义的别名.
 - `alias <别名>`: 查看其定义.
 - `alias <别名>=<cmd>`: 定义别名.
@@ -117,6 +119,10 @@ takes its input and writes it to a file, but also to standard out.
 
 ### `touch`
 create an empty file or change timestamps of file
+
+### `unalias`
+
+- `-a`: 取消全部 `alias`.
 
 ### `which`
 find command

@@ -80,6 +80,9 @@ nav:
       - Vectorize: note/llvm-vectorize.md
     - MkDocs: note/mkdocs.md
     - Npm: note/npm.md
+    - Office: 
+      - Excel: note/excel.md
+      - Word: note/word.md
     - Opencode: note/opencode.md
     - Pacman: note/pacman.md
     - Potpourri:
