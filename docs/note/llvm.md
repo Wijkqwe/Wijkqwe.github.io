@@ -5,12 +5,19 @@
 ### LLVM_LINK_LLVM_DYLIB
 
 `-DLLVM_LINK_LLVM_DYLIB=ON`: 告诉LLVM工具(如clang、opt等)链接到共享库(`libLLVM.so`), 而不是静态链接各个LLVM组件库.
+  > 启用时, 可能对 JIT 造成影响.
 
-> 启用时, 可能对 JIT 造成影响.
+CUDA 运行时支持:
+
+- `-DCMAKE_CUDA_COMPILER=clang`
+- `-DCMAKE_CUDA_HOST_COMPILER=clang++`
+- `-DFLANG_EXPERIMENTAL_CUDA_RUNTIME=ON`
 
 ## Tool
 
 ### llc
+
+- [llc - LLVM static compiler](https://llvm.org/docs/CommandGuide/llc.html)
 
 将 `.ll` / `.bc` 编译为指定目标架构的汇编代码.
 > 目标优先级: 指定目标 -> 文件内目标 -> `llc` 默认目标

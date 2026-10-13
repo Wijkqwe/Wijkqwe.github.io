@@ -162,6 +162,7 @@
   语言的 DSL, 是 MLIR 框架中一个非常核心的声明式定义机制.
 - **OOD**: Out-of-Distribution 分布外. 用于评估模型可靠性.
 - **OoO**: Out of Order Execution 乱序执行.
+- **OSDT**: Open Source Development Tools 开源开发工具.
 - **outline**: 将程序中的一段代码(通常是一个独立的代码区域)提取出来,
   封装成一个单独的函数.
 
@@ -199,6 +200,7 @@
   用于描述程序中哪些变量(或临时值)的"生命周期"存在重叠, 从而不能共享同一个物理寄存器.
 - **RNN**: Recurrent neural network 循环神经网络.
 - **ROI**: Return on Investment 投资回报率.
+- **ROS**: Robot Operating System 机器人操作系统.
 - **RoundTrip**: 往返转换, 是将数据从格式 A 转换为格式 B, 再从格式 B 转换回格式
   A, 然后验证转换后的结果是否与原始数据完全一致的过程.
 - **RP**: Register Pressure 寄存器压力. 指程序在某个执行点, 需要同时存放在寄存器中的活跃变量数量,

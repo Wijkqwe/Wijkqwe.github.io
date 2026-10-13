@@ -172,6 +172,7 @@ kill -STOP %1
 - `-v`: 详细信息.
 - `-x`: 解包.
 - `-z`: 通过 gzip 解压缩(处理 `.gz`).
+- `-C <path>`: 指定解压目录.
 
 ### `nohup`
 encapsulating whatever command you're executing and ignoring wherever you get a hang up signal
