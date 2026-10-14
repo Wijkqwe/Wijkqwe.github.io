@@ -132,6 +132,7 @@
 
 - **MaaS**: Model as a Service 模型即服务.
 - **MAC tree**: Multiply-Accumulate Tree 乘加树.
+- **MCU**: Microcontroller Unit 微控制器单元, 通称单片机.
 - **ML**: Machine Learning 机器学习.
 - **MLA**: Multi-Head Latent Attention 多头潜在注意力. DeepSeek 系列模型中提出的一种高效注意力机制.
 - **MLLM**: Multimodal Large Language Model 多模态大语言模型.

@@ -78,6 +78,7 @@ find . -path '**/test/*.py' -type f
 find . -mtime -1
 find . -name "*.tmp" -exec rm {} \;
 ```
+
 - `-name <name>`: 按名称匹配.
 - `-iname <name>`: 忽略名称大小写.
 - `-path <path>`: 按路径匹配.

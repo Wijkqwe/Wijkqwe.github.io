@@ -58,22 +58,23 @@ references = map<string string>
 	- `--name-only`: 仅列出修改了哪些文件
 	- `[commit] -- [file]`: 特定提交的特定文件
 - `git log`: 查看历史提交
+	- `-- [filepath]`: 查看该文件有关commit
 	- `--abbrev-commit`: 显示短哈希
     - `--author="<name>"`: 列出特定作者的提交, 支持正则.
-	- `--oneline`: more compact representation
-		等价于`--pretty=oneline --abbrev-commit`
-	- `-- [filepath]`: 查看该文件有关commit
-	- `--simplify-by-decoration`: 只显示有分支/标签引用的提交，隐藏那些没有分支变化的提交。
+	- `--decorate`: 在提交信息旁显示分支、标签等引用信息
+    - `--grep=<pattern>`: 列出提交信息中包含特定内容的提交.
 	- `--merges <特定分支>`: 仅显示发生合并操作的提交
     - `--numstat`: 查看统计情况, 分别列出新增和删除的行数.
-	- `--stat`: 查看统计情况
+	- `--oneline`: more compact representation
+		等价于`--pretty=oneline --abbrev-commit`
 	- `--pretty=<format> / format:"<自定义格式>"`: 设置输出格式。
 	    - `<format>` 有一些内置格式: 
 		    - oneline
 		    - full
 		    - ...
 		- 同时，可以通过占位符和颜色自定义`format`的样式。
-	- `--decorate`: 在提交信息旁显示分支、标签等引用信息
+	- `--simplify-by-decoration`: 只显示有分支/标签引用的提交，隐藏那些没有分支变化的提交。
+	- `--stat`: 查看统计情况
 - `git blame <file>`: 逐行查看每行代码的最后修改的提交(时间, 编辑者).
     - `-L <start>[,<end>]`: 从 start 行开始, 到 end 行结束. 若 end 为空则到最后一行.
 

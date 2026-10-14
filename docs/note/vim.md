@@ -36,9 +36,9 @@
 
 #### to visual mode
 
-- <kbd>v</kbd>
-- <kbd>V</kbd>
-- <kbd>crtl</kbd>+<kbd>v</kbd>
+- <kbd>v</kbd> 字符模式
+- <kbd>V</kbd> 行模式
+- <kbd>crtl</kbd>+<kbd>v</kbd> 块模式
 
 ---
 
@@ -185,6 +185,10 @@ repeat the previous editing command that was made
 ### visual block mode
 
 <kbd>ctrl</kbd>+<kbd>v</kbd> select rectangular blocksof text
+
+- <kbd>I</kbd>: 批量插入, <kbd>Esc</kbd> 后应用到每一行.
+- <kbd>A</kbd>: 批量追加, <kbd>Esc</kbd> 后应用到每一行.
+- <kbd>o</kbd>: 在矩形四个角间移动.
 
 ---
 

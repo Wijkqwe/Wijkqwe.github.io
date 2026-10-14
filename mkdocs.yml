@@ -55,6 +55,7 @@ nav:
     - index.md
   - Note:
     - note/index.md
+    - Assembly: note/assembly.md
     - Code:
       - C#: note/c#.md
       - C++: note/cpp.md
@@ -77,6 +78,7 @@ nav:
       - note/llvm.md
       - clang: note/llvm-clang.md
       - flang: note/llvm-flang.md
+      - Tools: note/llvm-tools.md
       - Vectorize: note/llvm-vectorize.md
     - MkDocs: note/mkdocs.md
     - Npm: note/npm.md
@@ -95,6 +97,7 @@ nav:
       - Test: note/potpourri/test.md
       - Version: note/potpourri/version.md
       - VPN: note/potpourri/VPN.md
+    - Regex: note/regex.md
     - Tmux: note/tmux.md
     - Tools: note/tools.md
     - Vim: note/vim.md
