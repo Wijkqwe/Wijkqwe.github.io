@@ -124,6 +124,10 @@ references = map<string string>
 - `git remote rename <name> <new-name>`: 修改名称.
 - `git remote set-url <name> <url>`: 修改 URL.
 
+#### 分支
+
+- `git branch -m [<旧分支名>] <新分支名>`: 重命名.
+
 ### 删
 
 #### 远程
@@ -166,7 +170,7 @@ references = map<string string>
 #### `git branch`
 
 - `--set-upstream-to=<branch>`:
-- `-m [<旧分支名>] <新分支名>`: 重命名。
+- `-m [<旧分支名>] <新分支名>`: 重命名.
 
 #### `git checkout`
 

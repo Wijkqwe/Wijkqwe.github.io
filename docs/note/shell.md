@@ -58,6 +58,18 @@ diff [选项] 文件1 文件2
 diff <(ls qwe) <(ls asd)
 ```
 
+### `dpkg`
+
+Debian 系列的底层软件包管理工具.
+
+- `-i <package.deb>`: 安装本地 `.deb` 包.
+- `-r <package>`: 卸载 保留配置.
+- `-P <package>`: 卸载 移除配置.
+- `-l`: 列出已安装包.
+    - `-l <package>`: 查询包是否安装.
+        - `ii`: 正常安装.
+        - `un`: 未安装.
+
 ### `du`
 
 - `-h`: human avaible
@@ -166,6 +178,12 @@ allow to send any sort of Unix signal
 ```bash
 kill -STOP %1
 ```
+
+### systemd
+
+#### `systemd-detect-virt`
+
+systemd 套件中的一个命令行工具, 用于检测当前系统是否运行在虚拟化环境中, 并识别具体的虚拟化技术类型.
 
 ### `tar`
 
