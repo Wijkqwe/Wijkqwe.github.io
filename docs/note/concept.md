@@ -118,6 +118,7 @@
 
 ## L
 
+- **land**: 合并 PR 进入分支.
 - **live in**: region 外的变量在 region 内被用到.
 - **LoRA**: Low-Rank Adaptation 低秩适配.属于参数高效微调(Parameter-Efficient
   Fine-Tuning, PEFT)技术的一种.在不改变原模型能力的前提下,

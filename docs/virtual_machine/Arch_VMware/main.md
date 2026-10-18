@@ -6,7 +6,7 @@
 
 或打开`.vmx`文件，添加一行`firmware = "efi"`,
 
-## 确保处于UEFI引导
+### 确保处于UEFI引导
 ```sh
 ls /sys/firmware/efi/efivars
 ```
@@ -16,13 +16,11 @@ cat //sys/firmware/efi/fw_platform_size
 ```
 返回64则64位UEFI，返回32则32位UEFI
 
-
 ## 连接网络
 
-### 无线网络
-`iwctl`命令
-
-`ping`检测
+1. `iwctl`: 无线网络.
+  > 虚拟机可无视.
+1. `ping`检测
 
 ## 禁用服务
 
@@ -39,7 +37,6 @@ systemctl status reflector.service
 ```
 `q`键退出
 
-
 ### 禁用蜂鸣器
 ```sh
 rmmod pcspkr
@@ -52,7 +49,6 @@ timedatectl set-ntp true
 timedatectl status
 ```
 
-
 ## 更换软件仓库镜像源
 ```sh
 vim /etc/pacman.d/mirrorlist
@@ -63,7 +59,6 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch # 清华�
 Server = https://repo.huaweicloud.com/archlinux/$repo/os/$arch # 华为开源镜像站
 Server = http://mirror.lzu.edu.cn/archlinux/$repo/os/$arch # 兰州大学开源镜像站
 ```
-
 
 ## 分区
 查看
@@ -121,7 +116,6 @@ btrfs subvolume list -p /mnt # 复查子卷情况
 umount /mnt
 ```
 
-
 ## 挂载分区
 ```sh
 mount /dev/sda3 /mnt #: 先挂载/
@@ -139,10 +133,11 @@ free -h
 df -h
 ```
 
-
 ## 安装系统
 
+```
 pacman -S archlinux-keyring
+```
 
 安装基础包
 ```sh
@@ -153,19 +148,16 @@ pacstrap /mnt base base-devel linux linux-firmware
 pacstrap /mnt networkmanager vim sudo bash bash-completion
 ```
 
-
 ## 生成fstab文件
 ```sh
 genfstab -U /mnt > /mnt/etc/fstab
 cat /mnt/etc/fstab
 ```
 
-
 ## 切换工作区域
 ```sh
 arch-chroot /mnt
 ```
-
 
 ## 修改主机名
 ```sh
@@ -182,13 +174,11 @@ vim /etc/hosts
 ```
 `Arch.localdomain Arch`中`Arch`为主机名
 
-
 ## 设置时区
 ```sh
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 hwclock --systohc #: 同步到硬件时间
 ```
-
 
 ## 设置地区偏好
 ```sh
@@ -201,18 +191,15 @@ locale-gen
 echo 'LANG=en_US.UTF-8'  > /etc/locale.conf
 ```
 
-
 ## 为root设置密码
 ```sh
 passwd root
 ```
 
-
 ## 安装微码
 ```sh
 pacman -S intel-ucode # Intel
 ```
-
 
 ## 安装引导程序
 
@@ -220,41 +207,45 @@ pacman -S intel-ucode # Intel
 ```sh
 pacman -S grub efibootmgr os-prober
 ```
-* `-S` 选项后指定要通过 `pacman` 包管理器安装的包：
-    * `grub` —— 启动引导器
-    * `efibootmgr` —— `efibootmgr` 被 `grub` 脚本用来将启动项写入 NVRAM
-    * `os-prober` —— 为了能够引导 win10，需要安装 `os-prober` 以检测到它
+
+- `-S` 选项后指定要通过 `pacman` 包管理器安装的包：
+    - `grub` —— 启动引导器
+    - `efibootmgr` —— `efibootmgr` 被 `grub` 脚本用来将启动项写入 NVRAM
+    - `os-prober` —— 为了能够引导 win10，需要安装 `os-prober` 以检测到它
 
 ### 安装GRUB到EFI分区
 ```sh
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=ARCH
 ```
-* `--efi-directory=/boot` —— 将 `grubx64.efi` 安装到之前的指定位置（EFI 分区）
-* `--bootloader-id=ARCH` —— 取名为 `ARCH`
+
+- `--efi-directory=/boot` —— 将 `grubx64.efi` 安装到之前的指定位置（EFI 分区）
+- `--bootloader-id=ARCH` —— 取名为 `ARCH`
 
 ### 编辑`grub`
 ```sh
 vim /etc/default/grub
 ```
-* 去掉 `GRUB_CMDLINE_LINUX_DEFAULT` 一行中最后的 `quiet` 参数
-* 把 `loglevel` 的数值从 `3` 改成 `5`。这样是为了后续如果出现系统错误，方便排错
-* 加入 `nowatchdog` 参数，这可以显著提高开关机速度
-* 为了引导 win10，则还需要添加新的一行 `GRUB_DISABLE_OS_PROBER=false`
+
+- 去掉 `GRUB_CMDLINE_LINUX_DEFAULT` 一行中最后的 `quiet` 参数
+- 把 `loglevel` 的数值从 `3` 改成 `5`。这样是为了后续如果出现系统错误，方便排错
+- 加入 `nowatchdog` 参数，这可以显著提高开关机速度
+- 为了引导 win10，则还需要添加新的一行 `GRUB_DISABLE_OS_PROBER=false`
 
 ### 生成`GRUB`配置文件
 ```sh
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-
 ## 解决`/usr`单独分区的问题
+
+> 若未出现问题可直接跳过.
+
 打开`/etc/mkinitcpio.conf`文件，找到`HOOK`一行，在后面加上`fsck` `usr` `shutdown`
 之后
 ```sh
 mkinitcpio -p linux
 ```
 打开文件`/etc/fstab`修改`/usr`分区对应passno为0(passno即末尾最后的数字)
-
 
 ## 完成安装
 
@@ -264,6 +255,9 @@ umount -R /mnt
 reboot
 ```
 重启前退出引导程序或与CD文件断开连接
+> 虚拟机可无视.
+
+### `/usr`单独分区报错
 
 若之前未解决`/usr`单独分区问题，则会出现
 ```
@@ -281,7 +275,7 @@ ls -l /new_root/sbin
 ```sh
 ls -l /usr/bin
 ```
-如果存在链接并且init都存在的话，证明是在rootfs下无法加载/usr的问题
+如果存在链接并且init都存在的话，证明是在rootfs下无法加载`/usr`的问题
 可能是没有注意`archwiki`里关于`mkinitcpio`里提到的，独立分区`/usr`需要在`/etc/mkinitcpio.conf`下添加hook的问题
 此时需要关闭虚拟机，依次点击“编辑虚拟机设置->硬件->CD/DVD->设备状态->启动时连接”，且使用ISO文件；
 开启虚拟机，按`Esc`键进入引导模式，选择`EFI ... CDROM ...`进入livecd，重新挂载并切换工作区
@@ -295,9 +289,11 @@ arch-chroot /mnt
 ```
 重复上述`解决/usr单独分区的问题`的步骤
 
+### 继续安装
+
 重启后进入root
 
-设置开机自启networkmanager服务
+设置开机自启`networkmanager`服务
 ```sh
 systemctl enable --now NetworkManager # 设置开机自启并立即启动 NetworkManager 服务
 ping www.baidu.com # 测试网络连接
