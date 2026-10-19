@@ -301,8 +301,32 @@ ping www.baidu.com # 测试网络连接
 安装`fastfetch`打印系统信息
 ```sh
 pacman -S fastfetch
+fastfetch
 ```
 
+### 非root用户
+
+添加用户.
+```sh
+useradd -m -G wheel -s /bin/bash qwe
+passwd qwe
+```
+添加组.
+```sh
+groupadd -g 1024 WWW
+usermod -aG sudo qwe
+usermod -aG WWW qwe
+```
+修改对应目录权限.
+```sh
+chown -R root:WWW /data
+chmod -R g+w /data
+```
+启用组.
+```sh
+EDITOR=vim visudo
+```
+去掉`wheel`一行前的`#`
 
 ## VMware
 
@@ -312,22 +336,37 @@ pacman -S fastfetch
 mkinitcpio -p linux
 ```
 
-
 ### 安装VM-Tools
+
 ```sh
-pacman -S open-vm-tools
+pacman -S open-vm-tools fuse
+```
+启用相关服务.
+```sh
 # systemctl start vmtoolsd.service
 systemctl enable --now vmtoolsd.service
 # systemctl start vmware-vmblock-fuse.service
 systemctl enable --now vmware-vmblock-fuse.service
 ```
 
-失败，VM窗口自适应无效，存在输入延迟
+### 共享文件夹
 
+先在 VMware 中设置好共享文件夹.
 
-
-
-
-
-
+创建挂载点.
+```sh
+mkdir -p <path>
+```
+设置开机自动挂载.
+```sh
+sudo vim /etc/fstab
+```
+在文件末尾新增一行.
+```
+.host:/ <path> fuse.vmhgfs-fuse defaults,allow_other,uid=1000,gid=1000 0 0
+```
+测试配置是否正确.
+```sh
+sudo mount -a
+```
 

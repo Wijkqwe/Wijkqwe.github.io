@@ -320,26 +320,34 @@ ping www.baidu.com # 测试网络连接
 pacman -S fastfetch
 ```
 
+### 非root用户
+
+添加用户.
+```sh
+useradd -m -G wheel vboxsf -s /bin/bash qwe
+passwd qwe
+```
+添加组.
+```sh
+groupadd -g 1024 WWW
+usermod -aG sudo qwe
+usermod -aG WWW qwe
+```
+修改对应目录权限.
+```sh
+chown -R root:WWW /data
+chmod -R g+w /data
+```
+启用组.
+```sh
+EDITOR=vim visudo
+```
+去掉`wheel`一行前的`#`
 
 ## VirtualBox
+
 依次点击“设置->常规->高级->共享粘贴板->双向”
 ```sh
 pacman -S virtualbox-guest-utils
 systemctl enable --now vboxservice.service
 ```
-
-
-## 非root用户
-```sh
-useradd -m -G wheel vboxsf -s /bin/bash qwe
-passwd qwe
-groupadd -g 1024 WWW
-chown -R root:WWW /data
-chmod -R g+w /data
-EDITOR=vim visudo
-```
-去掉`wheel`一行前的`#`
-
-
-
-
