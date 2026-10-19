@@ -31,6 +31,8 @@
 
 - **C2C**: Chip-to-Chip, 芯片到芯片. 将两颗或两颗以上独立制造、已经切割好的芯片,
   通过某种方式连接在一起, 共同工作, 以实现更强大或更复杂的系统功能.
+- **CAGR**: Compound Annual Growth Rate 复合年增长率.
+  用来描述一项投资、业务或指标在特定时期内的年均增长速度的指标.
 - **CFG**: Control Flow Graph 控制流图.
 - **CFI**: LLVM Flang 中 C 与 Fortran 互操作的基石.
 - **CIM**: Computing-in-Memory 存内计算.

@@ -55,10 +55,12 @@ for i in {0..255}; do printf "\x1b[38;5;${i}mcolor${i} - ███████�
 
 ## session
 
-```bash
-#: create new session
-tmux [new -s session-name -n window-name]
+- `tmux new`: 新建会话.
+    - `-s session-name`: 指定会话名.
+    - `-n window-name`: 指定窗口名.
+    - `-t session-name`: 指向已有会话, 加入其组.
 
+```sh
 #: restore session
 tmux at [-t session-name]
 

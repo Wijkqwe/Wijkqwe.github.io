@@ -97,6 +97,11 @@ find . -name "*.tmp" -exec rm {} \;
 - `-ipath <path>`: 忽略路径大小写.
 - `-maxdepth n`: 全局选项，最多递归n层
 
+### `getent`
+
+- `getent group`: 查看所有组信息.
+    - `<group>`: 查看指定组.
+
 ### `grep`
 
 - `-r` / `--recursive`: 递归
@@ -105,6 +110,12 @@ find . -name "*.tmp" -exec rm {} \;
 - `-L [string]`: 检索不包含 string 的文件
 - `-i`: 不区分大小写.
 - `--color=auto`: 显示颜色.
+
+### `groups`
+
+查看当前用户所在组.
+
+- `groups <user>`: 查看指定用户.
 
 ### `pwd`
 echo current location
@@ -136,6 +147,20 @@ create an empty file or change timestamps of file
 ### `unalias`
 
 - `-a`: 取消全部 `alias`.
+
+### `usermod`
+
+```sh
+man usermod
+```
+- `-G <group1>[,gourp2...] <user>`: 将用户加到组内.
+    - `-aG`: 以追加形式添加.
+
+### `visudo`
+
+直接编辑 sudoers 文件.
+
+可通过修改 `EDITOR=<editor>` 设置编辑器.
 
 ### `which`
 find command
@@ -305,6 +330,12 @@ touch pro1/test1.py pro1/test2.py pro1/test3.py pro2/test1.py pro2/test2.py pro2
 touch {a..j}
 ## equal
 touch a b ... j
+```
+将一组命令作为一个整体执行, 将整组的标准输出重定向.
+```sh
+{
+  ...
+} > /dev/null
 ```
 
 ## 环境变量

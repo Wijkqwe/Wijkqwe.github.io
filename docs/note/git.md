@@ -116,6 +116,7 @@ references = map<string string>
 #### 提交
 
 - `git commit --amend [-m ""]`: 修改最近一次提交的信息.
+    - `--amend --reset-author`: 修改最近一次提交的作者信息.
 - `git store <path>`: 恢复未暂存(未`add`)的文件.
     `--staged`:  从暂存区中恢复, 工作区修改保留.
 
