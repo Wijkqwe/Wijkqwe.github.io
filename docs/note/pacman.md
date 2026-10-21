@@ -21,6 +21,8 @@ pacman -R <package_name>
     - `-n`: 官方仓库包.
     - `-q`: 精简输出, 仅包名.
 
+## yay
 
+用于 AUR 仓库, 参数选项与 `pacman` 相同.
 
 

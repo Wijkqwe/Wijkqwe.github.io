@@ -202,6 +202,7 @@
 - **RIG**: Register Interference Graph 寄存器干涉图. 是编译器在寄存器分配
   (Register Allocation) 阶段使用的一种核心数据结构. RIG 是一个无向图,
   用于描述程序中哪些变量(或临时值)的"生命周期"存在重叠, 从而不能共享同一个物理寄存器.
+- **RNG**: Random Number Generator 随机数生成器.
 - **RNN**: Recurrent neural network 循环神经网络.
 - **ROI**: Return on Investment 投资回报率.
 - **ROS**: Robot Operating System 机器人操作系统.

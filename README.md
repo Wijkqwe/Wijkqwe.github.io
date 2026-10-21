@@ -29,6 +29,7 @@ mkdocs gh-deploy
 - python
     - mkdocs
     - mkdocs-material
+    - mkdocs-git-revision-date-localized-plugin
 
 ## Reference
 

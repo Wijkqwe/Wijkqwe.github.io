@@ -55,6 +55,7 @@ nav:
     - index.md
   - Note:
     - note/index.md
+    - apt: note/apt.md
     - Assembly: note/assembly.md
     - Code:
       - C#: note/c#.md

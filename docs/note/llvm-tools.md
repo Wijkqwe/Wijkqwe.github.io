@@ -50,9 +50,14 @@
 
 ## llvm-mc
 
+[llvm-mc](https://llvm.org/docs/CommandGuide/llvm-mc.html)
+
 将汇编代码转换成目标文件;
 将二进制码反汇编成汇编指令.
 
+- `-disassemble "0x..."`: 用于将一系列十六进制字节解析并反汇编为汇编语法.
+- `-show-encoding`: 在汇编(或反汇编)过程中, 额外打印出每条指令对应的机器码字节序列.
+  需搭配`--assemble`(默认)或`--disassemble`使用.
 - `-triple=`: 指定目标三元组.
   > https://clang.llvm.org/docs/CrossCompilation.html#target-triple
 - `--version`: 列出可用的已注册后端目标.

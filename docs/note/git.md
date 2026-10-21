@@ -142,6 +142,10 @@ references = map<string string>
 - `git add <path>`: 暂存.
     - `-p / --patch`: 交互式提交, 依次处理每一个修改块.
 
+#### 分支
+
+- `gck -b <branch>`: 新建分支并切换到该分支. 工作区更改保留.
+
 ---
 
 ### 提交
