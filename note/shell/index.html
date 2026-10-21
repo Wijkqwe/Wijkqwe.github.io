@@ -1077,10 +1077,32 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#grep" class="md-nav__link">
     <span class="md-ellipsis">
       
         grep
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        groups
       
     </span>
   </a>
@@ -1147,6 +1169,28 @@
     <span class="md-ellipsis">
       
         unalias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usermod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        usermod
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        visudo
       
     </span>
   </a>
@@ -3659,10 +3703,32 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#grep" class="md-nav__link">
     <span class="md-ellipsis">
       
         grep
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        groups
       
     </span>
   </a>
@@ -3729,6 +3795,28 @@
     <span class="md-ellipsis">
       
         unalias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usermod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        usermod
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        visudo
       
     </span>
   </a>
@@ -4787,7 +4875,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年10月15日 12:10:06 UTC">2026年10月15日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年10月19日 11:09:11 UTC">2026年10月19日</span>
   </span>
 
     
@@ -4812,7 +4900,7 @@
 </ul>
 <h3 id="awk"><code>awk</code><a class="headerlink" href="#awk" title="Permanent link">&para;</a></h3>
 <p>按行读取文本 -&gt; 按分隔符拆成字段 -&gt; 对每行执行模式-动作.</p>
-<div class="highlight"><pre><span></span><code>awk<span class="w"> </span><span class="s1">&#39;[模式] { [动作] }&#39;</span><span class="w"> </span>...
+<div class="highlight"><pre><span></span><code>awk<span class="w"> </span><span class="s1">'[模式] { [动作] }'</span><span class="w"> </span>...
 </code></pre></div>
 <ul>
 <li>模式(pattern): 决定哪些行需要处理, 可以省略.</li>
@@ -4877,9 +4965,9 @@
 </blockquote>
 <h3 id="find"><code>find</code><a class="headerlink" href="#find" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>find<span class="w"> </span>.<span class="w"> </span>-name<span class="w"> </span>src<span class="w"> </span>-type<span class="w"> </span>d
-find<span class="w"> </span>.<span class="w"> </span>-path<span class="w"> </span><span class="s1">&#39;**/test/*.py&#39;</span><span class="w"> </span>-type<span class="w"> </span>f
+find<span class="w"> </span>.<span class="w"> </span>-path<span class="w"> </span><span class="s1">'**/test/*.py'</span><span class="w"> </span>-type<span class="w"> </span>f
 find<span class="w"> </span>.<span class="w"> </span>-mtime<span class="w"> </span>-1
-find<span class="w"> </span>.<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*.tmp&quot;</span><span class="w"> </span>-exec<span class="w"> </span>rm<span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
+find<span class="w"> </span>.<span class="w"> </span>-name<span class="w"> </span><span class="s2">"*.tmp"</span><span class="w"> </span>-exec<span class="w"> </span>rm<span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
 </code></pre></div>
 <ul>
 <li><code>-name &lt;name&gt;</code>: 按名称匹配.</li>
@@ -4887,6 +4975,13 @@ find<span class="w"> </span>.<span class="w"> </span>-name<span class="w"> </spa
 <li><code>-path &lt;path&gt;</code>: 按路径匹配.</li>
 <li><code>-ipath &lt;path&gt;</code>: 忽略路径大小写.</li>
 <li><code>-maxdepth n</code>: 全局选项，最多递归n层</li>
+</ul>
+<h3 id="getent"><code>getent</code><a class="headerlink" href="#getent" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>getent group</code>: 查看所有组信息.<ul>
+<li><code>&lt;group&gt;</code>: 查看指定组.</li>
+</ul>
+</li>
 </ul>
 <h3 id="grep"><code>grep</code><a class="headerlink" href="#grep" title="Permanent link">&para;</a></h3>
 <ul>
@@ -4896,6 +4991,11 @@ find<span class="w"> </span>.<span class="w"> </span>-name<span class="w"> </spa
 <li><code>-L [string]</code>: 检索不包含 string 的文件</li>
 <li><code>-i</code>: 不区分大小写.</li>
 <li><code>--color=auto</code>: 显示颜色.</li>
+</ul>
+<h3 id="groups"><code>groups</code><a class="headerlink" href="#groups" title="Permanent link">&para;</a></h3>
+<p>查看当前用户所在组.</p>
+<ul>
+<li><code>groups &lt;user&gt;</code>: 查看指定用户.</li>
 </ul>
 <h3 id="pwd"><code>pwd</code><a class="headerlink" href="#pwd" title="Permanent link">&para;</a></h3>
 <p>echo current location</p>
@@ -4919,6 +5019,14 @@ realpath<span class="w"> </span><span class="o">[</span>option<span class="o">]<
 <ul>
 <li><code>-a</code>: 取消全部 <code>alias</code>.</li>
 </ul>
+<h3 id="usermod"><code>usermod</code><a class="headerlink" href="#usermod" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>man<span class="w"> </span>usermod
+</code></pre></div>
+- <code>-G &lt;group1&gt;[,gourp2...] &lt;user&gt;</code>: 将用户加到组内.
+    - <code>-aG</code>: 以追加形式添加.</p>
+<h3 id="visudo"><code>visudo</code><a class="headerlink" href="#visudo" title="Permanent link">&para;</a></h3>
+<p>直接编辑 sudoers 文件.</p>
+<p>可通过修改 <code>EDITOR=&lt;editor&gt;</code> 设置编辑器.</p>
 <h3 id="which"><code>which</code><a class="headerlink" href="#which" title="Permanent link">&para;</a></h3>
 <p>find command
 <div class="highlight"><pre><span></span><code>which<span class="w"> </span><span class="nb">echo</span>
@@ -4980,7 +5088,7 @@ allow to send any sort of Unix signal
 <p>standard output
 overwrite</p>
 <h5 id="0">0<a class="headerlink" href="#0" title="Permanent link">&para;</a></h5>
-<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;500&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>brightness
+<p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">"500"</span><span class="w"> </span>&gt;<span class="w"> </span>brightness
 </code></pre></div>
 doesnot work, cause <code>&gt;</code> was set by shell,
 in this case, is run <code>sudo</code> with arguments <code>echo</code> and <code>"500"</code>, and send its output to the file called brightness</p>
@@ -5029,7 +5137,7 @@ as such: <code>rm -- -r</code> or <code>ssh machine --for-ssh -- foo --for-foo</
 <h4 id="_12"><code>?</code><a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
 <p>match any single character</p>
 <h4 id="_13"><code>{}</code><a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>qwe.<span class="o">{</span>c,h<span class="o">}</span>
+<p><div class="highlight"><pre><span></span><code>cat<span class="w"> </span>qwe.<span class="o">{</span>c,h<span class="o">}</span>
 <span class="c1">## equal</span>
 cat<span class="w"> </span>qwe.c<span class="w"> </span>qwe.h
 
@@ -5041,6 +5149,11 @@ touch<span class="w"> </span><span class="o">{</span>a..j<span class="o">}</span
 <span class="c1">## equal</span>
 touch<span class="w"> </span>a<span class="w"> </span>b<span class="w"> </span>...<span class="w"> </span>j
 </code></pre></div>
+将一组命令作为一个整体执行, 将整组的标准输出重定向.
+<div class="highlight"><pre><span></span><code><span class="o">{</span>
+<span class="w">  </span>...
+<span class="o">}</span><span class="w"> </span>&gt;<span class="w"> </span>/dev/null
+</code></pre></div></p>
 <h2 id="_14">环境变量<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
 <h3 id="path">$PATH<a class="headerlink" href="#path" title="Permanent link">&para;</a></h3>
 <p>follow this to find where command is,</p>
@@ -5080,8 +5193,8 @@ touch<span class="w"> </span>a<span class="w"> </span>b<span class="w"> </span>.
 <li>
 <p>MCD function
     <div class="highlight"><pre><span></span><code>mcd<span class="o">()</span><span class="w"> </span><span class="o">{</span>
-<span class="w">    </span>mkdir<span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
-<span class="w">    </span><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
+<span class="w">    </span>mkdir<span class="w"> </span>-p<span class="w"> </span><span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span>
+<span class="w">    </span><span class="nb">cd</span><span class="w"> </span><span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span>
 <span class="o">}</span>
 </code></pre></div>
     <code>$1</code> like <code>argv</code> in <code>bash</code>, </p>
@@ -5113,7 +5226,7 @@ that will make this more portable so it can be run in more machine.</p>
 <p>use <code>cd ... || exit</code>.
 if you don't have permissions, or it doesn't exist, that will give a nonzero error command.</p>
 <h3 id="for"><code>for</code><a class="headerlink" href="#for" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span>file<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span>file<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">"</span><span class="nv">$@</span><span class="s2">"</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
 <span class="w">    </span>...
 <span class="k">done</span>
 </code></pre></div>
@@ -5204,7 +5317,7 @@ color-code, have better Unicode support.</p>
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年10月15日 12:10:06 UTC">2026年10月15日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年10月19日 11:09:11 UTC">2026年10月19日</span>
   </span>
 
     

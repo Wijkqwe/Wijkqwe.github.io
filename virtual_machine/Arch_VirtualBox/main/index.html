@@ -2693,6 +2693,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#root_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        非root用户
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2703,17 +2714,6 @@
     <span class="md-ellipsis">
       
         VirtualBox
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#root_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        非root用户
       
     </span>
   </a>
@@ -3203,6 +3203,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#root_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        非root用户
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3213,17 +3224,6 @@
     <span class="md-ellipsis">
       
         VirtualBox
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#root_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        非root用户
       
     </span>
   </a>
@@ -3277,7 +3277,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年8月3日 12:08:30 UTC">2026年8月3日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年10月19日 11:08:51 UTC">2026年10月19日</span>
   </span>
 
     
@@ -3319,7 +3319,7 @@ systemctl<span class="w"> </span>disable<span class="w"> </span>reflector.servic
 <code>q</code>键退出</p>
 <h3 id="_6">禁用蜂鸣器<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>rmmod<span class="w"> </span>pcspkr
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;blacklist pcspkr&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/modprobe.d/blacklist.conf
+<span class="nb">echo</span><span class="w"> </span><span class="s2">"blacklist pcspkr"</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/modprobe.d/blacklist.conf
 </code></pre></div>
 <h2 id="_7">更新系统时钟<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>timedatectl<span class="w"> </span>set-ntp<span class="w"> </span><span class="nb">true</span>
@@ -3428,7 +3428,7 @@ hwclock<span class="w"> </span>--systohc<span class="w"> </span><span class="c1"
 去掉<code>en_US.UTF-8 UTF-8</code>及<code>zh_CN.UTF-8 UTF-8</code>行前注释符号<code>#</code>
 生成<code>locale</code>
 <div class="highlight"><pre><span></span><code>locale-gen
-<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;LANG=en_US.UTF-8&#39;</span><span class="w">  </span>&gt;<span class="w"> </span>/etc/locale.conf
+<span class="nb">echo</span><span class="w"> </span><span class="s1">'LANG=en_US.UTF-8'</span><span class="w">  </span>&gt;<span class="w"> </span>/etc/locale.conf
 </code></pre></div></p>
 <h2 id="root">为root设置密码<a class="headerlink" href="#root" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>passwd<span class="w"> </span>root
@@ -3506,20 +3506,29 @@ ping<span class="w"> </span>www.baidu.com<span class="w"> </span><span class="c1
 安装<code>fastfetch</code>打印系统信息
 <div class="highlight"><pre><span></span><code>pacman<span class="w"> </span>-S<span class="w"> </span>fastfetch
 </code></pre></div></p>
+<h3 id="root_1">非root用户<a class="headerlink" href="#root_1" title="Permanent link">&para;</a></h3>
+<p>添加用户.
+<div class="highlight"><pre><span></span><code>useradd<span class="w"> </span>-m<span class="w"> </span>-G<span class="w"> </span>wheel<span class="w"> </span>vboxsf<span class="w"> </span>-s<span class="w"> </span>/bin/bash<span class="w"> </span>qwe
+passwd<span class="w"> </span>qwe
+</code></pre></div>
+添加组.
+<div class="highlight"><pre><span></span><code>groupadd<span class="w"> </span>-g<span class="w"> </span><span class="m">1024</span><span class="w"> </span>WWW
+usermod<span class="w"> </span>-aG<span class="w"> </span>sudo<span class="w"> </span>qwe
+usermod<span class="w"> </span>-aG<span class="w"> </span>WWW<span class="w"> </span>qwe
+</code></pre></div>
+修改对应目录权限.
+<div class="highlight"><pre><span></span><code>chown<span class="w"> </span>-R<span class="w"> </span>root:WWW<span class="w"> </span>/data
+chmod<span class="w"> </span>-R<span class="w"> </span>g+w<span class="w"> </span>/data
+</code></pre></div>
+启用组.
+<div class="highlight"><pre><span></span><code><span class="nv">EDITOR</span><span class="o">=</span>vim<span class="w"> </span>visudo
+</code></pre></div>
+去掉<code>wheel</code>一行前的<code>#</code></p>
 <h2 id="virtualbox_1">VirtualBox<a class="headerlink" href="#virtualbox_1" title="Permanent link">&para;</a></h2>
 <p>依次点击“设置-&gt;常规-&gt;高级-&gt;共享粘贴板-&gt;双向”
 <div class="highlight"><pre><span></span><code>pacman<span class="w"> </span>-S<span class="w"> </span>virtualbox-guest-utils
 systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>vboxservice.service
 </code></pre></div></p>
-<h2 id="root_1">非root用户<a class="headerlink" href="#root_1" title="Permanent link">&para;</a></h2>
-<p><div class="highlight"><pre><span></span><code>useradd<span class="w"> </span>-m<span class="w"> </span>-G<span class="w"> </span>wheel<span class="w"> </span>vboxsf<span class="w"> </span>-s<span class="w"> </span>/bin/bash<span class="w"> </span>qwe
-passwd<span class="w"> </span>qwe
-groupadd<span class="w"> </span>-g<span class="w"> </span><span class="m">1024</span><span class="w"> </span>WWW
-chown<span class="w"> </span>-R<span class="w"> </span>root:WWW<span class="w"> </span>/data
-chmod<span class="w"> </span>-R<span class="w"> </span>g+w<span class="w"> </span>/data
-<span class="nv">EDITOR</span><span class="o">=</span>vim<span class="w"> </span>visudo
-</code></pre></div>
-去掉<code>wheel</code>一行前的<code>#</code></p>
 
 
 
@@ -3542,7 +3551,7 @@ chmod<span class="w"> </span>-R<span class="w"> </span>g+w<span class="w"> </spa
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年8月3日 12:08:30 UTC">2026年8月3日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年10月19日 11:08:51 UTC">2026年10月19日</span>
   </span>
 
     

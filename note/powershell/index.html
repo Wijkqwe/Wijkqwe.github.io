@@ -2396,7 +2396,7 @@
 <div class="highlight"><pre><span></span><code><span class="nb">Set-ExecutionPolicy</span> <span class="n">-Scope</span> <span class="k">Process</span> <span class="n">-ExecutionPolicy</span> <span class="n">Bypass</span>
 </code></pre></div></p>
 <h3 id="_1">文件批量重命名<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>Get-ChildItem<span class="w"> </span>-Filter<span class="w"> </span><span class="s2">&quot;qwerty*&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Rename-Item<span class="w"> </span>-NewName<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="nv">$_</span>.Name<span class="w"> </span>-replace<span class="w"> </span><span class="s1">&#39;^qwerty&#39;</span>,<span class="w"> </span><span class="s1">&#39;asd&#39;</span><span class="w"> </span><span class="o">}</span>
+<div class="highlight"><pre><span></span><code>Get-ChildItem<span class="w"> </span>-Filter<span class="w"> </span><span class="s2">"qwerty*"</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>Rename-Item<span class="w"> </span>-NewName<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="nv">$_</span>.Name<span class="w"> </span>-replace<span class="w"> </span><span class="s1">'^qwerty'</span>,<span class="w"> </span><span class="s1">'asd'</span><span class="w"> </span><span class="o">}</span>
 </code></pre></div>
 
 

@@ -2799,7 +2799,7 @@
 <p><code>Pure</code>: <code>mlir/include/mlir/Interfaces/SideEffectInterfaces.td</code>.</p>
 <p>用来标记一个操作没有副作用且结果只取决于操作数.
 使用示例:</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="n">MyAddOp</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">MyDialect_Op</span><span class="p">&lt;</span><span class="s">&quot;add&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="n">Pure</span><span class="p">]&gt;</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="n">MyAddOp</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">MyDialect_Op</span><span class="p">&lt;</span><span class="s">"add"</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="n">Pure</span><span class="p">]&gt;</span><span class="w"> </span><span class="p">{</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>标记 Pure 后，MLIR 会自动:</p>
