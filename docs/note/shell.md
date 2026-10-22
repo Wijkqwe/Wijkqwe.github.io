@@ -43,6 +43,8 @@ bg %1
 
 ### `curl`
 
+- `-I`: 查看状态码.
+- `-L`:
 - `-O [path]`: 下载文件, 保留原始文件名.
 - `-o [new name] [path]`: 下载并重命名文件.
 
@@ -75,6 +77,8 @@ Debian 系列的底层软件包管理工具.
 - `-h`: human avaible
 
 ### `echo`
+
+> 不同 shell 的处理可能不同.
 
 - `-e`: 允许解析转义字符.
 
@@ -116,6 +120,10 @@ find . -name "*.tmp" -exec rm {} \;
 查看当前用户所在组.
 
 - `groups <user>`: 查看指定用户.
+
+### `printf`
+
+> 由 POSIX 标准定义, 行为高度一致.
 
 ### `pwd`
 echo current location
@@ -483,6 +491,8 @@ color-code, have better Unicode support.
 
 ### lsof
 
+### `rsync`
+
 ### stow
 
 批量建立软链接，可用于管理配置文件.
@@ -519,20 +529,4 @@ cannot be captureed
 
 ### SIGSTOP
 <kbd>ctrl</kbd>+<kbd>z</kbd>
-
-## remote control
-
-### `ssh`
-
-#### ssh key
-
-#### `scp`
-copy files
-
-#### `ssh-copy-id`
-copy id
-
-#### `rsync`
-
-#### config
 

@@ -111,6 +111,10 @@ references = map<string string>
 - `git remote`:
     - `-v`:
 
+#### 子模块
+
+- `git submodule status`:
+
 ### 改
 
 #### 提交
@@ -145,6 +149,14 @@ references = map<string string>
 #### 分支
 
 - `gck -b <branch>`: 新建分支并切换到该分支. 工作区更改保留.
+
+#### 仓库
+
+- `git clone <url> [path]`: 
+
+#### 子模块
+
+- `git submodule update --init --recursive`: 子模块初始化.
 
 ---
 

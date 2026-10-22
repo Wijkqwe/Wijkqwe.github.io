@@ -23,6 +23,8 @@ pacman -R <package_name>
 
 ## yay
 
+- [中文 wiki](https://wiki.archlinuxcn.org/zh-mo/Yay)
+
 用于 AUR 仓库, 参数选项与 `pacman` 相同.
 
 
