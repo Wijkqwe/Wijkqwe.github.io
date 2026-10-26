@@ -55,4 +55,6 @@ $ source <envname>/bin/activate
 - `python -m http.server`: 默认端口 8000
 - `python -m http.server 8000`: 指定端口
 
+## V2
 
+Unicode 默认 UCS2.

@@ -13,6 +13,9 @@ file
 ## history model
 directed acyclic graph
 
+## submodule
+
+> 一些项目使用文本记录子模块的哈希, 从而规避一些问题.
 
 ## data structure
 
@@ -119,7 +122,8 @@ references = map<string string>
 
 #### 提交
 
-- `git commit --amend [-m ""]`: 修改最近一次提交的信息.
+- `git commit --amend [-m ""]`: 将暂存区内容追加到最近一次提交.
+    - `--amend --no-edit`: 不修改提交信息.
     - `--amend --reset-author`: 修改最近一次提交的作者信息.
 - `git store <path>`: 恢复未暂存(未`add`)的文件.
     `--staged`:  从暂存区中恢复, 工作区修改保留.

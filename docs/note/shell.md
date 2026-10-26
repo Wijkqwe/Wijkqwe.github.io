@@ -74,7 +74,9 @@ Debian 系列的底层软件包管理工具.
 
 ### `du`
 
+- `-d N`/`--max-depth=N`: 限制层级.
 - `-h`: human avaible
+- `-s`: summary, 仅总计. 功能上等同于 `-d 0`.
 
 ### `echo`
 
@@ -224,11 +226,28 @@ systemd 套件中的一个命令行工具, 用于检测当前系统是否运行�
 
 ### `tar`
 
-- `-f`: 指定文件.
+- `-f <file>`: 指定文件.
+- `-t`: 列出内容.
 - `-v`: 详细信息.
 - `-x`: 解包.
 - `-z`: 通过 gzip 解压缩(处理 `.gz`).
 - `-C <path>`: 指定解压目录.
+
+### `test`
+
+POSIX 标准的条件求值命令. shell 脚本中做条件判断的底层命令.
+`[ ]` 和 `[[ ]]` 本质上都是它的语法糖。
+
+```sh
+test ...
+[ ... ]
+```
+
+- `-d <path>`: 是目录为真.
+- `-e <path>`: 文件存在为真.
+- `-f <path>`: 是文件为真.
+- `-n <str>`: 字符串非空为真.
+- `-z <str>`: 字符串为空为真.
 
 ### `nohup`
 encapsulating whatever command you're executing and ignoring wherever you get a hang up signal
@@ -332,15 +351,15 @@ match any single character
 
 ```bash
 cat qwe.{c,h}
-## equal
+#: equal
 cat qwe.c qwe.h
 
 touch pro{1,2}/test{1,2,3}.py
-## equal
+#: equal
 touch pro1/test1.py pro1/test2.py pro1/test3.py pro2/test1.py pro2/test2.py pro2/test3.py
 
 touch {a..j}
-## equal
+#: equal
 touch a b ... j
 ```
 将一组命令作为一个整体执行, 将整组的标准输出重定向.
@@ -354,6 +373,10 @@ touch a b ... j
 
 ### $PATH
 follow this to find where command is,
+
+### $SSH_CONNECTION
+
+通过 SSH 登录时, OpenSSH 的 sshd 会设置这个环境变量.
 
 ## 命令行快捷键
 
@@ -496,7 +519,10 @@ color-code, have better Unicode support.
 ### stow
 
 批量建立软链接，可用于管理配置文件.
+> 不接受包含 `/` 的路径.
 
+- `--dotfiles`: 将 `dot-` 映射为 `.`.
+  > stow 2.3.x 及之前该选项存在问题.
 - `-n`: 模拟操作，不实际执行
 - `-v`: 显示详情
 

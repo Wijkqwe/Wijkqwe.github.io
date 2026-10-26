@@ -4,8 +4,17 @@
 
 ### scp
 
-### ssh
+```sh
+scp [option] <source> <target>
+```
 
+remote: `user@IP:path`.
+
+- `-i <key_file>`: 密钥.
+- `-P <端口号>`:
+- `-r`: 目录递归.
+
+### ssh
 
 ### ssh-copy-id
 
