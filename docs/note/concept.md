@@ -141,6 +141,7 @@
 - **MLLM**: Multimodal Large Language Model 多模态大语言模型.
 - **MLP**: Multi-Layer Perceptron 多层感知机. 在 Transformer 中, MLP 通常指前馈网络(FFN, Feed-Forward Network), 是每个 Transformer 层中紧随注意力之后的第二个子层.
 - **MMA**: Matrix Multiply-Accumulate 矩阵乘加.
+- **MMU**: Memory Management Unit 内存管理单元.
 - **MMX**: MultiMedia Extensions 多媒体扩展. Intel 随 Pentium 处理器推出的一项
   SIMD 指令集扩展.
   包含 8 个 64 位寄存器(MM0-MM7), 直接复用了 x87 浮点运算单元(FPU)的 8 个 80
@@ -271,6 +272,7 @@
 
 - **ULP**: Unit in the Last Place 最后一位单位.
   ULP 是浮点数在某个数值附近, 两个相邻可表示数之间的间距. 它代表了该浮点数格式在该量级下能分辨的最小精度单位.
+- **UMD**: User-Mode Driver 用户态驱动.
 
 ## V
 

@@ -14,7 +14,13 @@
 - `apt list --installed`: 列出所有已安装的包.
 - `apt-mark showmanual`: 列出显式安装的包.
 - `dpkg -l`: 列出所有已安装的包.
+- `dpkg -s <pkg>`: 查看包状态.
+- `dpkg-deb -c <pkg>`: 列出包内文件.
 
 ## uninstall
 
 - `apt remove <pkg>`:
+
+## unzip
+
+- `dpkg-deb -x <pkg> <path>`: 解压包内文件到指定路径.

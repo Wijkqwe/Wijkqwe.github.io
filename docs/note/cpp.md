@@ -276,7 +276,7 @@ Provides consistent interface to handle errors through the throw expression
 
 #### `std::cerr`
 
-
+#### `std::hex`
 
 ### `<memory>`
 
