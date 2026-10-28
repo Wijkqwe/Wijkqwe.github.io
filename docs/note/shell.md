@@ -60,18 +60,6 @@ diff [选项] 文件1 文件2
 diff <(ls qwe) <(ls asd)
 ```
 
-### `dpkg`
-
-Debian 系列的底层软件包管理工具.
-
-- `-i <package.deb>`: 安装本地 `.deb` 包.
-- `-r <package>`: 卸载 保留配置.
-- `-P <package>`: 卸载 移除配置.
-- `-l`: 列出已安装包.
-    - `-l <package>`: 查询包是否安装.
-        - `ii`: 正常安装.
-        - `un`: 未安装.
-
 ### `du`
 
 - `-d N`/`--max-depth=N`: 限制层级.
@@ -123,6 +111,45 @@ find . -name "*.tmp" -exec rm {} \;
 
 - `groups <user>`: 查看指定用户.
 
+### `history`
+
+### `jobs`
+
+> [bg](#bg) | [fg](#fg)
+
+### `kill`
+kill jobs.
+allow to send any sort of Unix signal
+```bash
+kill -STOP %1
+```
+
+### `less`
+
+- <kbd>ctrl</kbd>+<kbd>u</kbd> scroll up
+- <kbd>ctrl</kbd>+<kbd>d</kbd> scroll down
+- <kbd>q</kbd> quit
+
+### `ln`
+
+```
+ln [目标路径] [链接路径]
+```
+
+- `-s`: 创建软链接
+- `-f`: 强制执行，如果目标位置已存在同名链接，会直接覆盖，无需手动删除旧链接
+
+### `ls`
+
+- `-F`: 根据类型在文件末尾添加标识符.
+
+### `more`
+
+- <kbd>space</kbd>: 下一屏
+- <kbd>enter</kbd>: 下一行
+- <kbd>b</kbd>: 前一屏
+- <kbd>q</kbd>: 退出
+
 ### `printf`
 
 > 由 POSIX 标准定义, 行为高度一致.
@@ -148,75 +175,9 @@ man realpath
 realpath [option] <file>
 ```
 
-### `tee`
-takes its input and writes it to a file, but also to standard out.
+### `sh`
 
-### `touch`
-create an empty file or change timestamps of file
-
-### `unalias`
-
-- `-a`: 取消全部 `alias`.
-
-### `usermod`
-
-```sh
-man usermod
-```
-- `-G <group1>[,gourp2...] <user>`: 将用户加到组内.
-    - `-aG`: 以追加形式添加.
-
-### `visudo`
-
-直接编辑 sudoers 文件.
-
-可通过修改 `EDITOR=<editor>` 设置编辑器.
-
-### `which`
-find command
-```bash
-which echo
-```
-
-### `history`
-
-### `less`
-
-- <kbd>ctrl</kbd>+<kbd>u</kbd> scroll up
-- <kbd>ctrl</kbd>+<kbd>d</kbd> scroll down
-- <kbd>q</kbd> quit
-
-### `ln`
-
-```
-ln [目标路径] [链接路径]
-```
-
-- `-s`: 创建软链接
-- `-f`: 强制执行，如果目标位置已存在同名链接，会直接覆盖，无需手动删除旧链接
-
-### `ls`
-
-- `-F`: 根据类型在文件末尾添加标识符.
-
-### `wc`
-
-默认输出格式.
-
-```
-行数 词数 字节数
-```
-
-### `jobs`
-
-> [bg](#bg) | [fg](#fg)
-
-### `kill`
-kill jobs.
-allow to send any sort of Unix signal
-```bash
-kill -STOP %1
-```
+- `-c <str>`: 将 str 当作命令而非脚本路径.
 
 ### systemd
 
@@ -249,17 +210,50 @@ test ...
 - `-n <str>`: 字符串非空为真.
 - `-z <str>`: 字符串为空为真.
 
+
+### `tee`
+takes its input and writes it to a file, but also to standard out.
+
+### `touch`
+create an empty file or change timestamps of file
+
+### `unalias`
+
+- `-a`: 取消全部 `alias`.
+
+### `usermod`
+
+```sh
+man usermod
+```
+- `-G <group1>[,gourp2...] <user>`: 将用户加到组内.
+    - `-aG`: 以追加形式添加.
+
+### `visudo`
+
+直接编辑 sudoers 文件.
+
+可通过修改 `EDITOR=<editor>` 设置编辑器.
+
+### `wc`
+
+默认输出格式.
+
+```
+行数 词数 字节数
+```
+
+### `which`
+
+find command
+```bash
+which echo
+```
+
 ### `nohup`
 encapsulating whatever command you're executing and ignoring wherever you get a hang up signal
 
 ### history substring search
-
-### `more`
-
-- <kbd>space</kbd>: 下一屏
-- <kbd>enter</kbd>: 下一行
-- <kbd>b</kbd>: 前一屏
-- <kbd>q</kbd>: 退出
 
 ## 特殊参数/符号
 
@@ -338,6 +332,16 @@ called `-r`. Or you want to run one program "through" another, like
 flags and options (things starting with `-`) in what follows, letting
 you pass things that look like flags without them being interpreted
 as such: `rm -- -r` or `ssh machine --for-ssh -- foo --for-foo`.after this will
+
+### `_`
+
+占位符.
+
+```sh
+sh -c "cmd" _ {}
+```
+
+其中 `_` 作为 `$0`, `{}` 作为 `$1`.
 
 ### globbing
 
@@ -464,7 +468,9 @@ for file in "$@"; do
 	...
 done
 ```
-
+```sh
+for i in I; do ...; done
+```
 
 ### `[ ... ]`
 Equal `test ...`.

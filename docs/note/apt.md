@@ -24,3 +24,15 @@
 ## unzip
 
 - `dpkg-deb -x <pkg> <path>`: 解压包内文件到指定路径.
+
+## command
+
+### `dpkg`
+
+- `-i <package.deb>`: 安装本地 `.deb` 包.
+- `-r <package>`: 卸载 保留配置.
+- `-P <package>`: 卸载 移除配置.
+- `-l`: 列出已安装包.
+    - `-l <package>`: 查询包是否安装.
+        - `ii`: 正常安装.
+        - `un`: 未安装.

@@ -22,6 +22,7 @@
     - `-S -emit-llvm`: `.ll` 文本格式.
     - `-c -emit-llvm`: `.bc` 二进制格式.
 
+- `-std=<>`: 指定 C++ 版本.
 - `-target <>`:
   > https://clang.llvm.org/docs/CrossCompilation.html#target-triple
 - `-Xclang <前端选项>`: 将选项传递给 clang 的前端(`-cc1` 调用).
@@ -29,4 +30,5 @@
     - `-disable-O0-optnone`: `clang -O0` 默认会给函数加上 `optnone` 属性,
       导致 `llc -O2` 仍然跳过所有优化 Pass.
     - `-ast-dump`: 输出 AST, 链接时报错.
+- `-Xarch_device <arg>`: 在异构编译中, 将参数传递给设备端编译工具链, 而不影响主机端.
 

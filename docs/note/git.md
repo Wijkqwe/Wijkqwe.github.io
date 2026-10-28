@@ -280,6 +280,11 @@ git clone <url> [folder name]
 
 #### `git config`
 
+### stash
+
+- `git stash`: 将工作区修改打包为一个提交压入栈.
+- `git stash pop`: 出栈.
+
 ### tag
 
 #### `git tag <tag_name> [<版本号>]`
