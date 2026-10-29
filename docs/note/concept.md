@@ -22,6 +22,7 @@
   下游会反过来向上游发送一个信号, 让上游暂停或减速发送数据.
 - **Bank**: 是指将大容量的存储资源(如内存、缓存、寄存器文件)划分为多个独立的、
   可以并行访问的小单元.每个小单元就是一个Bank.
+- **BLAS**: Basic Linear Algebra Subprograms 基础线性代数子程序.
 - **Bleeding-edge**: 指的是采用最新、最前沿, 但尚未经过充分测试的技术、
   框架或工具.
 - **BMM**: Batch Matrix Multiplication 批量矩阵乘法.
@@ -232,6 +233,7 @@
   它动态跟踪每条指令所需的操作数是否就绪、功能单元是否空闲,
   从而允许指令在满足条件时提前执行, 而不是死板地按程序顺序执行.
 - **SDF**: Synchronous Data Flow 同步数据流.
+- **SDK**: Software Development Kit 软件开发工具包.
 - **SLP**: Superword Level Parallelism 超字级并行.
 - **SNR**: Script Number Register 脚本编号寄存器.
 - **SPEC**: 规范驱动开发.

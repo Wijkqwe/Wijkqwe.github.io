@@ -80,6 +80,8 @@ references = map<string string>
 	- `--stat`: 查看统计情况
 - `git blame <file>`: 逐行查看每行代码的最后修改的提交(时间, 编辑者).
     - `-L <start>[,<end>]`: 从 start 行开始, 到 end 行结束. 若 end 为空则到最后一行.
+- `git rev-list --count <branch>`: 查看某分支的提交数.
+    - `<branch>` = `HEAD` 时为当前分支.
 
 #### 状态
 
