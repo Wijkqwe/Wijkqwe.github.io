@@ -2591,7 +2591,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年10月28日 13:21:32 UTC">2026年10月28日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年10月29日 12:57:26 UTC">2026年10月29日</span>
   </span>
 
     
@@ -2634,20 +2634,31 @@
 </ul>
 </li>
 <li>
-<p><code>-std=&lt;&gt;</code>: 指定 C++ 版本.</p>
+<p><code>-I[ ]&lt;path&gt;</code>: 指定头文件搜索路径.</p>
 </li>
-<li><code>-target &lt;&gt;</code>:<blockquote>
+<li><code>-l[ ]&lt;name&gt;</code>: 指定需要链接的库 <code>lib&lt;name&gt;</code>.</li>
+<li><code>-L[ ]&lt;path&gt;</code>: 指定额外的库的搜索路径.</li>
+<li><code>-std=&lt;&gt;</code>: 指定 C++ 版本.</li>
+<li>
+<p><code>-target &lt;&gt;</code>:</p>
+<blockquote>
 <p>https://clang.llvm.org/docs/CrossCompilation.html#target-triple</p>
 </blockquote>
 </li>
-<li><code>-Xclang &lt;前端选项&gt;</code>: 将选项传递给 clang 的前端(<code>-cc1</code> 调用).
-  每次只传递一个选项.<ul>
+<li>
+<p><code>-Xclang &lt;前端选项&gt;</code>: 将选项传递给 clang 的前端(<code>-cc1</code> 调用).
+  每次只传递一个选项.</p>
+<ul>
 <li><code>-disable-O0-optnone</code>: <code>clang -O0</code> 默认会给函数加上 <code>optnone</code> 属性,
   导致 <code>llc -O2</code> 仍然跳过所有优化 Pass.</li>
 <li><code>-ast-dump</code>: 输出 AST, 链接时报错.</li>
+<li><code>-target-sdk-version=&lt;ver&gt;</code>: 指定 SDK 版本. 通常仅在 macos 上有用.</li>
 </ul>
 </li>
-<li><code>-Xarch_device &lt;arg&gt;</code>: 在异构编译中, 将参数传递给设备端编译工具链, 而不影响主机端.</li>
+<li><code>-Xarch_device &lt;arg&gt;</code>: 在异构编译中, 将参数传递给设备端编译工具链, 而不影响主机端.<ul>
+<li><code>-nostdlibinc</code>: 禁止搜索标准系统头文件目录.</li>
+</ul>
+</li>
 </ul>
 
 
@@ -2671,7 +2682,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年10月28日 13:21:32 UTC">2026年10月28日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年10月29日 12:57:26 UTC">2026年10月29日</span>
   </span>
 
     
