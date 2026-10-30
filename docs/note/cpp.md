@@ -397,7 +397,6 @@ GNU Multiple Precision Arithmetic Library (GMP)
     }
     ```
 
-
 ### 指令
 
 #### pragma
@@ -410,23 +409,37 @@ GNU Multiple Precision Arithmetic Library (GMP)
 函数名前: 返回值为const
 函数名后: 函数不能修改class的成员
 
-
 ### virtual
 虚函数, 位置在函数返回类型前
 函数声明中加, 函数实现中不加
 
 
 ### override
+
 重写虚函数, 位置在函数名后
 函数声明中加, 函数实现中不加
 
-
 ### static
+
 函数声明中加, 函数实现中不加
 
+### using
 
+C++11 加入.
 
+#### 定义别名
 
+```cpp
+using qwe_t = qwe;
+```
+
+用法与 `typedef` 类似.
+
+可以用于定义一个指向函数的指针类型.
+```cpp
+using qwe_t = bool (*)(const QWE& qwe);
+using qwe_func = bool (const QWE& qwe);
+```
 
 ***
 
