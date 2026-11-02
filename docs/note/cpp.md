@@ -402,7 +402,28 @@ GNU Multiple Precision Arithmetic Library (GMP)
 #### pragma
 预处理器指令
 
+### 宏
 
+`#define <tar> [source]`.
+
+#### `##`
+
+用于将左右 token 拼接成一个新 token.
+
+```c
+#define qwe_t(a, b) class a##b {}
+qwe_t(qwe, asd) //: class qweasd {}
+#define qwe_func(a) class qwe##a {}
+qwe_func(asd) //: class qweasd {}
+```
+
+### 模板
+
+显示实例化定义.
+
+```c
+template 类型 函数名<模板实参>(参数列表);
+```
 
 ### const
 
