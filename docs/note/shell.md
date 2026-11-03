@@ -72,6 +72,10 @@ diff <(ls qwe) <(ls asd)
 
 - `-e`: 允许解析转义字符.
 
+### `env`
+
+列出环境变量.
+
 ### `fg`
 
 > [bg](#bg) | [jobs](#jobs)
@@ -221,11 +225,23 @@ create an empty file or change timestamps of file
 
 - `-a`: 取消全部 `alias`.
 
+### `useradd`
+
+添加用户.
+
+- `-d <dir>`: 指定用户登录时的主目录路径(配合 `-m` 使用).
+- `-m`: 创建用户主目录, 如果不存在则自动创建, 并从骨架目录(默认 `/etc/skel`)复制初始文件.
+  > 创建时内部逻辑会直接设置所有者和所有组, 若没有权限则报错.
+- `-M`: 不创建用户主目录, 即使系统配置默认创建.
+
 ### `usermod`
 
 ```sh
 man usermod
 ```
+
+- `-d <dir> <user>`: 修改用户 `$HOME`.
+    - `-d <dir> -m <user>`: 同时将原目录下所有文件复制到目标目录.
 - `-G <group1>[,gourp2...] <user>`: 将用户加到组内.
     - `-aG`: 以追加形式添加.
 
@@ -374,6 +390,8 @@ touch a b ... j
 ```
 
 ## 环境变量
+
+`env` / `printenv` 列出当前进程所有环境变量.
 
 ### $PATH
 follow this to find where command is,

@@ -94,6 +94,7 @@ nav:
       - Clangd: note/clangd.md
       - Gdb: note/gdb.md
       - Git: note/git.md
+      - GNU: note/gnu.md
       - i3wm: note/i3wm.md
       - Kitty: note/kitty.md
       - MkDocs: note/mkdocs.md
