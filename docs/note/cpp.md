@@ -417,6 +417,33 @@ qwe_t(qwe, asd) //: class qweasd {}
 qwe_func(asd) //: class qweasd {}
 ```
 
+### 枚举
+
+keyword `enum`.
+
+```cpp
+enum qwe {};
+```
+
+#### 限定作用域
+
+```cpp
+enum class qwe{};
+enum struct qwe{};
+```
+
+两种写法等价.
+修饰后, 枚举值需加类型名限定.
+```cpp
+qwe x = qwe::q;
+```
+不会污染外围作用域.
+
+强类型, 需进行显式转换.
+```cpp
+int i = static_cast<int>(qwe::q);
+```
+
 ### 模板
 
 显示实例化定义.
@@ -424,6 +451,19 @@ qwe_func(asd) //: class qweasd {}
 ```c
 template 类型 函数名<模板实参>(参数列表);
 ```
+
+- `template <int N>`: 非类型模板参数, 需为编译期常量.
+- `template <Args... args>`: 可变参数模板 (值包).
+- `template <class... Args>`: 可变参数模板 (类型包).
+
+### 断言
+
+#### static_assert
+
+C++11 引入. C++17 支持单参数形式.
+
+编译期断言, 在编译阶段检查条件是否成立.
+条件需是编译期常量表达式 (`constexpr`).
 
 ### const
 

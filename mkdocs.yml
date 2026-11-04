@@ -68,6 +68,8 @@ nav:
       - Python: note/python.md
       - Shell: note/shell.md
       - Vue: note/vue.md
+      - 编程模型:
+        - CUDA: note/cuda.md
     - Browser Plugin: note/browser_plugin.md
     - LLVM:
       - note/llvm.md
