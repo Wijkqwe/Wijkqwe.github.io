@@ -81,7 +81,12 @@
 
 - **GDSII**: Graphic Design System II 图形设计系统二代是芯片设计领域最关键、
   应用最广泛的数据库文件格式.
-- **GeMM**: General Matrix Multiply 通用矩阵乘法.
+- **GEMM**: General Matrix Multiply 通用矩阵乘法.
+    - **tile**: 将矩阵切分成多个尺寸较小的子矩阵(块), 然后以这些小块为单位进行数据搬运和计算,
+      每个小块为一个 tile.
+    - **B M N K**: 
+        - B: batch size
+        - M N K: 三个维度.
 - **GPR**: General Purpose Register 通用寄存器.
 - **GSoC**: Google Summer of Code. 由 Google 主办的一项全球性线上开源编程项目.
   竞争激烈.
@@ -263,6 +268,8 @@
 - **TMA**: Tensor Memory Accelerator 张量内存加速器. NVIDIA 从 Hopper 架构开始引入的一个专用硬件引擎.
 - **ToB**: To Business.
 - **ToC**: To Consumer.
+- **TOSA**: Tensor Operator Set Architecture. 由 ARM 等公司推动的开放规范.
+  在 MLIR 中以方言实现.
 - **TSP**: Tensor Streaming Processor.
 - **TTA**: Transport Triggered Architecture 传输触发架构.
 - **TTD**: Tensor-Train Decomposition 张量列分解.

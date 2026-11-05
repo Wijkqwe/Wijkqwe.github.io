@@ -117,6 +117,10 @@ find . -name "*.tmp" -exec rm {} \;
 
 ### `history`
 
+### `ip`
+
+- `ip addr`: 列出 IP 地址.
+
 ### `jobs`
 
 > [bg](#bg) | [fg](#fg)

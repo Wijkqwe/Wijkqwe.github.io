@@ -446,15 +446,37 @@ int i = static_cast<int>(qwe::q);
 
 ### 模板
 
-显示实例化定义.
+- `template 类型 函数名<模板实参>(参数列表);`: 显示实例化定义.
 
-```c
-template 类型 函数名<模板实参>(参数列表);
-```
+- `template <class T>`: 模板参数, T 为类型参数.
+- `template <int N>`: 非类型模板参数, N 需为编译期常量.
 
-- `template <int N>`: 非类型模板参数, 需为编译期常量.
+#### 参数包
+
 - `template <Args... args>`: 可变参数模板 (值包).
 - `template <class... Args>`: 可变参数模板 (类型包).
+- `args...`: 展开参数包.
+- `sizeof...(args)`: 返回参数包中元素的个数.
+
+#### 类模板
+
+```cpp
+template <class T, int N>
+class QWE {};
+//: 全特化
+template <>
+class QWE<float, 1> : public ASD { return 0; };
+//: 偏特化
+template <int N>
+class QWE<float> : public ZXC { return N; };
+```
+
+#### 函数模板
+
+```cpp
+template <class T, int N>
+void qwe(T a) { return N; }
+```
 
 ### 断言
 
@@ -467,8 +489,12 @@ C++11 引入. C++17 支持单参数形式.
 
 ### const
 
-函数名前: 返回值为const
-函数名后: 函数不能修改class的成员
+- 函数名前: 返回值为const.
+- 函数名后: 函数不能修改class的成员.
+
+- `const void* const qwe[];`: qwe 数组中每个元素都是指向 `const void` 的 `const` 指针.
+    - 指向数据不可变.
+    - 指针本身不可变.
 
 ### virtual
 虚函数, 位置在函数返回类型前
