@@ -1652,10 +1652,49 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="模板">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        参数包
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        类模板
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        函数模板
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
     <span class="md-ellipsis">
       
         断言
@@ -1739,7 +1778,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_23" class="md-nav__link">
+  <a href="#_26" class="md-nav__link">
     <span class="md-ellipsis">
       
         定义别名
@@ -4676,10 +4715,49 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="模板">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        参数包
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        类模板
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        函数模板
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
     <span class="md-ellipsis">
       
         断言
@@ -4763,7 +4841,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_23" class="md-nav__link">
+  <a href="#_26" class="md-nav__link">
     <span class="md-ellipsis">
       
         定义别名
@@ -4841,7 +4919,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年11月4日 11:19:43 UTC">2026年11月4日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年11月5日 11:04:55 UTC">2026年11月5日</span>
   </span>
 
     
@@ -5201,22 +5279,55 @@ i != 0时为false,输出" ";</p>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">qwe</span><span class="o">::</span><span class="n">q</span><span class="p">);</span>
 </code></pre></div></p>
 <h3 id="_21">模板<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
-<p>显示实例化定义.</p>
-<div class="highlight"><pre><span></span><code><span class="n">template</span><span class="w"> </span><span class="n">类型</span><span class="w"> </span><span class="n">函数名</span><span class="o">&lt;</span><span class="n">模板实参</span><span class="o">&gt;</span><span class="p">(</span><span class="n">参数列表</span><span class="p">);</span>
-</code></pre></div>
 <ul>
-<li><code>template &lt;int N&gt;</code>: 非类型模板参数, 需为编译期常量.</li>
+<li>
+<p><code>template 类型 函数名&lt;模板实参&gt;(参数列表);</code>: 显示实例化定义.</p>
+</li>
+<li>
+<p><code>template &lt;class T&gt;</code>: 模板参数, T 为类型参数.</p>
+</li>
+<li><code>template &lt;int N&gt;</code>: 非类型模板参数, N 需为编译期常量.</li>
+</ul>
+<h4 id="_22">参数包<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h4>
+<ul>
 <li><code>template &lt;Args... args&gt;</code>: 可变参数模板 (值包).</li>
 <li><code>template &lt;class... Args&gt;</code>: 可变参数模板 (类型包).</li>
+<li><code>args...</code>: 展开参数包.</li>
+<li><code>sizeof...(args)</code>: 返回参数包中元素的个数.</li>
 </ul>
-<h3 id="_22">断言<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<h4 id="_23">类模板<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">T</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="o">&gt;</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">QWE</span><span class="w"> </span><span class="p">{};</span>
+<span class="c1">//: 全特化</span>
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">QWE</span><span class="o">&lt;</span><span class="kt">float</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="o">&gt;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">ASD</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="p">};</span>
+<span class="c1">//: 偏特化</span>
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="o">&gt;</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">QWE</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">ZXC</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">N</span><span class="p">;</span><span class="w"> </span><span class="p">};</span>
+</code></pre></div>
+<h4 id="_24">函数模板<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="nc">T</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="o">&gt;</span>
+<span class="kt">void</span><span class="w"> </span><span class="n">qwe</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">N</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<h3 id="_25">断言<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
 <h4 id="static_assert">static_assert<a class="headerlink" href="#static_assert" title="Permanent link">&para;</a></h4>
 <p>C++11 引入. C++17 支持单参数形式.</p>
 <p>编译期断言, 在编译阶段检查条件是否成立.
 条件需是编译期常量表达式 (<code>constexpr</code>).</p>
 <h3 id="const">const<a class="headerlink" href="#const" title="Permanent link">&para;</a></h3>
-<p>函数名前: 返回值为const
-函数名后: 函数不能修改class的成员</p>
+<ul>
+<li>函数名前: 返回值为const.</li>
+<li>
+<p>函数名后: 函数不能修改class的成员.</p>
+</li>
+<li>
+<p><code>const void* const qwe[];</code>: qwe 数组中每个元素都是指向 <code>const void</code> 的 <code>const</code> 指针.</p>
+<ul>
+<li>指向数据不可变.</li>
+<li>指针本身不可变.</li>
+</ul>
+</li>
+</ul>
 <h3 id="virtual">virtual<a class="headerlink" href="#virtual" title="Permanent link">&para;</a></h3>
 <p>虚函数, 位置在函数返回类型前
 函数声明中加, 函数实现中不加</p>
@@ -5227,7 +5338,7 @@ i != 0时为false,输出" ";</p>
 <p>函数声明中加, 函数实现中不加</p>
 <h3 id="using">using<a class="headerlink" href="#using" title="Permanent link">&para;</a></h3>
 <p>C++11 加入.</p>
-<h4 id="_23">定义别名<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h4>
+<h4 id="_26">定义别名<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">qwe_t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">qwe</span><span class="p">;</span>
 </code></pre></div>
 <p>用法与 <code>typedef</code> 类似.</p>
@@ -5261,7 +5372,7 @@ i != 0时为false,输出" ";</p>
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年11月4日 11:19:43 UTC">2026年11月4日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年11月5日 11:04:55 UTC">2026年11月5日</span>
   </span>
 
     
