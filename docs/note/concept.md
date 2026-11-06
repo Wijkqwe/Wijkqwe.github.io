@@ -75,6 +75,7 @@
 ## F
 
 - **False Positive**: 将正常误报为异常.
+- **FFN**: Feed Forward Network 前馈网络.
 - **FP16**: Floating-Point 16-bit 16位浮点数.
 
 ## G
