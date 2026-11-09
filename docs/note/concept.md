@@ -70,6 +70,8 @@
 
 ## E
 
+- **ELF**: Executable and Linkable Format 可执行与可连接格式.
+  类 Unix 系统下标准二进制文件格式.
 - **EOS**: End of Sequence 序列结束符.
 
 ## F
