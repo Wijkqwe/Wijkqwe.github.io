@@ -8,6 +8,10 @@
 
 ## 变量
 
+- `CMAKE_BUILD_TYPE`: 构建类型.
+    - `Debug`.
+    - `Release`.
+    - `RelWithDebInfo`.
 - `CMAKE_CURRENT_BINARY_DIR`: 当前 CMakeLists.txt 对应的构建目录.
 - `CMAKE_CURRENT_SOURCE_DIR`: 当前 CMakeLists.txt 所在的源码目录.
 - `CMAKE_BINARY_DIR`: 整个项目的顶层构建目录.
@@ -18,6 +22,13 @@
 
 调用函数时, 没有匹配具名形参的参数, 被传给 `cmake_parse_arguments` 进行处理,
 其中无法识别的参数被传给 `ARG_UNPARSED_ARGUMENTS`.
+
+### target_compile_options
+
+```cmake
+target_compile_options(<target> [BEFORE] <INTERFACE|PUBLIC|PRIVATE> <item>...
+                       [<INTERFACE|PUBLIC|PRIVATE> <item>...]...)
+```
 
 ## 关键字
 

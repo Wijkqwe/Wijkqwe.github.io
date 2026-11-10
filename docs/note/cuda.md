@@ -27,3 +27,21 @@ CUDA C++ 中对“在 GPU 上并行执行的函数”的专有称呼.
 
 ### dim3
 
+## 操作
+
+### 填充元素
+
+```cpp
+if (TILE * sizeof(T) <= x) {
+  return x / sizeof(T);
+}
+```
+tile 总字节数不超过 x 字节时，将元素数提升到填满的粒度.
+
+### 向上取整
+
+x 向上取整到 tile 的整数倍.
+```cpp
+x = ((x + tile - 1) / tile) * tile;
+```
+

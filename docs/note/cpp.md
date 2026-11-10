@@ -3,14 +3,14 @@
 ### 函数
 
 #### 绝对值
+
 * abs(): 整数绝对值
 * fabs(): 浮点数绝对值
 
-
 #### 位运算
+
 * lowbit(): 计算二进制中最低位的1
 `#define lowbit(x) ((x)&(-x))`
-
 
 #### 幂运算
 
@@ -154,6 +154,7 @@ i != 0时为false,输出" ";
 ***
 
 ## STL(Standard Template Library)
+
 `<algorithm>`
 `<deque>`
 `<functional>`
@@ -167,7 +168,6 @@ i != 0时为false,输出" ";
 `<set>`
 `<stack>`
 `<utility>`
-
 
 ### 迭代器`<iterator>`
 
@@ -222,7 +222,6 @@ i != 0时为false,输出" ";
 
 ## Standard Library
 [Web](https://en.cppreference.com/w/cpp/standard_library)
-
 
 ### `<algorithm>`
 
@@ -376,9 +375,6 @@ class tuple;
 GNU Multiple Precision Arithmetic Library (GMP)
 大整数算术运算
 
-
-
-
 ***
 
 ## 语法
@@ -486,6 +482,22 @@ C++11 引入. C++17 支持单参数形式.
 
 编译期断言, 在编译阶段检查条件是否成立.
 条件需是编译期常量表达式 (`constexpr`).
+
+### 属性
+
+`__attribute__`
+
+#### aligned()
+
+GCC/Clang 提供的扩展属性, 强制指定变量或类型的内存对齐字节数.
+```cpp
+int x __attribute__((aligned(64)));
+//: x 的起始地址为 64 的倍数.
+```
+C++11 起有标准特性 `alignas()`.
+```cpp
+alignas(64) int x;
+```
 
 ### const
 
