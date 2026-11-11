@@ -129,6 +129,11 @@ references = map<string string>
     - `--amend --reset-author`: 修改最近一次提交的作者信息.
 - `git store <path>`: 恢复未暂存(未`add`)的文件.
     `--staged`:  从暂存区中恢复, 工作区修改保留.
+- 拆分提交.
+    1. `git rebase` `e`: 停留在对应的哈希.
+    1. `git reset HEAD^`: 撤销提交并保留更改.
+    1. "分别提交".
+    1. `git rebase --continue`: 继续.
 
 #### 远程
 
@@ -138,12 +143,20 @@ references = map<string string>
 #### 分支
 
 - `git branch -m [<旧分支名>] <新分支名>`: 重命名.
+- `git branch -f <父分支> <子分支>`: 将<父分支>移动到<子分支>的位置.
+  需要当前不在<父分支>上.
 
 ### 删
 
 #### 远程
 
 - `git remote remove <name>`:
+
+#### 分支
+
+- `gb -d <branch>`: 删除已合并分支.
+- `gb -D <branch>`: 删除未合并分支.
+- `gp <remote> --delete <branch>`: 删除远程分支.
 
 ### 增
 

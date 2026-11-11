@@ -176,6 +176,8 @@
   语言的 DSL, 是 MLIR 框架中一个非常核心的声明式定义机制.
 - **OOD**: Out-of-Distribution 分布外. 用于评估模型可靠性.
 - **OoO**: Out of Order Execution 乱序执行.
+- **OpenMPI**: Open Message Passing Interface.
+  开源的高性能消息传递库, 也是 MPI 标准在生产环境中最主流的实现之一.
 - **OSDT**: Open Source Development Tools 开源开发工具.
 - **outline**: 将程序中的一段代码(通常是一个独立的代码区域)提取出来,
   封装成一个单独的函数.
@@ -187,6 +189,9 @@
   已经无法再改进其中任何一个目标的状态.
 - **Pass-through**: 透传, 指一个组件或层级在传递数据时, 不对数据的内容进行解释、
   转换或验证, 只是单纯地把它转发给下一级.
+- **PCB**: Printed Circuit Board 印制电路板/印刷线路板.
+    - **板卡**: PCB 经过元器件装配后形成的功能模块.
+      功能相对独立、通过插槽或接口连接到主系统(如计算机主板)上, 以扩展或增强系统特定功能.
 - **PCIe**: Peripheral Component Interconnect Express 高速串行计算机扩展总线标准.
 - **Phi 操作**(Φ/φ 函数): 用来解决问题: 当一个变量在程序的控制流汇合处(比如
   if-else 之后)拥有多个可能的定义来源时, 如何明确地“选择”正确的那个.
@@ -244,6 +249,7 @@
 - **SDK**: Software Development Kit 软件开发工具包.
 - **SLP**: Superword Level Parallelism 超字级并行.
 - **SNR**: Script Number Register 脚本编号寄存器.
+- **SoC**: System on a Chip 片上系统.
 - **SPEC**: 规范驱动开发.
 - **SPIR-V**: 是一个开放标准的、跨平台的二进制中间语言,
   专门用于表示并行计算和图形学任务, 比如着色器(Shader)和计算内核(Compute Kernel).
