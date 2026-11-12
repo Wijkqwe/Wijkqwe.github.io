@@ -80,6 +80,15 @@ diff <(ls qwe) <(ls asd)
 
 > [bg](#bg) | [jobs](#jobs)
 
+### `file`
+
+给出文件基本类型信息.
+
+```sh
+#: 可查看库是否包含调试信息
+file <>.so
+```
+
 ### `find`
 
 ```bash

@@ -45,3 +45,18 @@ x 向上取整到 tile 的整数倍.
 x = ((x + tile - 1) / tile) * tile;
 ```
 
+## major
+
+```
+C[M, N] = A[M, K] * B[K, N]
+```
+- C:
+    - M-major：col-major 列优先存储
+    - N-major：row-major 行优先存储
+- A：
+    - M-major：col-major 列优先存储
+    - K-major：row-major 行优先存储
+- B：
+    - K-major：col-major 列优先存储
+    - N-major：row-major 行优先存储
+

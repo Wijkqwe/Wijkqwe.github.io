@@ -10,6 +10,8 @@
 
 - `CMAKE_BUILD_TYPE`: 构建类型.
     - `Debug`.
+      > 某些情况下, 部分文件会缺少 `-g`.
+      > 需手动添加.
     - `Release`.
     - `RelWithDebInfo`.
 - `CMAKE_CURRENT_BINARY_DIR`: 当前 CMakeLists.txt 对应的构建目录.

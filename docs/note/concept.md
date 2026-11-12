@@ -91,6 +91,7 @@
         - B: batch size
         - M N K: 三个维度.
 - **GPR**: General Purpose Register 通用寄存器.
+- **GraphQL**: 一种用于 API 的查询语言, 同时也是一套服务器端的运行时环境.
 - **GSoC**: Google Summer of Code. 由 Google 主办的一项全球性线上开源编程项目.
   竞争激烈.
 
@@ -139,6 +140,7 @@
 - **LSTM**: Long Short Term Memory 长短期记忆网络.
 - **LTO**: Link-Time Optimization 链接时代码优化.
 - **LUT**: Lookup Table 查找表.
+- **LVM**: Logical Volume Manager 逻辑卷管理. Linux 下的一种磁盘分区管理机制.
 
 ## M
 
@@ -205,6 +207,7 @@
 - **Predicate Functions**: 谓词函数.
 - **Predicate Loops**: 谓词循环.
 - **PRD**: Product Requirements Document 产品需求文档.
+- **PVE**: Proxmox VE. 虚拟化平台.
 
 ## Q
 
@@ -309,13 +312,16 @@
 - **XaaS**: Everything as a Service 一切皆服务.
   云计算的核心思想: 把任何 IT 能力都封装成"按需付费的服务".
   有多种衍生模式.
+- **Xfce4**: Linux 轻量级桌面环境.
 
 ## 其他
 
 - **端侧**: 通常指"终端设备一侧". 计算和数据处理发生在设备本地, 而不是发送到云端.
+- **核函数**: 异构编程模型中, 算子在 GPU 上的一种实现方式.
 - **寄存器重命名**: 将指令中的寄存器映射到实际的物理寄存器.
 - **内核编译**: AI编译器中的内核编译, 是将高层级的AI模型描述(如PyTorch的计算图), 
   转化为能在特定硬件(如GPU或Groq LPU)上极致高效运行的、
   专门定制的底层计算内核(Kernel)的过程.
 - **启发式算法**: 找到足够好(可接受)的解.
+- **算子**: 执行特定运算或操作的基础功能单元.
 
