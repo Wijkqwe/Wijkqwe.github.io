@@ -157,7 +157,9 @@ repeat the previous editing command that was made
 
 ### fold
 
-- <kbd>z</kbd>+<kbd>a</kbd>: open or close current fold
+- <kbd>z</kbd><kbd>a</kbd>: open or close current fold
+- <kbd>z</kbd><kbd>R</kbd>: unfold all.
+- <kbd>z</kbd><kbd>M</kbd>: fold all.
 
 ---
 

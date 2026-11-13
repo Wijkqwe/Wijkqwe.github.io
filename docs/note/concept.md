@@ -7,6 +7,7 @@
 - **AGU**: 地址生成单元. 处理器内部专门负责计算和生成内存访问地址的硬件单元.
   可与 ALU 并行.
 - **AI Infra**: 
+- **AME**: RISC-V 附加矩阵扩展.
 - **Antichain**: 反链, 是图论(特别是偏序集理论)中的一个重要概念.
 - **ASIC**: Application-Specific Integrated Circuit 专用集成电路.
 - **Attention Mechanism**: 注意力机制, 是当今几乎所有主流大模型(如GPT、LLaMA、

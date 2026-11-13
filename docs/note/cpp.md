@@ -413,6 +413,12 @@ qwe_t(qwe, asd) //: class qweasd {}
 qwe_func(asd) //: class qweasd {}
 ```
 
+### 类型转换
+
+#### reinterpret_cast
+
+将这部分内存当作另一种类型来看待.
+
 ### 枚举
 
 keyword `enum`.
