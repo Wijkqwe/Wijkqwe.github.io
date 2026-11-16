@@ -23,6 +23,7 @@
   下游会反过来向上游发送一个信号, 让上游暂停或减速发送数据.
 - **Bank**: 是指将大容量的存储资源(如内存、缓存、寄存器文件)划分为多个独立的、
   可以并行访问的小单元.每个小单元就是一个Bank.
+- **BIU**: Bus Interface Unit 总线接口单元.
 - **BLAS**: Basic Linear Algebra Subprograms 基础线性代数子程序.
 - **Bleeding-edge**: 指的是采用最新、最前沿, 但尚未经过充分测试的技术、
   框架或工具.
@@ -80,17 +81,24 @@
 - **False Positive**: 将正常误报为异常.
 - **FFN**: Feed Forward Network 前馈网络.
 - **FP16**: Floating-Point 16-bit 16位浮点数.
+- **Frontier**: 用于 LLM 推理服务的离散事件仿真器. 可用来性能预测.
 
 ## G
 
 - **GDSII**: Graphic Design System II 图形设计系统二代是芯片设计领域最关键、
   应用最广泛的数据库文件格式.
-- **GEMM**: General Matrix Multiply 通用矩阵乘法.
+- **GEMM**: General Matrix Multiply 通用矩阵乘法. D = \alpha (A * B) + \beta C.
     - **tile**: 将矩阵切分成多个尺寸较小的子矩阵(块), 然后以这些小块为单位进行数据搬运和计算,
       每个小块为一个 tile.
     - **B M N K**: 
         - B: batch size
         - M N K: 三个维度.
+    - **major**: 元素存储方式.
+    - **ld**: 相邻行/列内存跨度.
+    - **blk**: 块大小.
+    - **scaling factors**: 即 \alpha \beta.
+    - **Split-K**: 将 K 维计算拆分, 多个计算单元分别计算部分和, 再将这些部分和累加.
+      当 M N 较小, K 较大时, 可有效利用算力.
 - **GPR**: General Purpose Register 通用寄存器.
 - **GraphQL**: 一种用于 API 的查询语言, 同时也是一套服务器端的运行时环境.
 - **GSoC**: Google Summer of Code. 由 Google 主办的一项全球性线上开源编程项目.
@@ -99,6 +107,7 @@
 ## H
 
 - **HBM**: 高带宽内存.
+- **HDL**: Hardware Description Language 硬件描述语言.
 - **HM 算法**: Hindley-Milner 算法, 
   是一套为程序自动推导出最通用类型的经典类型推理算法.它也被称为Damas-Milner算法.
 - **HPC**: High-Performance Computing 高性能计算.
@@ -224,6 +233,8 @@
 - **RNG**: Random Number Generator 随机数生成器.
 - **RNN**: Recurrent neural network 循环神经网络.
 - **ROI**: Return on Investment 投资回报率.
+- **Roofline**: 上界分析模型.
+  核心思想是: 任何程序在特定硬件上的实际性能, 都不可能超过由“硬件峰值计算能力”和“内存带宽”共同决定的上限.
 - **ROS**: Robot Operating System 机器人操作系统.
 - **RoundTrip**: 往返转换, 是将数据从格式 A 转换为格式 B, 再从格式 B 转换回格式
   A, 然后验证转换后的结果是否与原始数据完全一致的过程.

@@ -76,6 +76,7 @@ nav:
       - clang: note/llvm-clang.md
       - flang: note/llvm-flang.md
       - LLVM IR: note/llvm-ir.md
+      - MLIR: note/mlir.md
       - Tools: note/llvm-tools.md
       - Vectorize: note/llvm-vectorize.md
     - Potpourri:
@@ -100,6 +101,7 @@ nav:
       - i3wm: note/i3wm.md
       - Kitty: note/kitty.md
       - MkDocs: note/mkdocs.md
+      - notebook: note/notebook.md
       - Npm: note/npm.md
       - Office: 
         - Excel: note/excel.md
