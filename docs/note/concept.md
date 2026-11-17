@@ -41,6 +41,7 @@
 - **CIM**: Computing-in-Memory 存内计算.
 - **Clause**: 子句 / 子语. 是附加在 Directive 后面的“修饰语”, 用来告诉编译器
   “以什么方式”、“在什么条件下”、“对哪些变量”执行这个 Directive.
+- **CModel**: 用于模拟芯片或硬件模块功能的软件程序.
 - **CMOS**: Complementary Metal-Oxide-Semiconductor 互补金属氧化物半导体.
   既是一种半导体制造工艺, 也是一种电路设计风格, 是现代数字芯片(CPU、GPU、AI 芯片、内存)最基础的构建单元.
 - **CNN**: Convolutional Neural Network 卷积神经网络.
@@ -58,6 +59,7 @@
 - **DCE**: Dead Code Elimination 死代码消除.
 - **DCU**: Deep Compute Unit 深度计算单元. 特指海光信息(Hygon)研发的 GPGPU 架构 AI 加速卡.
 - **DFA**: 确定性有限自动机.
+- **Die**: 裸片/晶粒. 在芯片设计中, 是指从一整片 Wafer 上切割下来的、包含完整集成电路的小块硅片. 它是芯片制造过程中的核心单元, 也是封装前的最小功能实体.
 - **Directive**: 编译指令 / 指示符. 源码中的特殊标记, 用来指导编译器、预处理器或运行时系统如何处理代码.
 - **DL**: Deep Learning 深度学习.
 - **DLP**: Data-Level Parallelism 数据级并行.
@@ -68,6 +70,7 @@
 - **DSO**: Dynamic Shared Object 动态共享对象. 即动态链接库.
 - **DSP**: Digital Signal Processor 数字信号处理器,
   是一种专门为快速处理连续数字信号流(如声音、图像、雷达回波)而设计的微处理器.
+- **DSVx**: DeepSeek V x.
 - **DWARF**: 一种标准化的调试信息格式.
 
 ## E
@@ -80,6 +83,8 @@
 
 - **False Positive**: 将正常误报为异常.
 - **FFN**: Feed Forward Network 前馈网络.
+- **FFT**: Fast Fourier Transform 快速傅里叶变换.
+  一种高效计算离散傅里叶变换（DFT）的算法. 它的核心作用是把信号从时域转换到频域.
 - **FP16**: Floating-Point 16-bit 16位浮点数.
 - **Frontier**: 用于 LLM 推理服务的离散事件仿真器. 可用来性能预测.
 
@@ -99,6 +104,7 @@
     - **scaling factors**: 即 \alpha \beta.
     - **Split-K**: 将 K 维计算拆分, 多个计算单元分别计算部分和, 再将这些部分和累加.
       当 M N 较小, K 较大时, 可有效利用算力.
+    - **WS**: WorkSpace. 用于暂存中间结果或辅助数据.
 - **GPR**: General Purpose Register 通用寄存器.
 - **GraphQL**: 一种用于 API 的查询语言, 同时也是一套服务器端的运行时环境.
 - **GSoC**: Google Summer of Code. 由 Google 主办的一项全球性线上开源编程项目.
@@ -108,6 +114,8 @@
 
 - **HBM**: 高带宽内存.
 - **HDL**: Hardware Description Language 硬件描述语言.
+- **HLO**: High Level Optimizer 高级优化器.
+  是 XLA（加速线性代数）编译器的核心 IR.
 - **HM 算法**: Hindley-Milner 算法, 
   是一套为程序自动推导出最通用类型的经典类型推理算法.它也被称为Damas-Milner算法.
 - **HPC**: High-Performance Computing 高性能计算.
@@ -176,6 +184,7 @@
 ## N
 
 - **NEON**: ARM 随 ARM Cortex-A8（2005）推出的 SIMD 指令集.
+- **NEU**: Neural Execution Unit 神经执行单元.
 - **NFA**: 非确定性有限自动机.
 - **NoC**: Network-on-Chip 片上网络.
 - **NP-hard**: 非确定性多项式时间困难.
@@ -230,6 +239,8 @@
 - **RIG**: Register Interference Graph 寄存器干涉图. 是编译器在寄存器分配
   (Register Allocation) 阶段使用的一种核心数据结构. RIG 是一个无向图,
   用于描述程序中哪些变量(或临时值)的"生命周期"存在重叠, 从而不能共享同一个物理寄存器.
+- **RMSNorm**: Root Mean Square Layer Normalization 均方根层归一化.
+  一种用于神经网络(尤其是 Transformer 架构)的归一化技术. 它是对 LayerNorm 的简化版本.
 - **RNG**: Random Number Generator 随机数生成器.
 - **RNN**: Recurrent neural network 循环神经网络.
 - **ROI**: Return on Investment 投资回报率.
@@ -311,11 +322,13 @@
 
 - **Variable mutation**: 变量突变. 指的是程序中的变量在初次赋值后,
   其值可以被再次修改的特性.
+- **VESA**: Video Electronics Standards Association 视频电子标准协会.
 - **VLA**: Vision-Language-Action 视觉-语言-动作. 它是当前具身智能和机器人学习领域的模型架构之一.
 - **VLM**: Vision-Language Model 视觉-语言模型.
 
 ## W
 
+- **Wafer**: 晶圆. 用于制作芯片的硅片基底.
 - **WAM**: World Action Model 世界行动模型. 机器人学习和具身智能领域的模型架构之一.
 - **WASM**: WebAssembly 是一种可移植、体积小、加载快且安全的二进制指令格式.
 
@@ -335,5 +348,6 @@
   转化为能在特定硬件(如GPU或Groq LPU)上极致高效运行的、
   专门定制的底层计算内核(Kernel)的过程.
 - **启发式算法**: 找到足够好(可接受)的解.
+- **求解器**: 用于解决复杂数学问题的算法、软件、库.
 - **算子**: 执行特定运算或操作的基础功能单元.
-
+    - 到算子颗粒度: 将模型分解为基本计算单元.

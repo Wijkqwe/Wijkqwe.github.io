@@ -2,10 +2,11 @@
 
 ## CMake 配置
 
-### LLVM_LINK_LLVM_DYLIB
-
 `-DLLVM_LINK_LLVM_DYLIB=ON`: 告诉LLVM工具(如clang、opt等)链接到共享库(`libLLVM.so`), 而不是静态链接各个LLVM组件库.
-  > 启用时, 可能对 JIT 造成影响.
+> 启用时, 可能对 JIT 造成影响.
+
+`-DLLVM_ENABLE_ASSERTIONS=ON`: 开启断言检查.
+> 默认仅当 `CMAKE_BUILD_TYPE` = `Debug` 是为 ON, 否则 OFF.
 
 CUDA 运行时支持:
 

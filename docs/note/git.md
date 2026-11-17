@@ -145,6 +145,7 @@ references = map<string string>
 - `git branch -m [<旧分支名>] <新分支名>`: 重命名.
 - `git branch -f <父分支> <子分支>`: 将<父分支>移动到<子分支>的位置.
   需要当前不在<父分支>上.
+- `git merge --ff-only <子分支>`: 将当前分支快进到子分支上.
 
 ### 删
 
