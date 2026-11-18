@@ -45,6 +45,7 @@
 - **CMOS**: Complementary Metal-Oxide-Semiconductor 互补金属氧化物半导体.
   既是一种半导体制造工艺, 也是一种电路设计风格, 是现代数字芯片(CPU、GPU、AI 芯片、内存)最基础的构建单元.
 - **CNN**: Convolutional Neural Network 卷积神经网络.
+- **Confluence**: 企业级 wiki / 知识库 / 文档平台.
 - **CoT**: Chain of Thought 思维链.
 - **CP0**: Co-processor 0 协处理器 0. MIPS 架构中集成在 CPU 核心内部的一组专用寄存器.
   负责管理处理器最核心的系统功能, 包括: 内存管理、异常处理和中断控制.
