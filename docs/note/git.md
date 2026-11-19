@@ -159,6 +159,12 @@ references = map<string string>
 - `gb -D <branch>`: 删除未合并分支.
 - `gp <remote> --delete <branch>`: 删除远程分支.
 
+#### 索引
+
+- `git rm --cached <file>`: 从 git 跟踪里删掉文件, 本地文件不变.
+    - `-r <dir>`: 递归删除目录.
+      > 可以直接 `git rm -r --cached .` 清空当前仓库索引.
+
 ### 增
 
 #### 更改
