@@ -23,6 +23,7 @@
   下游会反过来向上游发送一个信号, 让上游暂停或减速发送数据.
 - **Bank**: 是指将大容量的存储资源(如内存、缓存、寄存器文件)划分为多个独立的、
   可以并行访问的小单元.每个小单元就是一个Bank.
+- **BF16**: Brain Floating Point. Google Brain 为 AI 设计浮点数格式.
 - **BIU**: Bus Interface Unit 总线接口单元.
 - **BLAS**: Basic Linear Algebra Subprograms 基础线性代数子程序.
 - **Bleeding-edge**: 指的是采用最新、最前沿, 但尚未经过充分测试的技术、
@@ -86,6 +87,8 @@
 - **FFN**: Feed Forward Network 前馈网络.
 - **FFT**: Fast Fourier Transform 快速傅里叶变换.
   一种高效计算离散傅里叶变换（DFT）的算法. 它的核心作用是把信号从时域转换到频域.
+- **Flash Attention**: 注意力计算算法.
+  重组计算过程极大减少慢速内存的访问次数.
 - **FP16**: Floating-Point 16-bit 16位浮点数.
 - **Frontier**: 用于 LLM 推理服务的离散事件仿真器. 可用来性能预测.
 
@@ -203,6 +206,7 @@
 - **OSDT**: Open Source Development Tools 开源开发工具.
 - **outline**: 将程序中的一段代码(通常是一个独立的代码区域)提取出来,
   封装成一个单独的函数.
+- **Overlap**: 多卡分布式训练, GPU 和卡间通信同时跑.
 
 ## P
 
@@ -297,6 +301,7 @@
 
 - **TCO**: Total Cost of Ownership 总拥有成本.
   指一个系统或产品从采购到报废的全生命周期内, 所有相关成本的总和.
+- **TF32**: TensorFloat32. NVIDIA Tensor Core 内部的中间计算格式.
 - **TII**: TargetInstrInfo in LLVM llvm/include/llvm/CodeGen/TargetInstrInfo.h.
 - **TLE**: Triton Language Extensions. FlagTree 中引入的分层语言扩展体系.
 - **TLI**: TargetLowering in LLVM llvm/include/llvm/CodeGen/TargetLowering.h.
