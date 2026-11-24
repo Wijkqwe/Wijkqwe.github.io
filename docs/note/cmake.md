@@ -63,3 +63,8 @@ $<qwe:asd>
 ### 内置表达式
 
 - `COMPILE_LANGUAGE`: CMake 3.0 版本之后被引入. 通过 `$<COMPILE_LANGUAGE:lang1,lang2,...>` 作为**信息表达式**使用, 返回一个布尔值.
+
+## file
+
+`CMakeFiles/*.dir/link.txt`: 完整链接命令.
+

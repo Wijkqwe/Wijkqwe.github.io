@@ -278,6 +278,7 @@
   从而允许指令在满足条件时提前执行, 而不是死板地按程序顺序执行.
 - **SDF**: Synchronous Data Flow 同步数据流.
 - **SDK**: Software Development Kit 软件开发工具包.
+- **shape**: 描述张量/数组每一维有多少元素.
 - **SLP**: Superword Level Parallelism 超字级并行.
 - **SNR**: Script Number Register 脚本编号寄存器.
 - **SoC**: System on a Chip 片上系统.
@@ -320,6 +321,7 @@
 
 ## U
 
+- **UCIe**: Universal Chiplet Interconnect Express 通用小芯片互联总线.
 - **ULP**: Unit in the Last Place 最后一位单位.
   ULP 是浮点数在某个数值附近, 两个相邻可表示数之间的间距. 它代表了该浮点数格式在该量级下能分辨的最小精度单位.
 - **UMD**: User-Mode Driver 用户态驱动.

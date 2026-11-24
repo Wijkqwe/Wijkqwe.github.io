@@ -29,6 +29,7 @@
 - `-target <>`:
   > https://clang.llvm.org/docs/CrossCompilation.html#target-triple
 
+- `-mllvm <arg>`: 将参数送入 LLVM 库.
 - `-Xclang <前端选项>`: 将选项传递给 clang 的前端(`-cc1` 调用).
   每次只传递一个选项.
     - `-disable-O0-optnone`: `clang -O0` 默认会给函数加上 `optnone` 属性,

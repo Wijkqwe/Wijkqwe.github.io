@@ -1,5 +1,7 @@
 # Shell
 
+优先级: keyword > alias > func > command(builtin) > command.
+
 ## command
 
 ### `alias`
@@ -283,6 +285,16 @@ which echo
 encapsulating whatever command you're executing and ignoring wherever you get a hang up signal
 
 ### history substring search
+
+## keyword
+
+### `time`
+
+计时.
+
+多核执行时, user 是所有核上用户态的累加, 可能大于 real.
+
+- `-p`: POSIX 输出格式.
 
 ## 特殊参数/符号
 
