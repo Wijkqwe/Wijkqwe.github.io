@@ -25,6 +25,8 @@
 - `-I[ ]<path>`: 指定头文件搜索路径.
 - `-l[ ]<name>`: 指定需要链接的库 `lib<name>`.
 - `-L[ ]<path>`: 指定额外的库的搜索路径.
+
+- `-save-temps`: 保留中间文件.
 - `-std=<>`: 指定 C++ 版本.
 - `-target <>`:
   > https://clang.llvm.org/docs/CrossCompilation.html#target-triple

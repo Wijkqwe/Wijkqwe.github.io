@@ -45,6 +45,13 @@ x 向上取整到 tile 的整数倍.
 x = ((x + tile - 1) / tile) * tile;
 ```
 
+### block 单次执行
+
+某些操作在一个 block 内仅需执行一次.
+```c
+if (threadIdx.x == 0) {}
+```
+
 ## major
 
 ```
@@ -59,4 +66,12 @@ C[M, N] = A[M, K] * B[K, N]
 - B：
     - K-major：col-major 列优先存储
     - N-major：row-major 行优先存储
+
+## 宏
+
+### __CUDA_ARCH__
+
+内置预处理器宏.
+
+编译 device 时有定义; host 端无定义.
 

@@ -317,7 +317,12 @@ doesnot work, cause `>` was set by shell,
 in this case, is run `sudo` with arguments `echo` and `"500"`, and send its output to the file called brightness
 
 ##### `2>`
+
 redirecting the standard error
+
+##### `&>`
+
+Redirecting the standard output and error.
 
 #### `<`
 standard input

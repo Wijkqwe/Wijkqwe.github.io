@@ -37,8 +37,11 @@
   通过某种方式连接在一起, 共同工作, 以实现更强大或更复杂的系统功能.
 - **CAGR**: Compound Annual Growth Rate 复合年增长率.
   用来描述一项投资、业务或指标在特定时期内的年均增长速度的指标.
+- **caller**: 调用者.
+- **callee**: 被调用者.
 - **CFG**: Control Flow Graph 控制流图.
 - **CFI**: LLVM Flang 中 C 与 Fortran 互操作的基石.
+- **CH**: Channel.
 - **CIM**: Computing-in-Memory 存内计算.
 - **Clause**: 子句 / 子语. 是附加在 Directive 后面的“修饰语”, 用来告诉编译器
   “以什么方式”、“在什么条件下”、“对哪些变量”执行这个 Directive.
@@ -58,10 +61,14 @@
 
 ## D
 
+- **D2D**: Die-to-Die.
 - **DCE**: Dead Code Elimination 死代码消除.
 - **DCU**: Deep Compute Unit 深度计算单元. 特指海光信息(Hygon)研发的 GPGPU 架构 AI 加速卡.
+- **DDR**: Double Data Rate SDRAM. 内存.
+    - **GDDR**: 显存. DRAM.
 - **DFA**: 确定性有限自动机.
 - **Die**: 裸片/晶粒. 在芯片设计中, 是指从一整片 Wafer 上切割下来的、包含完整集成电路的小块硅片. 它是芯片制造过程中的核心单元, 也是封装前的最小功能实体.
+- **differential harness**: 差分校验工装. 有助于解决 Vibe Coding 痛点: 凭感觉验收、隐姓逻辑漂移.
 - **Directive**: 编译指令 / 指示符. 源码中的特殊标记, 用来指导编译器、预处理器或运行时系统如何处理代码.
 - **DL**: Deep Learning 深度学习.
 - **DLP**: Data-Level Parallelism 数据级并行.
@@ -150,6 +157,10 @@
   还精确规定了何时出发、何时到达（时间表）。通过反链分析，
   将冲突的操作分配到不同时钟周期，彻底消除 Bank 冲突。
 
+## K
+
+- **KPN**: Kahn Process Networks. 分布式计算模型, 其中一组确定性顺序进程通过无限制的先进先出通道进行通信, 所得到的过程网络表现出确定性行为.
+
 ## L
 
 - **land**: 合并 PR 进入分支.
@@ -169,6 +180,7 @@
 - **MaaS**: Model as a Service 模型即服务.
 - **MAC tree**: Multiply-Accumulate Tree 乘加树.
 - **MCU**: Microcontroller Unit 微控制器单元, 通称单片机.
+- **Mesh**: NoC 的一种拓扑结构. 结构规整, 易于实现.
 - **ML**: Machine Learning 机器学习.
 - **MLA**: Multi-Head Latent Attention 多头潜在注意力. DeepSeek 系列模型中提出的一种高效注意力机制.
 - **MLLM**: Multimodal Large Language Model 多模态大语言模型.
@@ -241,6 +253,7 @@
 ## R
 
 - **RA**: Register Allocation 寄存器分配.
+- **RDC**: Relocatable Device Code 可重定位设备代码.
 - **RIG**: Register Interference Graph 寄存器干涉图. 是编译器在寄存器分配
   (Register Allocation) 阶段使用的一种核心数据结构. RIG 是一个无向图,
   用于描述程序中哪些变量(或临时值)的"生命周期"存在重叠, 从而不能共享同一个物理寄存器.
@@ -321,7 +334,8 @@
 
 ## U
 
-- **UCIe**: Universal Chiplet Interconnect Express 通用小芯片互联总线.
+- **UCIe**: Universal Chiplet Interconnect Express 通用芯片互联总线.
+  封装内的 Die-to-Die 互联.
 - **ULP**: Unit in the Last Place 最后一位单位.
   ULP 是浮点数在某个数值附近, 两个相邻可表示数之间的间距. 它代表了该浮点数格式在该量级下能分辨的最小精度单位.
 - **UMD**: User-Mode Driver 用户态驱动.
@@ -352,6 +366,7 @@
 - **端侧**: 通常指"终端设备一侧". 计算和数据处理发生在设备本地, 而不是发送到云端.
 - **核函数**: 异构编程模型中, 算子在 GPU 上的一种实现方式.
 - **寄存器重命名**: 将指令中的寄存器映射到实际的物理寄存器.
+- **科学计算**: 用数值近似方法算出结果.
 - **内核编译**: AI编译器中的内核编译, 是将高层级的AI模型描述(如PyTorch的计算图), 
   转化为能在特定硬件(如GPU或Groq LPU)上极致高效运行的、
   专门定制的底层计算内核(Kernel)的过程.
