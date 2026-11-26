@@ -79,6 +79,7 @@ nav:
       - MLIR: note/mlir.md
       - Tools: note/llvm-tools.md
       - Vectorize: note/llvm-vectorize.md
+    - Math: note/math.md
     - Potpourri:
       - Daemons: note/potpourri/daemons.md
       - Data Wrangling: note/potpourri/data_wrangling.md
